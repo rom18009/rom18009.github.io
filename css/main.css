@@ -4,7 +4,6 @@ body {
 }
 
 header,
-nav,
 main,
 footer {
     margin: 1.25rem auto;
@@ -28,6 +27,7 @@ img {
 }
 
 nav {
+    margin: .25rem auto;
     padding: 0.5rem;
 }
 
