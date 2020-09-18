@@ -5,6 +5,7 @@ body {
 
 header,
 main,
+nav,
 footer {
     margin: 1.25rem auto;
     max-width: 760px;
