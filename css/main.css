@@ -3,12 +3,12 @@ body {
     line-height: 1.5;
   }
   
-  header,nav,main,footer {
+  header, nav, main, footer {
     margin: 1.25rem auto;
     max-width: 760px;
   }
   
-  header,footer {
+  header {
     background-color: brown;
     color: white;
     text-align: center;
@@ -16,24 +16,44 @@ body {
     padding: 0.25rem;
   }
   
+  img {
+    float: right;
+    margin:0px;
+    width: 10rem;
+    border-radius: 7px;
+  }
+  
   nav {
     padding: 0.5rem;
   }
-  
-  header img {
-    float: right;
-    height: 200px;
-    border-radius: 12px;
-    width: 200px;
-    box-shadow: 0 4px 8px 0 black;
+
+  h1 {
+      padding: 10px;
   }
   
-  .byuLink {
+  h2 {
+      display: block;
+      border-bottom: 1.3px solid grey;
+      padding-bottom: 5px;
+      font-size: 1.5rem;
+      font-weight: bold;
+  }
+
+  footer {
+    background-color: brown;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+    text-align: center;
+    border-radius: .5rem;
+  }
+  
+  footer a {
     color: white;
   }
 
-  .lastUpdated {
-    color: yellow;
-    font-size: 0.85em;
-}
+  footer div {
+      color: yellow;
+  }
+
   
