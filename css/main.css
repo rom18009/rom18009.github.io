@@ -1,6 +1,7 @@
 body {
     font-size: 18px;
     line-height: 1.5;
+    font-family: "Gill Sans", sans-serif;
 }
 
 header,
@@ -9,6 +10,7 @@ nav,
 footer {
     margin: 1.25rem auto;
     max-width: 760px;
+    font-family: Gill Sans Extrabold, sans-serif;
 }
 
 header {
