@@ -1,7 +1,9 @@
 header {
-	background-color: brown;
-	color: white;
-	text-align: center;
+    background-color: brown;
+    color: white;
+    text-align: center;
+    border-radius: 12px;
+    padding: 0.12rem;
 }
 
 main {
@@ -25,15 +27,6 @@ h1 {
 	padding: 10px;
 }
 
-h3 {    
-	display: block;
-    border-bottom: 1.3px solid grey;
-    padding-bottom: 5px;
-    font-size: 1.5em;
-    font-weight: bold;
-    text-align: center;
-}
-
 h2 {
     background-color: brown;
     color: white;
@@ -41,6 +34,15 @@ h2 {
     border-radius: 7px 7px 0 0;
     padding: .5rem 0 .5rem 0;
     margin-bottom: 0;
+}
+
+h3 {    
+	display: block;
+    border-bottom: 1.3px solid grey;
+    padding-bottom: 5px;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
 }
 
 h1,
@@ -66,4 +68,22 @@ footer {
     padding: .5rem 0 .5rem 0;
     color: white;
     text-align: center;
+}
+
+footer div {
+    color: yellow;
+}
+
+nav {
+    margin: 15px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav a {
+    color: #1d1d1d;
+}
+
+nav a:hover {
+    color: #ffd145;
 }
