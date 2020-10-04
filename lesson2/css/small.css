@@ -1,8 +1,13 @@
+header,nav,main,footer {
+	max-width: 767px;
+	margin: 0 auto;
+}
+
 header {
     background-color: brown;
     color: white;
     text-align: center;
-    border-radius: 12px;
+    border-radius: 7px;
     padding: 0.12rem;
 }
 
@@ -20,7 +25,7 @@ img {
 	margin-left: auto;
     margin-right: auto;
     padding-top: 12px;
-    width: 80%;
+    width: 95%;
 }
 
 h1 {
@@ -77,11 +82,11 @@ footer div {
 nav {
     margin: 15px;
     text-align: center;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'David Libre', serif;
 }
 
 nav a {
-    color: #1d1d1d;
+    color: #000000;
 }
 
 nav a:hover {
