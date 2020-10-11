@@ -10,7 +10,8 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link href="https://fonts.googleapis.com/css2?family=David+Libre:wght@500&display=swap" rel="stylesheet">
-    <link href="/lesson4/css/small.css" rel="stylesheet">
+    <link href="/lesson4/css/normalize.css" rel="stylesheet">
+	<link href="/lesson4/css/small.css" rel="stylesheet">
     <link href="/lesson4/css/medium.css" rel="stylesheet">
     <link href="/lesson4/css/large.css" rel="stylesheet">
     <link rel="icon" type="image/png" sizes="180x180" href="/lesson4/images/apple-touch-icon.png">
@@ -21,13 +22,16 @@
 
 <body>
     <header>
-        <img src="/lesson4/images/sunny-cast_128_logo.png" alt="weather logo">
-        <h1>Sunny-Cast</h1>
-        <div>The weather site catch phrase/moto</div>
+		<img id="sitelogo" src="/lesson4/images/sunny-cast_128_logo.png" alt="Sunny-cast weather logo">
+        <div class="title">
+            <h1 id="sitename">Sunny-Cast</h1>
+            <div class="sitemotto">Where the forecast is always sunny!</div>
+        </div>
     </header>
-    <nav class="clearfix">
-        <button onclick="toggleMenu()">&#9776; Menu</button>
-        <ul id="primaryNav" class="hide">
+
+    <nav> 
+		<ul class="clearfix">
+			<li><a class="menu" href="#">&#9776; Menu</a></li>
             <li><a href="#">Home</a></li>
             <li class ="active"><a href="#">Preston</a></li>
             <li><a href="#">Soda Springs</a></li>
@@ -44,13 +48,12 @@
         <div class="contentbox">Contact Information</div>
     </main>
     <footer>
-        &copy; <script src='/lesson3/js/currentyear.js'></script> | Mark A. Romriell | Idaho | <a
-            href="https://www.byui.edu/online">BYUI Online Learning</a>
-        <div>Last Updated: <span id="lastUpdated"></span>
-        </div>
+        &copy; <span id="currentyear"></span> Sunny-cast | Mark A. Romriell <br>
+        <div><span id="currentdate"></span></div>
     </footer>
-    <script src='/lesson4/css/hamburger.css'></script>
-    <script src='/lesson4/js/lastupdated.js'></script>
+    <script src='/lesson4/js/hamburger.js'></script>
+    <script src='/lesson4/js/longdates.js'></script>
 </body>
 
 </html>
+

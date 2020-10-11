@@ -1,34 +1,30 @@
 /* 64em is also 1028px when basefont is 16px */
 @media only screen and (min-width: 64rem) {
-    
-    header,nav ul,main {
-        max-width: 80%;
-    }
-    
-    nav button {
-        display: none;
+
+    body {
+        max-width: 90%;
     }
 
-    nav ul.hide {
+    h1 {
+        padding-top: 1rem;
+    }
+
+    main {
+        max-width: 64em;
+    }
+
+    .contentbox {
+        background-color: #bbbbbb;
+        color: #444;
+        border: 1px dashed black;
+        max-width: 55em;
+        margin: 14px auto;
+    }
+
+    #sitelogo {
+        width: 8em;
         display: block;
+        margin: auto;
     }
 
-    nav ul {
-        margin-left: 2%;
-    }
-
-    nav ul li {
-        float: left;
-        flex: 1 1 100%;
-    }
-
-    nav ul li a {
-        border: none;
-        padding: .6rem 1rem;
-    }
-    
-    h2 {
-        text-align: left;
-    }
-    
-} /*end large */
+}

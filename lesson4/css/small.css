@@ -1,112 +1,140 @@
 /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
-html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
 
 /*----------- apply a natural box layout model to all elements --------------*/
-* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
 
 
-header,nav,main,footer {
-	max-width: 767px;
-	margin: 0 auto;
+body,
+main,
+header,
+.sitemotto,
+.sitename,
+h1,
+h2,
+nav,
+footer,
+.contentbox,
+a {
+    font-family: 'David Libre', serif;
 }
 
 body {
     background-color: #EFF1F3;
+    margin: auto;
 }
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #FED766;
-    font-family: 'David Libre', serif;
-    font-size: 25px;
+main {
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 1em;
 }
 
-nav {
-	text-align: center;
-	box-shadow: 0 2px 15px #696773;
-}
-  
-nav ul li a {
-    display: block;
-    color: #272727;
+header h1,
+header div {
     text-align: center;
-    padding: .75rem;
-    text-decoration: none;
-    font-size: 20px;
-}
-  
-nav a:hover {
-    background-color: #009FB7;
 }
 
-
-/*----- Clearfix: Force an Element not to collapse -----*/
-.clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.contentbox {
-    display: block;
-    margin: 10px auto;
-    border: 1px dashed black;
-    padding: 15px;
-    background-color: #eee;
-    color: #444;
-    font-style: italic;
+header,
+footer {
+    align-items: center;
+    text-align: center;
+    background-color: #696773;
+    color: #FED766;
+    padding: 1em;
+    justify-content: center;
 }
 
 h1 {
-    padding: 10px;
-    font-family: 'David Libre', serif;
-    font-size: 45px;
-}
-
-.sample-header {
-    font-family: 'David Libre', serif;
-    font-size: 45px;
-}
-
-.sample-navigation {
-    font-family: 'David Libre', serif;
-    font-size: 25px;
+    color: #FED766;
+    font-size: 42px;
 }
 
 h2 {
-    font-family: 'David Libre', serif;
-    color: #272727;
-    font-size: 30px;
+    font-size: 14px;
 }
 
-h3 {
-    font-family: 'David Libre', serif;
-    font-size: 25px;
-}
-
-p, ul li {
-    font-size: 20px;
-}
-
-img {
+.sitemotto {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 15px;
+    max-width: 100%;
+    margin: auto;
+}
+
+#sitelogo {
+    width: 8em;
+    display: block;
+    margin: auto;
+}
+
+h2 {
+    color: #272727;
+    text-align: center;
+}
+
+.contentbox {
+    background-color: #bbbbbb;
+    border: 1px dashed black;
+    margin: 10px auto;
+    padding: 12px;
+    color: #444;
+    font-style: italic;
+    width: 75%;
+}
+
+nav {
+    margin: 0 auto;
+    max-width: 760px;
+    background-color: #FED766;
+}
+
+.clearfix {
+    list-style: none;
+    padding: 0;
+}
+
+.clearfix li:first-child {
+    display: block;
+}
+
+.clearfix li {
+    display: none;
+}
+
+.clearfix a {
+    display: block;
+    padding: 0.75rem;
+    text-align: left;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+
+.clearfix a:hover {
+    color: black;
+    background-color: #009FB7;
+}
+
+.responsive li {
+    display: block;
+}
+
+.active {
+    border: 1px solid black;
+    border-radius: 2px;
 }
 
 footer {
-	background-color: #696773;
+    background-color: #696773;
     font-family: 'David Libre', serif;
     font-size: 15px;
     color: #FED766;
     text-align: center;
     padding: 5px;
-}
-
-main {
-    padding-bottom: 10px;
 }
