@@ -35,16 +35,13 @@
         margin: 12px auto;
     }
 
-    #sitelogo {
+    .sitelogo {
         width: 8em;
         ;
         float: left;
         padding: 10px 10px;
         max-height: 100px;
     }
-
-
-    /* THIS IS FROM THE CODE PEN  */
 
     .clearfix {
         display: flex;
@@ -63,6 +60,4 @@
     .clearfix li:first-child {
         display: none;
     }
-
-    /* THIS IS FROM THE CODEPEN */
 }

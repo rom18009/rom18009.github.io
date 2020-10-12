@@ -5,7 +5,7 @@
         max-width: 90%;
     }
 
-    h1 {
+    h1 .sitename {
         padding-top: 1rem;
     }
 
@@ -21,7 +21,7 @@
         margin: 14px auto;
     }
 
-    #sitelogo {
+    .sitelogo {
         width: 8em;
         display: block;
         margin: auto;
