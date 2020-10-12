@@ -1,10 +1,18 @@
-header,nav,main,footer {
-	max-width: 767px;
-	margin: 0 auto;
+header,
+nav,
+main,
+footer {
+    max-width: 767px;
+    margin: 0 auto;
+}
+
+main {
+    padding: 10px;
 }
 
 body {
     background-color: #EFF1F3;
+    font-family: 'David Libre', serif;
 }
 
 nav ul {
@@ -18,10 +26,10 @@ nav ul {
 }
 
 nav {
-	text-align: center;
-	box-shadow: 0 2px 15px #696773;
+    text-align: center;
+    box-shadow: 0 2px 15px #696773;
 }
-  
+
 nav ul li a {
     display: block;
     color: #272727;
@@ -30,7 +38,7 @@ nav ul li a {
     text-decoration: none;
     font-size: 20px;
 }
-  
+
 nav a:hover {
     background-color: #009FB7;
 }
@@ -51,6 +59,11 @@ h1 {
     font-size: 25px;
 }
 
+.sample body {
+    font-family: 'David Libre', serif;
+    font-size: 18px;
+}
+
 h2 {
     font-family: 'David Libre', serif;
     color: #272727;
@@ -62,7 +75,8 @@ h3 {
     font-size: 25px;
 }
 
-p, ul li {
+p,
+ul li {
     font-size: 20px;
 }
 
@@ -74,14 +88,10 @@ img {
 }
 
 footer {
-	background-color: #696773;
+    background-color: #696773;
     font-family: 'David Libre', serif;
     font-size: 15px;
     color: #FED766;
     text-align: center;
     padding: 5px;
-}
-
-main {
-    padding-bottom: 10px;
 }
