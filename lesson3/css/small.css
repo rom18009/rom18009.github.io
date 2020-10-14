@@ -10,9 +10,12 @@ main {
     padding: 10px;
 }
 
-body {
+body,
+h2,
+h3,
+p {
     background-color: #EFF1F3;
-    font-family: 'David Libre', serif;
+    font-family: 'Cardo', serif;
 }
 
 nav ul {
@@ -65,13 +68,11 @@ h1 {
 }
 
 h2 {
-    font-family: 'David Libre', serif;
     color: #272727;
     font-size: 30px;
 }
 
 h3 {
-    font-family: 'David Libre', serif;
     font-size: 25px;
 }
 

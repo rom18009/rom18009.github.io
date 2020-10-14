@@ -35,12 +35,16 @@
         margin: 12px auto;
     }
 
-    .sitelogo {
-        width: 8em;
-        ;
-        float: left;
-        padding: 10px 10px;
-        max-height: 100px;
+    .container {
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
+
+    .container .sitelogo {
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
     }
 
     .clearfix {
