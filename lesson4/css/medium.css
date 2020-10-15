@@ -42,9 +42,8 @@
     }
 
     .container .sitelogo {
-        -webkit-box-flex: 1;
-        -ms-flex: 1;
-        flex: 1;
+            width: 80%;
+            margin: auto;
     }
 
     .clearfix {

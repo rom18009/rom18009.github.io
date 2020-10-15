@@ -37,11 +37,6 @@ main {
     padding: 1em;
 }
 
-/*header h1,
-header div {
-    text-align: center;
-}*/
-
 header,
 footer {
     align-items: center;
@@ -73,14 +68,14 @@ h2 {
     -ms-flex-align: center;
     align-items: center;
     overflow: hidden;
-  }
-  
-  .container .sitelogo {
-    max-width: 250px;
+}
+
+.container .sitelogo {
+    max-width: 20px;
     padding: 0 8px;
-  }
-  
-  .container .sitelogo a {
+}
+
+.container .sitelogo a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -89,47 +84,43 @@ h2 {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    height: 35px;
-  }
-  
-  .container .sitelogo a img {
-    max-width: 100%;
-    max-height: 35px;
-  }
-  
-  .container .title {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;  
-    -webkit-box-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    padding: 0 10px;
-  }
-  
-  .container .title .sitename {
+    max-width: 8em;
+}
+
+.container .sitelogo a img {
+    width: 100%;
+}
+
+.container .title {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.container .title .sitename {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
-  }
-
-.sitemotto {
-    line-height: 1;
-    top: 0px;
 }
 
-/*.sitelogo {
-    width: 8em;
+.sitemotto {
+    line-height: 2;
+    top: 0px;
+    text-align: left;
+    margin-block-start: auto;
     display: block;
-    margin: auto;
-}*/
+    width: 100%;
+}
 
 h2 {
     color: #272727;
