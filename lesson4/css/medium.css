@@ -1,66 +1,48 @@
-@media only screen and (min-width: 32.5em) {
-    body {
-        max-width: 90%;
+@media only screen and (min-width: 34em) {
+    
+	header {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
     }
-
-    h1 {
-        font-size: 2.5rem;
-    }
-
-    h2 {
-        font-size: 2rem;
-    }
-
-    h3 {
-        font-size: 1.5rem;
-    }
-
-    nav ul {
-        display: flex;
-    }
-
-    nav {
-        max-width: 100%;
-    }
-
-    nav ul li {
-        flex: 1 1 100%;
-    }
-
-    .contentbox {
-        background-color: #bbbbbb;
-        color: #444;
-        ;
-        max-width: 40em;
-        margin: 12px auto;
-    }
-
-    .container {
-        -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-        justify-content: space-between;
-    }
-
-    .container .sitelogo {
-            width: 80%;
-            margin: auto;
-    }
-
-    .clearfix {
-        display: flex;
-    }
-
-    .clearfix li {
-        display: block;
-        flex: 1 1 auto;
-    }
-
-    .clearfix a {
-        text-align: center;
-
-    }
-
-    .clearfix li:first-child {
-        display: none;
-    }
-}
+	
+	.sitelogo {
+		margin: 1em;
+		width: 9em;
+		justify-self: end;
+		align-self: center;
+	}
+	
+	.sitetitle {
+		margin-left: 1em;
+		justify-self: start;
+	}
+	
+	header h1 {
+		font-size: 2.625em;
+	}
+	
+	.sitemotto {
+		font-size: large;
+		
+	}
+	
+	.clearfix {
+		display: flex;
+		justify-content: center;
+	}
+	
+	.clearfix li {
+		display:block;
+		flex: 1 1 auto;
+	}
+	
+	.clearfix a {
+		text-align: center;
+		font-size: 0.875em;
+		padding: 1em;
+	}
+	
+	.clearfix li:first-child {
+				display: none;
+	}
+}	

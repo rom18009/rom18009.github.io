@@ -1,10 +1,9 @@
-const hambutton = document.querySelector('.menu');
-const mainnav = document.querySelector('.clearfix')
+function menuToggle() {
+    document.getElementsByClassName("clearfix")[0].classList.toggle("responsive");
 
-hambutton.addEventListener('click', () => {
-    mainnav.classList.toggle('responsive')
-}, false);
-
-window.onresize = () => {
-    if (window.innerWidth > 760) mainnav.classList.remove('responsive')
-};
+    if (document.getElementById("hamburger").innerHTML === "Menu") {
+        document.getElementById("hamburger").innerHTML = "X";
+    } else {
+        document.getElementById("hamburger").innerHTML = "Menu";
+    }
+}

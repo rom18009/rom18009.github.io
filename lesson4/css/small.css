@@ -1,168 +1,72 @@
-/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
-html {
-    -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
+header {
+	background-color: #696773;
+	padding: 1em;
 }
 
-/*----------- apply a natural box layout model to all elements --------------*/
-* {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-
-body,
-main,
-header,
-.sitemotto,
-.sitename,
-h1,
-h2,
-nav,
-footer,
-.contentbox,
-a {
-    font-family: 'David Libre', serif;
-}
-
-body {
-    background-color: #EFF1F3;
-    margin: auto;
-}
-
-main {
-    max-width: 95%;
-    margin: 0 auto;
-    padding: 1em;
-}
-
-header,
-footer {
-    align-items: center;
-    text-align: center;
-    background-color: #696773;
-    color: #FED766;
-    padding: 1em;
-    justify-content: center;
-}
-
-h1 {
-    color: #FED766;
-    font-size: 42px;
-}
-
-h2 {
-    font-size: 18px;
-}
-
-.container {
-    height: 160px;
-    background-color: #333333;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    overflow: hidden;
-}
-
-.container .sitelogo {
-    max-width: 20px;
-    padding: 0 8px;
-}
-
-.container .sitelogo a {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    max-width: 8em;
-}
-
-.container .sitelogo a img {
-    width: 100%;
-}
-
-.container .title {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-box-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    padding: 0 10px;
-    margin: 0 auto;
-}
-
-.container .title .sitename {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+.sitelogo {
+	display: block;
+	width: 4em;
+	margin: auto;
 }
 
 .sitemotto {
-    line-height: 2;
-    top: 0px;
-    text-align: left;
-    margin-block-start: auto;
-    display: block;
-    width: 100%;
+	font-family: 'David Libre', serif;
+	color: #FED766;
 }
 
-h2 {
-    color: #272727;
+main {
+	font-family: 'Cardo', serif;
+	max-width: 960px;
+	padding: 1em;
+    margin: 0.625em auto;
+    justify-content: center;
+}
+
+header h1, header div {
+	color: #FED766;
+	filter: drop shadow (0.15em 0.125em 0.15em black);
     text-align: center;
+    width: 760;
+    font-size: small;
 }
 
-.contentbox {
-    background-color: #bbbbbb;
-    border: 1px dashed black;
-    margin: 10px auto;
-    padding: 12px;
-    color: #444;
-    font-style: italic;
-    width: 75%;
+h1 {
+	font-size: 2.6em;
+	line-height: 2em;
 }
 
 nav {
-    margin: 0 auto;
-    max-width: 760px;
-    background-color: #FED766;
+	background-color: #FED766;
+	font-family: 'Cardo', serif;
+    text-align: center;
 }
 
 .clearfix {
-    list-style: none;
-    padding: 0;
-}
-
-.clearfix li:first-child {
-    display: block;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	text-align: center;
 }
 
 .clearfix li {
     display: none;
 }
 
+.clearfix li:first-child {
+    display: block;
+}
+
+.responsive li {
+    display: block;
+}
+
 .clearfix a {
     display: block;
+	color: black;
+	font-weight: 700;
     padding: 0.75rem;
+	text-decoration: none;
     text-align: left;
-    text-decoration: none;
-    color: black;
-    font-weight: 700;
 }
 
 .clearfix a:hover {
@@ -170,20 +74,34 @@ nav {
     background-color: #009FB7;
 }
 
-.responsive li {
-    display: block;
+.clearfix .active {
+    border: 0.125em solid black;
+    border-radius: 0.125em;
 }
 
-.active {
-    border: 1px solid black;
-    border-radius: 2px;
+h2 {
+	font-size: 18px;
+	text-align: center;
+}
+
+.contentbox {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    background-color: #bbbbbb;
+    border: 0.0625em dashed black;
+    margin: 0.625em auto;
+    padding: 0.75em;
+    color: #272727;
+    font-style: italic;
+    width: auto;
 }
 
 footer {
-    background-color: #696773;
-    font-family: 'David Libre', serif;
-    font-size: 15px;
-    color: #FED766;
+    align-items: center;
     text-align: center;
-    padding: 5px;
+    background-color: #696773;
+    color: #FED766;
+    padding: 1em;
+
 }
+

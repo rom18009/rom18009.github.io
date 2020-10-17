@@ -1,29 +1,19 @@
 /* 64em is also 1028px when basefont is 16px */
 @media only screen and (min-width: 64rem) {
 
-    body {
-        max-width: 90%;
-    }
+	.sitelogo {
+		width: 10em;
+	}
 
-    h1 .sitename {
-        padding-top: 1rem;
-    }
+	header h1 {
+		font-size: 3.25em
+	}
+	
+	.sitemotto {
+		font-size: x-large;
+	}
 
-    main {
-        max-width: 64em;
-    }
-
-    .contentbox {
-        background-color: #bbbbbb;
-        color: #444;
-        border: 1px dashed black;
-        max-width: 55em;
-        margin: 14px auto;
-    }
-
-    .sitelogo {
-        width: 80%;
-        margin: auto;
-    }
-
+	.clearfix a {
+		font-size: 1em;
+	}
 }
