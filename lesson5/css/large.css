@@ -1,0 +1,19 @@
+/* 64em is also 1028px when basefont is 16px */
+@media only screen and (min-width: 64rem) {
+
+	.sitelogo {
+		width: 10em;
+	}
+
+	header h1 {
+		font-size: 3.25em
+	}
+
+	.sitemotto {
+		font-size: x-large;
+	}
+
+	.clearfix a {
+		font-size: 1em;
+	}
+}
