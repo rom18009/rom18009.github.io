@@ -22,17 +22,21 @@ header {
     color: #FED766;
 }
 
+body {
+    background-color: #EFF1F3;
+}
+
 main {
     font-family: 'Cardo', serif;
     max-width: 960px;
     padding: 1em;
     margin: 0.625em auto;
     justify-content: center;
-    background-color: EFF1F3;
 }
 
 header h1,
 header div {
+    font-family: 'Cardo', serif;
     color: #FED766;
     filter: drop-shadow(0.15em 0.125em 0.15em black);
     text-align: center;
@@ -90,6 +94,7 @@ nav {
 }
 
 h2 {
+    font-family: 'Cardo', serif;
     font-size: 1.5em;
     text-align: center;
 }
@@ -106,6 +111,7 @@ h2 {
 }
 
 .weathersummary {
+    font-family: 'Cardo', serif;
     color: #000000;
     background-color: #FED766;
     display: grid;
@@ -139,6 +145,7 @@ h2 {
 }
 
 article {
+    font-family: 'Cardo', serif;
     border: 1px solid black;
     background-color: #696773;
     color: white;
@@ -173,6 +180,7 @@ article {
 }
 
 .contactinfo {
+    font-family: 'Cardo', serif;
     color: #000000;
     line-height: 2.5em;
     font-weight: bold;

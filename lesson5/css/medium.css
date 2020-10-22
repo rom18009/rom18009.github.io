@@ -68,6 +68,7 @@
 	}
 
 	.forecastdiv {
+		font-family: 'Cardo', serif;
 		display: grid;
 		grid-template-columns: repeat(5, 1fr);
 		grid-gap: 1.5%;
@@ -90,8 +91,8 @@
 	}
 
 	.forecastdiv h4 {
-		color:black;
-		background-color: #ffffcc;
+		color: black;
+		background-color: #FED766;
 		margin: 0;
 		padding: .5em;
 	}
@@ -103,7 +104,7 @@
 		font-weight: 600;
 	}
 
-	.forecastdiv>div {
+	.forecastdiv div {
 		box-shadow: 0 0 0.5em black;
 		border-radius: 0.3125em;
 		overflow: hidden;
