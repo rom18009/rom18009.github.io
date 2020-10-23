@@ -170,6 +170,12 @@ article {
     font-size: 1.125em;
 }
 
+h3 {
+    font-family: 'Cardo', serif;
+    font-size: 1.5em;
+    text-align: center;
+}
+
 .contactdiv {
     background-color: #FED766;
     padding: 2em;

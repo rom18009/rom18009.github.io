@@ -95,13 +95,14 @@
 		background-color: #FED766;
 		margin: 0;
 		padding: .5em;
+
 	}
 
 	.forecastdiv section {
 		color: #FED766;
 		background-color: #696773;
 		padding: .20em 0 .75em 0;
-		font-weight: 600;
+		font-weight: 700;
 	}
 
 	.forecastdiv div {
