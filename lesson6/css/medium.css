@@ -91,7 +91,7 @@
 	}
 
 	.forecastdiv h4 {
-		background-color: #009FB7;
+		background-color: #272727;
 		color: #FED766;
 		margin: 0;
 		padding: .5em;
@@ -100,7 +100,7 @@
 
 	.forecastdiv section {
 		color: #FED766;
-		background-color: #677371;
+		background-color: #808a88;
 		padding: .20em 0 .75em 0;
 		font-weight: 700;
 	}
