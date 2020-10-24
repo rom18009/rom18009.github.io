@@ -1,0 +1,209 @@
+#announcement {
+    font-family: 'David Libre', serif;
+    color: #000000;
+    background-color: #FED766;
+    padding: .60em;
+    text-align: center;
+}
+
+header {
+    background-color: #696773;
+    padding: 1em;
+}
+
+.sitelogo {
+    display: block;
+    width: 4em;
+    margin: auto;
+}
+
+.sitemotto {
+    font-family: 'David Libre', serif;
+    color: #FED766;
+}
+
+body {
+    background-color: #EFF1F3;
+}
+
+main {
+    font-family: 'Cardo', serif;
+    max-width: 960px;
+    padding: 1em;
+    margin: 0.625em auto;
+    justify-content: center;
+}
+
+header h1,
+header div {
+    font-family: 'Cardo', serif;
+    color: #FED766;
+    filter: drop-shadow(0.15em 0.125em 0.15em black);
+    text-align: center;
+    font-size: small;
+    margin: auto;
+}
+
+h1 {
+    font-size: 2.6em;
+    line-height: 2em;
+}
+
+nav {
+    background-color: #FED766;
+    font-family: 'Cardo', serif;
+    text-align: center;
+}
+
+.clearfix {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.clearfix li {
+    display: none;
+}
+
+.clearfix li:first-child {
+    display: block;
+}
+
+.responsive li {
+    display: block;
+}
+
+.clearfix a {
+    display: block;
+    color: black;
+    font-weight: 700;
+    padding: 0.75rem;
+    text-decoration: none;
+    text-align: left;
+}
+
+.clearfix a:hover {
+    color: black;
+    background-color: #009FB7;
+}
+
+.clearfix .active {
+    border: 0.125em solid black;
+    border-radius: 0.125em;
+}
+
+h2 {
+    font-family: 'Cardo', serif;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.herodiv {
+    position: relative;
+    margin-bottom: 1.2em;
+}
+
+.heroimage {
+    display: block;
+    width: 100%;
+    margin: auto;
+}
+
+.weathersummary {
+    font-family: 'Cardo', serif;
+    color: #000000;
+    background-color: #FED766;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: .60em;
+    font-weight: bold;
+    box-shadow: 0 0 0.5em black;
+    padding: 0.5em;
+}
+
+.sumtitle {
+    grid-column: 1/3;
+    width: 90%;
+    border-bottom: 0.125em solid #000000;
+    justify-self: center;
+    text-align: center;
+    margin: 0;
+    padding-bottom: .2em;
+}
+
+.sumnames {
+    text-align: right;
+}
+
+.sumvalues {
+    text-align: left;
+}
+
+.forecastdiv {
+    display: none;
+}
+
+article {
+    font-family: 'Cardo', serif;
+    border: 1px solid black;
+    background-color: #696773;
+    color: white;
+    line-height: 1.5em;
+    padding: 2em;
+    margin: 1.5em auto;
+}
+
+.story1img {
+    max-width: 40%;
+    margin-bottom: .5em;
+    box-shadow: 0 0 10px #EFF1F3;
+}
+
+.story1title {
+    margin: 0;
+    line-height: 1.5em;
+    color: #000000;
+}
+
+.story1text {
+    font-size: 1.125em;
+}
+
+h3 {
+    font-family: 'Cardo', serif;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.contactdiv {
+    background-color: #FED766;
+    padding: 2em;
+}
+
+.contactmap {
+    display: none;
+}
+
+.contactinfo {
+    font-family: 'Cardo', serif;
+    color: #000000;
+    line-height: 2.5em;
+    font-weight: bold;
+    text-align: center;
+    margin: auto;
+}
+
+.socialicons {
+    text-align: center;
+    margin: 1em;
+}
+
+footer {
+    align-items: center;
+    text-align: center;
+    background-color: #272727;
+    color: #FED766;
+    padding: 1em;
+
+}
