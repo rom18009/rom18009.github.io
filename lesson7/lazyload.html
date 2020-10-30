@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="author" content="Mark Romriell">
+
+    <title>Wdd 230 - Lesson7 - Progressive Loading of Images / Lazy Loading webpage</title>
+    <meta name="description" content="Lesson7 - Lazy Loading of Images">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="/lesson7/css/lazyloading.css">
+    <link rel="manifest" href="/lesson7/images/site.webmanifest">
+
+
+</head>
+
+<body>
+    <header>
+        <h1>Lesson7 - Progressive Loading of Images / Lazy Loading</h1>
+    </header>
+    <main>
+        <picture>
+            <img data-src="lesson7/images/canyon400.jpg" src="lesson7/images/placeholder400.jpg"
+                alt="Canyon with rainbow">
+        </picture>
+        <picture>
+            <img data-src="lesson7/images/field400.jpg" src="lesson7/images/placeholder400.jpg"
+                alt="Yellow field with colorful clouds">
+        </picture>
+        <picture>
+            <img data-src="lesson7/images/hillside400.jpg" src="lesson7/images/placeholder400.jpg"
+                alt="Hillside covered in yellow flowers">
+        </picture>
+        <picture>
+            <img data-src="lesson7/images/humid400.jpg" src="lesson7/images/placeholder400.jpg"
+                alt="Canal with leaning tree and humid foilage">
+        </picture>
+        <picture>
+            <img data-src="lesson7/images/lake400.jpg" src="lesson7/images/placeholder400.jpg"
+                alt="Mountain Lake with mirror reflection">
+        </picture>
+        <picture>
+            <img data-src="lesson7/images/snow400.jpg" src="lesson7/images/placeholder400.jpg"
+                alt="Snowy trees with colorful clouds">
+        </picture>
+    </main>
+
+</body>
+<footer>
+    &copy; <span id="currentyear"></span> Sunny-Cast | Mark A. Romriell <br>
+    <div><span id="currentdate"></span></div>
+</footer>
+<script src='/lesson7/js/longdates.js'></script>
+<script src='/lesson7/js/lazyload.js'></script>
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script>
+    WebFont.load({
+        google: {
+            families: ['Cardo']
+        }
+    });
+</script>
+</body>
+
+</html>
