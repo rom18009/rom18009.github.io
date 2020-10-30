@@ -19,7 +19,7 @@ header h1 {
     color: #FED766;
     filter: drop-shadow(0.15em 0.125em 0.15em black);
     text-align: center;
-    font-size: small;
+    font-size: xx-large;
     margin: auto;
 }
 
@@ -54,6 +54,11 @@ main img[data-src] {
 
 main picture {
     text-align: center;
+}
+
+main img:hover {
+    color: black;
+    background-color: #009FB7;
 }
 
 footer {

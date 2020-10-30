@@ -11,7 +11,7 @@ document.getElementById('currentdate').textContent = new Date().toLocaleDateStri
 // Shows Current Year
 document.getElementById('currentyear').textContent = new Date().getFullYear();
 
-// Shows Friday Announcement Banner
+/*// Shows Friday Announcement Banner
 day = new Date().getDay();
 let announcement = document.getElementById("announcement");
 
@@ -19,4 +19,4 @@ if (day == 5) {
     announcement.style.display = "block";
 } else {
     announcement.style.display = "none";
-}
+}*/
