@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="author" content="Mark Romriell">
+    <title>Sunny-Cast</title>
+    <meta name="description" content="Preston Page Assignment - Weather Site">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=David+Libre:wght@500&display=swap">
+    <link rel="stylesheet" href="/lesson5/css/normalize.css">
+    <link rel="stylesheet" href="/lesson5/css/small.css">
+    <link rel="stylesheet" href="/lesson5/css/medium.css">
+    <link rel="stylesheet" href="/lesson5/css/large.css">
+    <link rel="icon" type="image/png" sizes="180x180" href="/lesson5/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/lesson5/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/lesson5/images/favicon-16x16.png">
+    <link rel="manifest" href="/lesson5/images/site.webmanifest">
+</head>
+
+<body>
+
+    <aside id="announcement">Saturday = Preston Pancakes in the Park!
+        <br>9:00 a.m. Saturday at the city park pavilion.</aside>
+
+    <header>
+        <img class="sitelogo" src="/lesson5/images/sunny-cast_logo.png" alt="Sunny-cast weather logo">
+        <div class="sitetitle">
+            <h1>Sunny-Cast</h1>
+            <div class="sitemotto">Where the forecast is always sunny!</div>
+        </div>
+    </header>
+
+    <nav>
+        <ul class="clearfix">
+            <li><a id="hamburger" href="#" onclick="menuToggle()">Menu</a></li>
+            <li><a href="#">Home</a></li>
+            <li class="active"><a href="#">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Preston Idaho</h2>
+
+        <div class="herodiv">
+            <img class="heroimage" src="/lesson5/images/hero.jpg"
+                alt="Image of the Preston area mountain range with snow and valley">
+
+            <section class="weathersummary">
+                <h3 class="sumtitle">Weather Summary</h3>
+                <div class="sumnames">
+                    Currently:<br>
+                    High:<br>
+                    Wind Chill:<br>
+                    Humidity:<br>
+                    Wind Speed:<br>
+                </div>
+
+                <div class="sumvalues">
+                    Sunny<br>
+                    68&deg; F<br>
+                    66&deg; F<br>
+                    60%<br>
+                    8 mph<br>
+                </div>
+            </section>
+        </div>
+
+        <div class="forecastdiv">
+            <h3 class="weekforecast">5 Day Forecast</h3>
+            <div class="tuesday">
+                <section>
+                    <h4>Tue</h4>
+                    <img class="weathericon" src="/lesson5/images/sunny.png" alt="Sunny Weather ICON">
+                    70&deg; F
+                </section>
+            </div>
+
+            <div class="wednesday">
+                <section>
+                    <h4>Wed</h4>
+                    <img class="weathericon" src="/lesson5/images/cloudy.png" alt="Cloudy Weather ICON">
+                    66&deg; F
+                </section>
+            </div>
+
+            <div class="thursday">
+                <section>
+                    <h4>Thur</h4>
+                    <img class="weathericon" src="/lesson5/images/sunny.png" alt="Sunny Weather ICON">
+                    68&deg; F
+                </section>
+            </div>
+
+            <div class="friday">
+                <section>
+                    <h4>Fri</h4>
+                    <img class="weathericon" src="/lesson5/images/cloudy.png" alt="Cloudy Weather ICON">
+                    64&deg; F
+                </section>
+            </div>
+
+            <div class="saturday">
+                <section>
+                    <h4>Sat</h4>
+                    <img class="weathericon" src="/lesson5/images/rainy.png" alt="Rainy Weather ICON">
+                    58&deg; F
+                </section>
+            </div>
+        </div>
+
+        <article>
+            <img class="story1img" src="/lesson5/images/farmer.jpg" alt="Happy farmer sitting on tractor">
+            <h3 class="story1title">Enjoyment in Farming</h3>
+            <p class="story1text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut odit nihil doloribus nam
+                quisquam necessitatibus beatae veniam sint, praesentium consequuntur aperiam minima fugit accusantium?
+                Earum nam ab veritatis repellendus a? Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+                molestiae expedita vitae optio, impedit saepe quasi fugit, doloribus assumenda, natus in rem sit earum
+                tenetur inventore? Inventore repellendus unde id. Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Impedit explicabo asperiores corporis accusantium tempore obcaecati nihil, voluptatum ipsam sint
+                perspiciatis voluptates tenetur ipsum, nostrum eaque quidem, soluta corrupti totam a! Lorem ipsum dolor
+                sit amet consectetur adipisicing elit. Natus ea ut, quaerat amet eaque sint eos deserunt distinctio
+                ipsam velit tenetur minima totam numquam error modi enim nisi dolorem dicta.</p>
+        </article>
+
+        <h3>Contact Information</h3>
+
+        <div class="contactdiv">
+            <img class="contactmap" src="/lesson5/images/map.png" alt="Google Map of the Preston City and Area">
+            <section class="contactinfo">
+                <h4>&#10140; 800 N. State St. Preston, ID 83263</h4>
+                <h4>&#9742; 208-852-4000</h4>
+                <h4>&#9993; weatherforecast@sunny-cast.net</h4>
+                <a href="https://www.facebook.com" target="blank"><img class="socialicons"
+                        src="/lesson5/images/facebook.png" alt="Facebook Icon"></a>
+                <a href="https://www.instagram.com" target="blank"><img class="socialicons"
+                        src="/lesson5/images/instagram.png" alt="Instagram Icon"></a>
+                <a href="https://www.pinterest.com/" target="blank"><img class="socialicons"
+                        src="/lesson5/images/pinterest.png" alt="Pinterest Icon"></a>
+                <a href="https://www.twitter.com" target="blank"><img class="socialicons"
+                        src="/lesson5/images/twitter.png" alt="Twitter Icon"></a>
+            </section>
+        </div>
+
+    </main>
+    <footer>
+        &copy; <span id="currentyear"></span> Sunny-Cast | Mark A. Romriell <br>
+        <div><span id="currentdate"></span></div>
+    </footer>
+    <script src='/lesson5/js/hamburger.js'></script>
+    <script src='/lesson5/js/longdates.js'></script>
+</body>
+
+</html>

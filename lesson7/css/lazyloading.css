@@ -4,7 +4,8 @@ body {
     line-height: 1.5;
 }
 
-header, main, footer {
+main,
+footer {
     margin: 1.25em auto;
     max-width: 1060px;
 }
@@ -23,13 +24,17 @@ header h1 {
     margin: auto;
 }
 
-body, main, footer {
+body,
+main,
+footer {
     font-family: 'Cardo', serif;
     padding: 1em;
 }
 
 @media only screen and (min-width: 32.5em) {
-    header, footer {
+
+    header,
+    footer {
         border-radius: 5px;
     }
 }
@@ -54,11 +59,6 @@ main img[data-src] {
 
 main picture {
     text-align: center;
-}
-
-main img:hover {
-    color: black;
-    background-color: #009FB7;
 }
 
 footer {
