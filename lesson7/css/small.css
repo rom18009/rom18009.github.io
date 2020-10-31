@@ -36,7 +36,7 @@ main {
 
 header h1,
 header div {
-    font-family: 'Cardo', serif;
+    font-family: 'David Libre', serif;
     color: #FED766;
     filter: drop-shadow(0.15em 0.125em 0.15em black);
     text-align: center;
@@ -205,11 +205,14 @@ h3 {
     justify-content: center;
     align-content: center;
     grid-gap: 1em;
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 1.8em 10em;
 }
 
 .lazyloadgallery img {
     filter: blur(0em);
-    transition: filter 0.5s;
+    transition: 0.5s;
 }
 
 .lazyloadgallery img[data-src] {
@@ -221,8 +224,8 @@ h3 {
     margin: 0;
 }
 
-.lazyloadgallery figcation {
-    background-color: #EFF1F3;
+.lazyloadgallery figcaption {
+    background-color: #dddddd;
     padding: 1em;
     margin: 0;
 }
