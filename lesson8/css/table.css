@@ -32,7 +32,7 @@ table {
     box-shadow: 10px 10px 10px #628ca6;
     margin: 3em auto 6em auto;
     text-align: center;
-    font-size: 1.1em;
+    font-size: 1.2em;
 }
 
 #theader {
@@ -70,7 +70,10 @@ tfoot td {
     background-color: #7fb9c2;
 }
 
-table, th, tr, td {
+table,
+th,
+tr,
+td {
     border: 2px solid #A9A9A9;
     border-collapse: collapse;
     padding: .5em;
