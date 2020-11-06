@@ -1,0 +1,36 @@
+/* 64em is also 1028px when basefont is 16px */
+@media only screen and (min-width: 64rem) {
+
+	.sitelogo {
+		width: 10em;
+	}
+
+	header h1 {
+		font-size: 3.25em
+	}
+
+	.sitemotto {
+		font-size: x-large;
+	}
+
+	.clearfix a {
+		font-size: 1em;
+	}
+
+	.lazyloadgallery {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-gap: 2em;
+		margin: 0 auto;
+		max-width: 100%;
+		padding: 1.8em 10em;
+	}
+
+	.lazyloadgallery h2:nth-child(1) {
+		grid-column: 1 / span 3;
+	}
+
+	.lazyloadgallery figure:hover {
+		box-shadow: 0 0 30px rgba(33, 33, 33, 1);
+	}
+}
