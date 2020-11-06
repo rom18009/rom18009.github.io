@@ -71,7 +71,7 @@ tfoot td {
 }
 
 table, th, tr, td {
-    border: 2px solid silver;
+    border: 2px solid #D3D3D3;
     border-collapse: collapse;
     padding: .5em;
 }
