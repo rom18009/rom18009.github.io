@@ -26,7 +26,8 @@ body {
     background-color: #EFF1F3;
 }
 
-main, fieldset {
+main,
+fieldset {
     font-family: 'Cardo', serif;
     max-width: 960px;
     padding: 1em;
@@ -49,19 +50,20 @@ h1 {
     line-height: 2em;
 }
 
-h2, h3 {
+h2,
+h3 {
     font-family: 'Cardo', serif;
     font-size: 1.5em;
     text-align: center;
 }
 
-.reportdetails{
+.reportdetails {
     text-align: center;
     font-weight: bold;
     font-size: 1.25rem;
 }
 
-.formsubheading{
+.formsubheading {
     text-align: center;
     font-size: 1.25rem;
 }
@@ -259,7 +261,7 @@ fieldset {
     margin: 2rem 0;
     border: 1px solid #696773;
     border-radius: 5px;
-    padding: 0.5rem 2%; 
+    padding: 0.5rem 2%;
 }
 
 legend {
@@ -268,13 +270,18 @@ legend {
     font-size: 1.2rem;
 }
 
-.form-box, form label {
+.form-box,
+form label {
     display: block;
     padding-top: 1rem;
     font-size: 1.2rem;
 }
 
-form select, form option, form input, form label, form button {
+form select,
+form option,
+form input,
+form label,
+form button {
     padding: 0.2rem 1rem;
     font-size: 1.2rem;
     max-width: 30rem;
@@ -284,7 +291,7 @@ form select, form option, form input, form label, form button {
     padding: 0.3rem 0;
 }
 
-#comments{
+#comments {
     padding: 1rem;
     line-height: 1.5;
     border-radius: 5px;
@@ -319,7 +326,8 @@ form input.submitBtn:hover {
     border: green solid 0.125rem;
 }
 
-form input, form textarea {
+form input,
+form textarea {
     border-radius: 0.3rem;
     padding: 0.5em;
 }
