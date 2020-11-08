@@ -288,7 +288,7 @@ form div {
 form label.top,
 form label.top select {
     display: block;
-    color: gray;
+    color: #272727;
     width: 85%;
     max-width: 30rem;
     font-size: 1.2rem;
@@ -302,7 +302,7 @@ form label.top  {
 form label.sbs {
     display: block;
     padding: 0.75em 0.75em;
-    color: #555;
+    color: #272727;
     
 }
 
@@ -353,7 +353,7 @@ form label.top input:required:valid {
 form input,
 form textarea {
     border-radius: 0.3rem;
-    width: 100%;
+    width: 85%;
     padding: 0.5em;
 }
 

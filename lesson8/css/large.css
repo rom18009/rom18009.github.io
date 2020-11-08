@@ -33,4 +33,9 @@
 	.lazyloadgallery figure:hover {
 		box-shadow: 0 0 30px rgba(33, 33, 33, 1);
 	}
+
+	/* Form */
+	form label.sbs {
+		padding: 0.2rem 0.75em;
+	}
 }
