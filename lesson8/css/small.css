@@ -271,10 +271,22 @@ legend {
 }
 
 .form-box,
+.form-list, 
+.form-radio,
+.form-range,
 form label {
     display: block;
     padding-top: 1rem;
     font-size: 1.2rem;
+}
+
+.form-radio label#danger {
+    color: #d20a0a;
+    font-weight: bold;
+}
+
+.form-radio label input {
+    margin-left: 2rem;
 }
 
 form select,
@@ -287,10 +299,6 @@ form button {
     max-width: 30rem;
 }
 
-.form-box {
-    padding: 0.3rem 0;
-}
-
 #comments {
     padding: 1rem;
     line-height: 1.5;
@@ -299,7 +307,7 @@ form button {
     box-shadow: 1px 1px 1px #999;
 }
 
-#selection {
+#form-radio {
     padding: 0.75em 0.75em;
 }
 
@@ -311,6 +319,7 @@ form input.btnReport {
     margin: 0 0 2rem;
     max-width: 30rem;
     font-size: 1.5rem;
+    font-weight: bold;
 }
 
 form input.submitBtn:hover {

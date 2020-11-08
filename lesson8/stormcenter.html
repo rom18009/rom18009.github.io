@@ -67,7 +67,7 @@
                 </div>
                 <div class="form-box">
                     <label for="zipcode">Zip Code*
-                        <input type="number" id="zipcode" name="zipcode" pattern="(\d{5}([\-]\d{4})?)" required>
+                        <input type="number" id="zipcode" name="zipcode" required>
                     </label>
                 </div>
             </fieldset>
@@ -79,7 +79,7 @@
                         <input type="date" id="stormdate" name="stormdate">
                     </label>
                 </div>
-                <div class="form-box">
+                <div class="form-list">
                     <label for="stormtype">Storm Type
                         <input list="type" id="stormtype" name="stormtype">
                         <datalist id="type">
@@ -92,26 +92,25 @@
                     </label>
                 </div>
                 <div class="form-box">
-                    <label for="stormseverity">Storm Severity Rating:
-                        <input type="range" id="rating" name="stormseverity" value="5" min="1" max="10" step="1"
+                    <label for="rating">Storm Severity Rating:
+                        <input type="range" id="rating" name="rating" value="5" min="1" max="10" step="1"
                             list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
-                        <span id="ratingvalue">5</span>
-                        <datalist id="tickmarks">
-                            <option value="0">
-                            <option value="1">
-                            <option value="2">
-                            <option value="3">
-                            <option value="4">
-                            <option value="5">
-                            <option value="6">
-                            <option value="7">
-                            <option value="8">
-                            <option value="9">
-                            <option value="10">
-                        </datalist>
-                    </label>
+                        <span id="ratingvalue">5</span></label>
+                    <datalist id="tickmarks">
+                        <option value="0">
+                        <option value="1">
+                        <option value="2">
+                        <option value="3">
+                        <option value="4">
+                        <option value="5">
+                        <option value="6">
+                        <option value="7">
+                        <option value="8">
+                        <option value="9">
+                        <option value="10">
+                    </datalist>
                 </div>
-                <div class="form-box">
+                <div class="form-list">
                     <label for="stormregion">Storm Region
                         <select id="stormregion" name="region" onchange="selectResponse()">
                             <option value="" disabled>Select Region...</option>
@@ -121,12 +120,11 @@
                         </select>
                     </label>
                 </div>
-                <div class="selection">
-                    <label for="danger">User in-danger?
-                        <input type="radio" id="danger1" name="danger" value="Yes"> Yes
-                        <input type="radio" id="danger2" name="danger" value="Maybe"> Maybe
-                        <input type="radio" id="danger3" name="danger" value="No"> No
-                    </label>
+                <div class="form-radio">
+                    <label id="danger">User in-danger?</label>
+                    <label><input type="radio" id="danger1" name="danger" value="Yes"> Yes</label>
+                    <label><input type="radio" id="danger2" name="danger" value="Maybe"> Maybe</label>
+                    <label><input type="radio" id="danger3" name="danger" value="No"> No</label>
                 </div>
             </fieldset>
 
