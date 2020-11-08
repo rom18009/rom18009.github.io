@@ -278,7 +278,7 @@ form legend {
     padding: 0 0.5rem;
 }
 
-form label .top,
+form label.top,
 form div {
     display: block;
     padding-top: 1rem;
