@@ -288,7 +288,7 @@ form div {
 form label.top,
 form label.top select {
     display: block;
-    color: #555;
+    color: gray;
     width: 85%;
     max-width: 30rem;
     font-size: 1.2rem;
