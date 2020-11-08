@@ -302,7 +302,7 @@ form button {
 #comments {
     padding: 1rem;
     line-height: 1.5;
-    border-radius: 5px;
+    border-radius: 0.313rem;
     border: 1px solid #ccc;
     box-shadow: 1px 1px 1px #999;
 }
@@ -322,7 +322,7 @@ form input.btnReport {
     font-weight: bold;
 }
 
-form input.submitBtn:hover {
+form input.btnReport:hover {
     background-color: #009FB7;
     border-radius: 0.5rem;
 }
