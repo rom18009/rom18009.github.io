@@ -423,11 +423,11 @@ form textarea {
 
 /* Footer */
 
-footer {
+footer,
+footer a {
     align-items: center;
     text-align: center;
     background-color: #272727;
     color: #FED766;
     padding: 1em;
-
 }
