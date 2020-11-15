@@ -187,6 +187,10 @@ article {
     margin: 1.5em auto;
 }
 
+.mainarticle a {
+    color: white;
+}
+
 .story1img {
     max-width: 40%;
     margin-bottom: .5em;
