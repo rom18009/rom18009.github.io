@@ -306,7 +306,7 @@ form label.top select {
     padding: 1rem;
 }
 
-form label.top  {
+form label.top {
     display: block;
 }
 
@@ -314,7 +314,7 @@ form label.sbs {
     display: block;
     padding: 0.75em 0.75em;
     color: #272727;
-    
+
 }
 
 form label.sbs input {
