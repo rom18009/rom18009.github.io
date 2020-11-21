@@ -71,10 +71,10 @@
 		font-family: 'Cardo', serif;
 		display: grid;
 		grid-template-columns: repeat(5, 1fr);
-		grid-gap: 1.5%;
+		grid-gap: 1.25%;
 		padding: 0;
 		width: 80%;
-		margin: 2em auto;
+		margin: .75em auto;
 		text-align: center;
 	}
 
@@ -84,25 +84,40 @@
 		margin: 1em 0 .625em 0;
 	}
 
+	  h3 {
+		display: block;
+		width: 75%;
+		height: 20px;
+		padding: .75rem 1rem .5rem 1rem;
+		margin: 1.5rem auto 0 auto;
+	  }
+	
+	  .forecastimg {
+		padding: 5px;
+		margin: 0 auto;
+	  }
+	
+	  #icon1 img {
+		max-width: 4rem;
+	  }
+
 	.forecastdiv img {
 		display: block;
 		margin: auto;
 		width: 80%;
 	}
 
-	.forecastdiv h4 {
-		background-color: #272727;
-		color: #FED766;
-		margin: 0;
-		padding: .5em;
-
-	}
-
 	.forecastdiv section {
 		color: #FED766;
 		background-color: #808a88;
-		padding: 0 0 .75em 0;
+		padding: .25em 0 .25em 0;
 		font-weight: 700;
+	}
+
+	.forecastdiv section.forecastheader,
+	.forecastdiv section.forecastfooter {
+		background-color: #272727;
+		padding: .5em;
 	}
 
 	.forecastdiv div {

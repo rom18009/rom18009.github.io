@@ -10,14 +10,14 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=David+Libre:wght@500&display=swap">
-    <link rel="stylesheet" href="/lesson9/css/normalize.css">
-    <link rel="stylesheet" href="/lesson9/css/small.css">
-    <link rel="stylesheet" href="/lesson9/css/medium.css">
-    <link rel="stylesheet" href="/lesson9/css/large.css">
-    <link rel="icon" type="image/png" sizes="180x180" href="/lesson9/images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/lesson9/images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/lesson9/images/favicon-16x16.png">
-    <link rel="manifest" href="/lesson9/images/site.webmanifest">
+    <link rel="stylesheet" href="/lesson10/css/normalize.css">
+    <link rel="stylesheet" href="/lesson10/css/small.css">
+    <link rel="stylesheet" href="/lesson10/css/medium.css">
+    <link rel="stylesheet" href="/lesson10/css/large.css">
+    <link rel="icon" type="image/png" sizes="180x180" href="/lesson10/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/lesson10/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/lesson10/images/favicon-16x16.png">
+    <link rel="manifest" href="/lesson10/images/site.webmanifest">
 </head>
 
 <body>
@@ -26,7 +26,7 @@
         <br>9:00 a.m. Saturday at the city park pavilion.</aside>
 
     <header>
-        <img class="sitelogo" src="/lesson9/images/sunny-cast_logo.png" alt="Sunny-cast weather logo">
+        <img class="sitelogo" src="/lesson10/images/sunny-cast_logo.png" alt="Sunny-cast weather logo">
         <div class="sitetitle">
             <h1>Sunny-Cast</h1>
             <div class="sitemotto">Where the forecast is always sunny!</div>
@@ -36,86 +36,65 @@
     <nav>
         <ul class="clearfix">
             <li><a id="hamburger" href="#" onclick="menuToggle()">&#9776;</a></li>
-            <li><a href="/lesson9/index.html">Home</a></li>
-            <li class="active"><a href="/lesson9/preston.html">Preston</a></li>
+            <li><a href="/lesson10/index.html">Home</a></li>
+            <li class="active"><a href="/lesson10/preston.html">Preston</a></li>
             <li><a href="#">Soda Springs</a></li>
             <li><a href="#">Fish Haven</a></li>
-            <li><a href="/lesson9/stormcenter.html">Storm Center</a></li>
-            <li><a href="/lesson9/gallery.html">Gallery</a></li>
+            <li><a href="/lesson10/stormcenter.html">Storm Center</a></li>
+            <li><a href="/lesson10/gallery.html">Gallery</a></li>
         </ul>
     </nav>
     <main>
         <h2>Preston Idaho</h2>
 
         <div class="herodiv">
-            <img class="heroimage" src="/lesson9/images/hero.jpg"
+            <img class="heroimage" src="/lesson10/images/hero.jpg"
                 alt="Image of the Preston area mountain range with snow and valley">
 
             <section class="weathersummary">
                 <h3 class="sumtitle">Weather Summary</h3>
                 <div class="sumnames">
                     Currently:<br>
-                    High:<br>
+                    Current Temp:<br>
                     Wind Chill:<br>
                     Humidity:<br>
                     Wind Speed:<br>
                 </div>
 
                 <div class="sumvalues">
-                    <span id="current">Sunny</span><br>
-                    <span id="high">45&deg; F</span><br>
-                    <span id="chill">0</span>&deg; F<br>
-                    <span id="humid">60%</span><br>
-                    <span id="speed">8 mph</span><br>
+                    <span id="currdescription"></span><br>
+                    <span id="current-temp"></span><br>
+                    <span id="windchill"></span><br>
+                    <span id="humidity"></span>%<br>
+                    <span id="windspeed"></span> mph<br>
                 </div>
             </section>
         </div>
 
+        <h3>5 Day Forecast</h3>
         <div class="forecastdiv">
-            <h3 class="weekforecast">5 Day Forecast</h3>
-            <div class="tuesday">
-                <section>
-                    <h4>Tue</h4>
-                    <img class="weathericon" src="/lesson9/images/sunny.png" alt="Sunny Weather ICON">
-                    70&deg; F
-                </section>
-            </div>
 
-            <div class="wednesday">
-                <section>
-                    <h4>Wed</h4>
-                    <img class="weathericon" src="/lesson9/images/cloudy.png" alt="Cloudy Weather ICON">
-                    66&deg; F
-                </section>
-            </div>
+            <section class="forecastheader"><span id="forecastdayone"></span></section>
+            <section class="forecastheader"><span id="forecastdaytwo"></span></section>
+            <section class="forecastheader"><span id="forecastdaythree"></span></section>
+            <section class="forecastheader"><span id="forecastdayfour"></span></section>
+            <section class="forecastheader"><span id="forecastdayfive"></span></section>
 
-            <div class="thursday">
-                <section>
-                    <h4>Thur</h4>
-                    <img class="weathericon" src="/lesson9/images/sunny.png" alt="Sunny Weather ICON">
-                    68&deg; F
-                </section>
-            </div>
+            <section class="forecasticon"><img src="" alt="" class="forecastimg"></section>
+            <section class="forecasticon"><img src="" alt="" class="forecastimg"></section>
+            <section class="forecasticon"><img src="" alt="" class="forecastimg"></section>
+            <section class="forecasticon"><img src="" alt="" class="forecastimg"></section>
+            <section class="forecasticon"><img src="" alt="" class="forecastimg"></section>
 
-            <div class="friday">
-                <section>
-                    <h4>Fri</h4>
-                    <img class="weathericon" src="/lesson9/images/cloudy.png" alt="Cloudy Weather ICON">
-                    64&deg; F
-                </section>
-            </div>
-
-            <div class="saturday">
-                <section>
-                    <h4>Sat</h4>
-                    <img class="weathericon" src="/lesson9/images/rainy.png" alt="Rainy Weather ICON">
-                    58&deg; F
-                </section>
-            </div>
+            <section class="forecastfooter"><span class="forecasttemp"></span></section>
+            <section class="forecastfooter"><span class="forecasttemp"></span></section>
+            <section class="forecastfooter"><span class="forecasttemp"></span></section>
+            <section class="forecastfooter"><span class="forecasttemp"></span></section>
+            <section class="forecastfooter"><span class="forecasttemp"></span></section>
         </div>
 
         <article>
-            <img class="story1img" src="/lesson9/images/farmer.jpg" alt="Happy farmer sitting on tractor">
+            <img class="story1img" src="/lesson10/images/farmer.jpg" alt="Happy farmer sitting on tractor">
             <h3 class="story1title">The Happy Farmer</h3>
             <p class="story1text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut odit nihil doloribus nam
                 quisquam necessitatibus beatae veniam sint, praesentium consequuntur aperiam minima fugit accusantium?
@@ -131,19 +110,19 @@
         <h3>Contact Information</h3>
 
         <div class="contactdiv">
-            <img class="contactmap" src="/lesson9/images/map.png" alt="Google Map of the Preston City and Area">
+            <img class="contactmap" src="/lesson10/images/map.png" alt="Google Map of the Preston City and Area">
             <section class="contactinfo">
                 <h4>&#10140; 800 N. State St. Preston, ID 83263</h4>
                 <h4>&#9742; 208-852-4000</h4>
                 <h4>&#9993; weatherforecast@sunny-cast.net</h4>
                 <a href="https://www.facebook.com" target="blank"><img class="socialicons"
-                        src="/lesson9/images/facebook.png" alt="Facebook Icon"></a>
+                        src="/lesson10/images/facebook.png" alt="Facebook Icon"></a>
                 <a href="https://www.instagram.com" target="blank"><img class="socialicons"
-                        src="/lesson9/images/instagram.png" alt="Instagram Icon"></a>
+                        src="/lesson10/images/instagram.png" alt="Instagram Icon"></a>
                 <a href="https://www.pinterest.com/" target="blank"><img class="socialicons"
-                        src="/lesson9/images/pinterest.png" alt="Pinterest Icon"></a>
+                        src="/lesson10/images/pinterest.png" alt="Pinterest Icon"></a>
                 <a href="https://www.twitter.com" target="blank"><img class="socialicons"
-                        src="/lesson9/images/twitter.png" alt="Twitter Icon"></a>
+                        src="/lesson10/images/twitter.png" alt="Twitter Icon"></a>
             </section>
         </div>
 
@@ -152,12 +131,12 @@
         &copy; <span id="currentyear"></span> Sunny-Cast | Mark A. Romriell <br>
         <div><span id="currentdate"></span></div>
     </footer>
-    <script src="/lesson9/js/hamburger.js"></script>
-    <script src="/lesson9/js/longdates.js"></script>
-    <script src="/lesson9/js/announcement.js"></script>
-    <script src="/lesson9/js/windchill.js"></script>
+    <script src="/lesson10/js/hamburger.js"></script>
+    <script src="/lesson10/js/longdates.js"></script>
+    <script src="/lesson10/js/announcement.js"></script>
+    <script src="/lesson10/js/weatherapi.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-    <script src='/lesson9/js/webfontload.js'></script>
+    <script src='/lesson10/js/webfontload.js'></script>
 </body>
 
 </html>

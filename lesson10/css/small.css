@@ -162,9 +162,17 @@ nav {
 
 /* Forecast Area */
 
-.forecastdiv {
+.gridleft {
+    text-align: right;
+  }
+  
+  .forecastdiv, h3 {
     display: none;
-}
+  }
+  
+  h3 {
+    padding: 1rem 0 .5rem 0;
+  }
 
 /* Preston Article */
 
