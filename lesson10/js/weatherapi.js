@@ -4,7 +4,7 @@ const forecastURL = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473
 fetch(apiURL)
     .then((response) => response.json())
     .then((jsObject) => {
-        console.log(jsObject); // -> use to check within console
+        // console.log(jsObject); // -> use to check within console
         
         document.getElementById('current-temp').innerHTML = Math.round(jsObject.main.temp) + " &#176;F";
         document.getElementById('hi-temp').innerHTML = Math.round(jsObject.main.temp_max) + " &#176;F";

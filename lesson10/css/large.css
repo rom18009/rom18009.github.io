@@ -64,8 +64,9 @@
 	.towns h3 {
 		background: #3f3f3f;
 		border-radius: 0.5rem;
+		line-height: normal;
 		padding: 1.25em;
-		font-size: 20px;
+		
 	}
 
 	.towns div {
