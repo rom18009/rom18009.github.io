@@ -4,14 +4,17 @@ const forecastURL = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473
 fetch(apiURL)
     .then((response) => response.json())
     .then((jsObject) => {
-        //console.log(jsObject); //use this to check the console
-        //weather overlay box
+        console.log(jsObject); // -> use to check within console
+        
         document.getElementById('current-temp').innerHTML = Math.round(jsObject.main.temp) + " &#176;F";
+        document.getElementById('hi-temp').innerHTML = Math.round(jsObject.main.temp_max) + " &#176;F";
+        document.getElementById('low-temp').innerHTML = Math.round(jsObject.main.temp_min) + " &#176;F";
         document.getElementById('windspeed').textContent = Math.round(jsObject.wind.speed);
         document.getElementById('humidity').textContent = jsObject.main.humidity;
-        //Currently: description
+
         document.getElementById('currdescription').textContent = jsObject.weather[0].description;
-        //calculate windchill
+
+        // calculate windchill
         let t = (Math.round(jsObject.main.temp));
         let s = (Math.round(jsObject.wind.speed));
         let wc = "N/A";
@@ -25,8 +28,7 @@ fetch(apiURL)
 fetch(forecastURL)
     .then((response) => response.json())
     .then((jsObject) => {
-        //forecast box
-        //forecast day of the week
+        // forecast array
 
         var weekday = new Array(7);
         weekday[0] = "Sun";
@@ -47,13 +49,13 @@ fetch(forecastURL)
 
             forecastHeader[i].textContent = weekday[d.getDay()];
 
-            //forecast icon and then description
-            const imagesfc = 'https://openweathermap.org/img/w/' + data[i].weather[0].icon + '.png'; // note the concatenation
-            const description = data[i].weather[0].description; // note how we reference the weather array
-            forecastImg[i].setAttribute('src', imagesfc); // focus on the setAttribute() method
+            // forecast icons
+            const imagesfc = 'https://openweathermap.org/img/w/' + data[i].weather[0].icon + '.png';
+            const description = data[i].weather[0].description;
+            forecastImg[i].setAttribute('src', imagesfc);
             forecastImg[i].setAttribute('alt', description);
 
-            //forecast temp
+            // forecast temp
             forecastTemp[i].innerHTML = Math.round(data[i].main.temp) + " &#176;F";
         }
 
