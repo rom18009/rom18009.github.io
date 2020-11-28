@@ -1,0 +1,117 @@
+body {
+    font-family: 'David Libre', serif;
+    font-size: 14px;
+    line-height: 1.5;
+    background-color: #EFF1F3;
+}
+
+header,
+main,
+footer,
+.cards {
+    margin: 1.25em auto;
+    max-width: 1060px;
+}
+
+header {
+    padding: 1em;
+    text-align: center;
+    background-color: #272727;
+    color: #FED766;
+}
+
+@media only screen and (min-width: 32.5em) {
+
+    header,
+    footer {
+        border-radius: 5px;
+    }
+}
+
+h1,
+h2 {
+    font-family: 'David Libre', serif;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+p {
+    font-family: 'Cardo', serif;
+    font-size: larger;
+}
+
+a:link {
+    color: #FED766
+}
+
+a:visited {
+    color: white;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-content: center;
+    grid-gap: 0.5em;
+    width: 90%;
+}
+
+.cards section {
+    border: 1px solid #696773;
+    padding: 0.4em;
+    text-align: center;
+    background-color: silver;
+}
+
+.cards h2 {
+    font-family: 'Cardo', serif;
+    color: #272727;
+    filter: drop-shadow(0.15em 0.125em 0.15em #FED766);
+    font-weight: bold;
+}
+
+.cards img {
+    width: 90%;
+    box-shadow: 0px 0px 13px 1px rgba(0, 0, 0, 0.9);
+    margin: 1em auto;
+}
+
+.returnlink {
+    text-align: center;
+}
+
+@media only screen and (min-width: 37.5em) {
+    .cards {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1em;
+    }
+
+    .cards section {
+        border-radius: 5px;
+        padding: 0.4em;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 60em) {
+    .cards {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        width: 100%;
+    }
+}
+
+footer {
+    align-items: center;
+    text-align: center;
+    background-color: #272727;
+    color: #FED766;
+    padding: 1em;
+}
