@@ -236,7 +236,7 @@ article {
 .contactinfo {
     font-family: 'Cardo', serif;
     color: #000000;
-    line-height: 2.5em;
+    /*line-height: 2.5em;*/
     font-weight: bold;
     text-align: center;
     margin: auto;
@@ -399,7 +399,7 @@ form textarea {
 .towns section {
     background-color: #272727;
     text-align: center;
-    margin: .5rem auto;
+    /*margin: .5rem auto;*/
     border-radius: 0.5rem;
     padding: 0.4em;
 }
