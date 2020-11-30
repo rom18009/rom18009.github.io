@@ -1,11 +1,16 @@
-const apiURL = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=f53db318c33586f3b186050f6fe7e3ea';
-const forecastURL = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=f53db318c33586f3b186050f6fe7e3ea';
+if (document.getElementById("weathername").innerHTML.indexOf("Preston") != -1) {
+    weatherURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=f53db318c33586f3b186050f6fe7e3ea";
+} else if (document.getElementById("weathername").innerHTML.indexOf("Soda") != -1) {
+    weatherURL = "https://api.openweathermap.org/data/2.5/weather?id=5607916&units=imperial&appid=f53db318c33586f3b186050f6fe7e3ea";
+} else {
+    weatherURL = "https://api.openweathermap.org/data/2.5/weather?id=5585010&units=imperial&appid=f53db318c33586f3b186050f6fe7e3ea";
+}
 
-fetch(apiURL)
+fetch(weatherURL)
     .then((response) => response.json())
     .then((jsObject) => {
         // console.log(jsObject); // -> use to check within console
-        
+
         document.getElementById('current-temp').innerHTML = Math.round(jsObject.main.temp) + " &#176;F";
         document.getElementById('hi-temp').innerHTML = Math.round(jsObject.main.temp_max) + " &#176;F";
         document.getElementById('low-temp').innerHTML = Math.round(jsObject.main.temp_min) + " &#176;F";
@@ -24,6 +29,14 @@ fetch(apiURL)
         }
         document.getElementById("windchill").innerHTML = wc;
     });
+
+if (document.getElementById("weathername").innerHTML.indexOf("Preston") != -1) {
+    forecastURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=0bed6e620de12605a6ab3e2bf045d31d";
+} else if (document.getElementById("weathername").innerHTML.indexOf("Soda") != -1) {
+    forecastURL = "https://api.openweathermap.org/data/2.5/forecast?id=5607916&units=imperial&appid=0bed6e620de12605a6ab3e2bf045d31d";
+} else {
+    forecastURL = "https://api.openweathermap.org/data/2.5/forecast?id=5585010&units=imperial&appid=0bed6e620de12605a6ab3e2bf045d31d";
+}
 
 fetch(forecastURL)
     .then((response) => response.json())
