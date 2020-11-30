@@ -168,15 +168,16 @@ nav {
 
 .gridleft {
     text-align: right;
-  }
-  
-  .forecastdiv, h3 {
+}
+
+.forecastdiv,
+h3 {
     display: none;
-  }
-  
-  h3 {
+}
+
+h3 {
     padding: 1rem 0 .5rem 0;
-  }
+}
 
 /* Site Articles */
 
@@ -225,7 +226,7 @@ article {
 }
 
 .story1title,
-.mainarticle h2, 
+.mainarticle h2,
 .eventssection h2 {
     margin: 0;
     line-height: 1.5em;
