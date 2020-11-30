@@ -30,7 +30,7 @@ main,
 fieldset {
     font-family: 'Cardo', serif;
     max-width: 960px;
-    padding: 1em;
+    padding: 2.25em;
     margin: 0.625em auto;
     justify-content: center;
 }
@@ -309,7 +309,7 @@ article {
 section.stormreporting {
     margin: 0 auto;
     max-width: 100%;
-    padding: 1.5em 1em;
+    /*padding: 1.5em 1em;*/
 }
 
 form fieldset {
