@@ -100,9 +100,10 @@ nav {
     display: block;
     color: black;
     font-weight: 700;
-    padding: 0.75rem;
+    padding: 0.5rem;
     text-decoration: none;
     text-align: left;
+    height: 100%
 }
 
 .clearfix a:hover {
