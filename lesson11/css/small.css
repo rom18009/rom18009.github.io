@@ -245,6 +245,10 @@ article {
     font-size: 1.125em;
 }
 
+p.story1text a {
+    color: #FED766;
+}
+
 /* Contact Information Area */
 
 .contactdiv {
