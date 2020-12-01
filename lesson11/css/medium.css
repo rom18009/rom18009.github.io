@@ -160,6 +160,10 @@
 		grid-column: 1 / span 2;
 	}
 
+	.lazyloadgallery figure:hover {
+		box-shadow: 0 0 30px rgba(33, 33, 33, 1);
+	}
+
 	/* Town */
 	.towns section {
 		background-color: #272727;
