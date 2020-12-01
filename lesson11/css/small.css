@@ -30,7 +30,7 @@ main,
 fieldset {
     font-family: 'Cardo', serif;
     max-width: 960px;
-    padding: 2.25em;
+    padding: 0.25rem;
     margin: 0.625em auto;
     justify-content: center;
 }
