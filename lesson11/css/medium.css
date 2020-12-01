@@ -84,22 +84,22 @@
 		margin: 1em 0 .625em 0;
 	}
 
-	  h3 {
+	h3 {
 		display: block;
 		/*width: 75%;
 		height: 20px;*/
 		padding: .75rem 1rem .5rem 1rem;
 		margin: 1.5rem auto 0 auto;
-	  }
-	
-	  .forecastimg {
+	}
+
+	.forecastimg {
 		padding: 5px;
 		margin: 0 auto;
-	  }
-	
-	  #icon1 img {
+	}
+
+	#icon1 img {
 		max-width: 4rem;
-	  }
+	}
 
 	.forecastdiv img {
 		display: block;
