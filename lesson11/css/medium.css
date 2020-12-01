@@ -1,4 +1,4 @@
-@media only screen and (min-width: 36em) {
+@media only screen and (min-width: 37.5em) {
 
 	header {
 		display: grid;
@@ -29,7 +29,7 @@
 	}
 
 	.sitemotto {
-		font-size: large;
+		font-size: 24px;
 
 	}
 
