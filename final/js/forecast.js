@@ -1,16 +1,10 @@
-if (document.getElementById("weathername").innerHTML.indexOf("Preston") != -1) {
-    apiURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=0bed6e620de12605a6ab3e2bf045d31d";
-} else if (document.getElementById("weathername").innerHTML.indexOf("Soda") != -1) {
-    apiURL = "https://api.openweathermap.org/data/2.5/forecast?id=5607916&units=imperial&appid=0bed6e620de12605a6ab3e2bf045d31d";
-} else {
-    apiURL = "https://api.openweathermap.org/data/2.5/forecast?id=5585010&units=imperial&appid=0bed6e620de12605a6ab3e2bf045d31d";
-}
-
+// ForecastAPI Info
+const forecastURL = "https://api.openweathermap.org/data/2.5/onecall?lat=20.4999&lon=-86.9499&units=imperial&appid=f53db318c33586f3b186050f6fe7e3ea";
 fetch(forecastURL)
     .then((response) => response.json())
     .then((jsObject) => {
+        
         // forecast array
-
         var weekday = new Array(7);
         weekday[0] = "Sun";
         weekday[1] = "Mon";
@@ -30,13 +24,14 @@ fetch(forecastURL)
 
             forecastHeader[i].textContent = weekday[d.getDay()];
 
-            // forecast icons
-            const imagesfc = 'https://openweathermap.org/img/w/' + data[i].weather[0].icon + '.png';
-            const description = data[i].weather[0].description;
-            forecastImg[i].setAttribute('src', imagesfc);
-            forecastImg[i].setAttribute('alt', description);
+        // forecast icons
+        const imagesfc = 'https://openweathermap.org/img/w/' + data[i].weather[0].icon + '.png';
+        const description = data[i].weather[0].description;
+        forecastImg[i].setAttribute('src', imagesfc);
+        forecastImg[i].setAttribute('alt', description);
 
-            // forecast temp
-            forecastTemp[i].innerHTML = Math.round(data[i].main.temp) + " &#176;F";
+        // forecast temp
+        forecastTemp[i].innerHTML = Math.round(data[i].main.temp) + " &#176;F";
         }
+
     });

@@ -9,7 +9,7 @@
     <meta name="description"
         content="~Scoots Home Landing Page with api calls for weather and three day forecast, summary of rentals link, social media links, navigation, and contact links">
 
-    <link rel="stylesheet" ref="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto+Slab:wght@500&display=swap">
+    <link rel="stylesheet" ref="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
     <link rel="stylesheet" href="/final/css/normalize.css">
     <link rel="stylesheet" href="/final/css/small.css">
     <link rel="stylesheet" href="/final/css/medium.css">
@@ -21,83 +21,129 @@
 </head>
 
 <body>
-
     <header>
-        <img class="sitelogo" src="/final/images/logo.png" alt="~Scoots Logo">
-        <div class="sitetitle">
-            <h1>Sunny-Cast</h1>
-            <div class="sitemotto">Where the forecast is always sunny!</div>
+        <div class="container">
+            <div id="sitelogo" src="/final/images/logo.png" alt="Sunny-cast weather logo">
+            </div>
+
+            <nav>
+                <ul class="nav">
+                    <li><a id="hamburger" href="#" onclick="menuToggle()">&#9776;</a></li>
+                    <li class="active"><a href="/final/index.html">Home</a></li>
+                    <li><a href="/final/rentals.html">Rentals</a></li>
+                    <li><a href="/final/reservations.html">Reservations</a></li>
+                    <li><a href="/final/tours.html">Tours</a></li>
+                    <li><a href="/final/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
         </div>
     </header>
 
-    <nav>
-        <ul class="clearfix">
-            <li><a id="hamburger" href="#" onclick="menuToggle()">&#9776;</a></li>
-            <li class="active"><a href="/lesson11/index.html">Home</a></li>
-            <li><a href="/lesson11/preston.html">Preston</a></li>
-            <li><a href="/lesson11/soda-springs.html">Soda Springs</a></li>
-            <li><a href="/lesson11/fish-haven.html">Fish Haven</a></li>
-            <li><a href="/lesson11/stormcenter.html">Storm Center</a></li>
-            <li><a href="/lesson11/gallery.html">Gallery</a></li>
-        </ul>
-    </nav>
-
-    <main>
-
-        <h2>Sunny-Cast</h2>
-
-        <div class="herodiv">
-            <img class="heroimage" src="/lesson11/images/home.jpg"
-                alt="Image of the Preston area mountain range with snow and valley">
+    <section id="reservation-button">
+        <div class="container">
+            <div class="reservebutton">
+                <a href="/final/reservations.html" class="button">Reserve Your Ride Today</a>
+            </div>
         </div>
+    </section>
 
-        <div class="towns"></div>
+    <section id="weatherdiv">
+        <div class="container">
+            <div class="weathersum">
+                <h3 class="weather-h3">Weather Summary</h3>
+                <div class="currentsum">
+                    <p>Currently: <span id="currdescription"></span></p>
+                    <p>Current Temp: <span id="current-temp"></span>&deg; F</p>
+                    <p>Humidity: <span id="humidity"></span> %</p>
+                </div>
 
-        <article class="mainarticle">
-            <img class="story1img" src="/lesson11/images/farmer.jpg" alt="Happy farmer sitting on tractor">
-            <h3 class="story1title">The Happy Farmer</h3>
+            </div>
 
-            <p class="story1text">Starting before the sun comes up and going to bed well past the sun going down,
-                life on a farm is hard and involves full days of work. This paints a rough picture and a lot of people
-                would wonder, is it worth being a farmer? Do they ever have joy and happiness? John Olsen has worked his
-                family farm since he could remember. John told me, "It's a hard life and my body is feeling the years of
-                labor, but I wouldn't want anything else." He went on to explain, "All the hours of preparing the soil,
-                planting the seed, watering, and then harvesting brings a sense of accomplishement. I can look back and
-                I know I've done something amazing." You can tell by the large smile on John's face... <a href="#">find
-                     out more.</a></p>
-        </article>
+            <div class="container">
+                <div class="weatherfc">
+                    <h3 class="weather-h3">3 Day Forecast</h3>
+                    <div class="weatherboxes">
+                        <div class="box">
+                            <span class="box-heading" id="weather1"></span>
+                            <span class="data" id="forecast1"></span>
+                            <img class="desc" id="icon1" src="" alt="">
+                        </div>
+                        <div class="box">
+                            <span class="box-heading" id="weather2"></span>
+                            <span class="data" id="forecast2"></span>
+                            <img class="desc" id="icon2" src="" alt="">
+                        </div>
+                        <div class="box">
+                            <span class="box-heading" id="weather3"></span>
+                            <span class="data" id="forecast3"></span>
+                            <img class="desc" id="icon3" src="" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
 
-        <h3>Contact Information</h3>
-
-        <div class="contactdiv">
-            <img class="contactmap" src="/lesson11/images/map-of-preston.jpg"
-                alt="Google Map of the Preston City and Area">
-            <section class="contactinfo">
-                <h4>&#10140; 800 N. State St. Preston, ID 83263</h4>
-                <h4>&#9742; 208-852-4000</h4>
-                <h4>&#9993; weatherforecast@sunny-cast.net</h4>
-                <a href="https://www.facebook.com" target="blank"><img class="socialicons"
-                        src="/lesson11/images/facebook.png" alt="Facebook Icon"></a>
-                <a href="https://www.instagram.com" target="blank"><img class="socialicons"
-                        src="/lesson11/images/instagram.png" alt="Instagram Icon"></a>
-                <a href="https://www.pinterest.com/" target="blank"><img class="socialicons"
-                        src="/lesson11/images/pinterest.png" alt="Pinterest Icon"></a>
-                <a href="https://www.twitter.com" target="blank"><img class="socialicons"
-                        src="/lesson11/images/twitter.png" alt="Twitter Icon"></a>
-            </section>
+    <section id="info">
+        <div class="container">
+            <h1>Testing</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum autem repudiandae blanditiis odit
+                voluptate sapiente ab laborum aut dolore quam ipsam reiciendis illo, iure quia, minus eum eligendi
+                laboriosam recusandae!</p>
         </div>
+    </section>
 
-    </main>
+    <div class="herodiv">
+        <img src="heroimage" src="/final/images/home.jpg"
+            alt="Image of the Preston area mountain range with snow and valley">
+    </div>
+
+    <div class="towns"></div>
+
+    <article class="mainarticle">
+        <img class="story1img" src="/lesson11/images/farmer.jpg" alt="Happy farmer sitting on tractor">
+        <h3 class="story1title">The Happy Farmer</h3>
+
+        <p class="story1text">Starting before the sun comes up and going to bed well past the sun going down,
+            life on a farm is hard and involves full days of work. This paints a rough picture and a lot of people
+            would wonder, is it worth being a farmer? Do they ever have joy and happiness? John Olsen has worked his
+            family farm since he could remember. John told me, "It's a hard life and my body is feeling the years of
+            labor, but I wouldn't want anything else." He went on to explain, "All the hours of preparing the soil,
+            planting the seed, watering, and then harvesting brings a sense of accomplishement. I can look back and
+            I know I've done something amazing." You can tell by the large smile on John's face... <a href="#">find
+                out more.</a></p>
+    </article>
+
+    <h3>Contact Information</h3>
+
+    <div class="contactdiv">
+        <img class="contactmap" src="/lesson11/images/map-of-preston.jpg" alt="Google Map of the Preston City and Area">
+        <section class="contactinfo">
+            <h4>&#10140; 800 N. State St. Preston, ID 83263</h4>
+            <h4>&#9742; 208-852-4000</h4>
+            <h4>&#9993; weatherforecast@sunny-cast.net</h4>
+            <a href="https://www.facebook.com" target="blank"><img class="socialicons"
+                    src="/lesson11/images/facebook.png" alt="Facebook Icon"></a>
+            <a href="https://www.instagram.com" target="blank"><img class="socialicons"
+                    src="/lesson11/images/instagram.png" alt="Instagram Icon"></a>
+            <a href="https://www.pinterest.com/" target="blank"><img class="socialicons"
+                    src="/lesson11/images/pinterest.png" alt="Pinterest Icon"></a>
+            <a href="https://www.twitter.com" target="blank"><img class="socialicons" src="/lesson11/images/twitter.png"
+                    alt="Twitter Icon"></a>
+        </section>
+    </div>
+
+    </section>
 
     <footer>
         &copy; <span id="currentyear"></span> Sunny-Cast | Home | Mark A. Romriell | <br>
         <div><span id="currentdate"></span></div>
     </footer>
-    <script src="/final/js/"></script>
-    <script src="/lesson11/js/longdates.js"></script>
-    <script src="/lesson11/js/towns.js"></script>
+    <script src="/final/js/hamburger.js"></script>
+    <script src="/final/js/weather.js"></script>
+    <script src="/final/js/longdates.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-    <script src='/lesson11/js/webfontload.js'></script>
+    <script src='/final/js/webfontload.js'></script>
 </body>
 
 </html>

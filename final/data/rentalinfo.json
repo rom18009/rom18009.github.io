@@ -1,81 +1,105 @@
 {
-    "rental": [{
+    "rental": [
+        {
             "type": "Honda Metro Scooter",
-            "image": "..images/honda-metro-scooter.jpg",
+            "photo": "/final/images/honda-metro-scooter.jpg",
             "maximum": "Max. Persons: 1",
-            "reservation": [{
+            "reservation": [
+                {
                 "halfday": "Half Day (3 hrs): $20",
                 "fullday": "Full Day: $30"
-            }],
-            "walkIn": [{
+                }
+            ],
+            "walkIn": [
+                {
                 "halfday": "Half Day (3 hrs): $25",
                 "fullday": "Full Day: $35"
-            }]
+                }
+            ]
         },
         {
             "type": "Honda Dio Scooter",
-            "image": "..images/honda-dio-scooter.jpg",
+            "photo": "/final/images/honda-dio-scooter.jpg",
             "maximum": "Max. Persons: 2",
-            "reservation": [{
+            "reservation": [
+                {
                 "halfday": "Half Day (3 hrs): $30",
                 "fullday": "Full Day: $40"
-            }],
-            "walkIn": [{
+                }
+            ],
+            "walkIn": [
+                {
                 "halfday": "Half Day (3 hrs): $35",
                 "fullday": "Full Day: $45"
-            }]
+                }
+            ]
         },
         {
             "type": "Honda PCX150 Scooter",
-            "image": "..images/honda-pcx150-scooter.jpg",
+            "photo": "/final/images/honda-pcx150-scooter.jpg",
             "maximum": "Max. Persons: 2",
-            "reservation": [{
+            "reservation": [
+                {
                 "halfday": "Half Day (3 hrs): $40",
                 "fullday": "Full Day: $50"
-            }],
-            "walkIn": [{
+                }
+            ],
+            "walkIn": [
+                {
                 "halfday": "Half Day (3 hrs): $45",
                 "fullday": "Full Day: $55"
-            }]
+                }
+            ]
         },
         {
             "type": "Honda Pioneer ATV",
-            "image": "..images/honda-pioneer-scooter.jpg",
+            "photo": "/final/images/honda-pioneer-scooter.jpg",
             "maximum": "Max. Persons: 4",
-            "reservation": [{
+            "reservation": [
+                {
                 "halfday": "Half Day (3 hrs): $50",
                 "fullday": "Full Day: $70"
-            }],
-            "walkIn": [{
+                }
+            ],
+            "walkIn": [
+                {
                 "halfday": "Half Day (3 hrs): $60",
                 "fullday": "Full Day: $80"
-            }]
+                }
+            ]
         },
         {
             "type": "Jeep Wrangler - 4 door with a/c",
-            "image": "..images/jeep-wrangler-4-door.jpg",
+            "photo": "/final/images/jeep-wrangler-4-door.jpg",
             "maximum": "Max. Persons: 5",
-            "reservation": [{
+            "reservation": [
+                {
                 "halfday": "Half Day (3 hrs): $70",
                 "fullday": "Full Day: $100"
-            }],
-            "walkIn": [{
+                }
+            ],
+            "walkIn": [
+                {
                 "halfday": "Half Day (3 hrs): $85",
                 "fullday": "Full Day: $125"
-            }]
+                }
+            ]
         },
         {
             "type": "Jeep Wrangler - 2 door",
-            "image": "..images/jeep-wrangler-2-door.jpg",
+            "photo": "/final/images/jeep-wrangler-2-door.jpg",
             "maximum": "Max. Persons: 4",
-            "reservation": [{
+            "reservation": [
+                {
                 "halfday": "Half Day (3 hrs): $60",
                 "fullday": "Full Day: $85"
-            }],
+                }
+            ],
             "walkIn": [{
                 "halfday": "Half Day (3 hrs): $70",
                 "fullday": "Full Day: $90"
-            }]
+                }
+            ]
         }
     ]
 }
