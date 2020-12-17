@@ -432,7 +432,7 @@ form input.submitBtn:hover {
 }
 
 form label.top input:required {
-    border: 2px dotted #29ac9c;
+    border: 2px dotted red;
 }
 
 form input,
