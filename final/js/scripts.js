@@ -1,4 +1,4 @@
-/* This is the main scripts.js that combine all scripts used for the site*/
+/* This is the main scripts.js that combine date and webfont*/
 
 // Date Script 
 const options = {

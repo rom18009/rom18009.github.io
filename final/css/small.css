@@ -1,0 +1,20 @@
+body {
+    font: 15px/1.5 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #EFF1F3;
+}
+
+/* Global */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header */
+header {
+    background: #35424a;
+    color: #ffffff;
+
+}

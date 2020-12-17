@@ -48,41 +48,43 @@
         </div>
     </section>
 
-    <section id="weatherdiv">
+    <section id="weatherinfo">
         <div class="container">
-            <div class="weathersum">
-                <h3 class="weather-h3">Weather Summary</h3>
-                <div class="currentsum">
-                    <p>Currently: <span id="currdescription"></span></p>
-                    <p>Current Temp: <span id="current-temp"></span>&deg; F</p>
-                    <p>Humidity: <span id="humidity"></span> %</p>
-                </div>
+            <div class="weatherdiv">
+                <div class="current">
+                    <h2>Current Weather</h2>
+                    <p>Today, <span id="currentdate"></span></p>
+                    <p class="temp"><span id="ctemperature"></span>&deg; F <img src="#" alt="unknown" id="icon"></p>
+                    <p>Description: <span id="description"></span>
+                    <p>Humidity: <span id="humidity"></span>&deg; F</p>
 
             </div>
 
-            <div class="container">
-                <div class="weatherfc">
-                    <h3 class="weather-h3">3 Day Forecast</h3>
-                    <div class="weatherboxes">
-                        <div class="box">
-                            <span class="box-heading" id="weather1"></span>
-                            <span class="data" id="forecast1"></span>
-                            <img class="desc" id="icon1" src="" alt="">
-                        </div>
-                        <div class="box">
-                            <span class="box-heading" id="weather2"></span>
-                            <span class="data" id="forecast2"></span>
-                            <img class="desc" id="icon2" src="" alt="">
-                        </div>
-                        <div class="box">
-                            <span class="box-heading" id="weather3"></span>
-                            <span class="data" id="forecast3"></span>
-                            <img class="desc" id="icon3" src="" alt="">
-                        </div>
+            <div class="forecastdiv">
+                <h2>3-Day Forecast</h2>
+                <div class="forecast">
+                    <div class="forecastbox">
+                        <span class="day" id="fcDay1"></span>
+                        <img src="#" alt="unknown" id="fcIcon1">
+                        <p class="degrees"><span id="fcTemp1"></span>&deg; F</p>
+                    </div>
+
+                    <div class="forecastbox">
+                        <span class="day" id="fcDay2"></span>
+                        <img src="#" alt="unknown" id="fcIcon2">
+                        <p class="degrees"><span id="fcTemp2"></span>&deg; F</p>
+                    </div>
+
+                    <div class="forecastbox">
+                        <span class="day" id="fcDay3"></span>
+                        <img src="#" alt="unknown" id="fcIcon3">
+                        <p class="degrees"><span id="fcTemp3"></span>&deg; F</p>
                     </div>
                 </div>
             </div>
+        </div>
     </section>
+
 
     <section id="info">
         <div class="container">
@@ -92,47 +94,26 @@
                 laboriosam recusandae!</p>
         </div>
     </section>
-
-    <div class="herodiv">
-        <img src="heroimage" src="/final/images/home.jpg"
-            alt="Image of the Preston area mountain range with snow and valley">
-    </div>
-
-    <div class="towns"></div>
-
-    <article class="mainarticle">
-        <img class="story1img" src="/lesson11/images/farmer.jpg" alt="Happy farmer sitting on tractor">
-        <h3 class="story1title">The Happy Farmer</h3>
-
-        <p class="story1text">Starting before the sun comes up and going to bed well past the sun going down,
-            life on a farm is hard and involves full days of work. This paints a rough picture and a lot of people
-            would wonder, is it worth being a farmer? Do they ever have joy and happiness? John Olsen has worked his
-            family farm since he could remember. John told me, "It's a hard life and my body is feeling the years of
-            labor, but I wouldn't want anything else." He went on to explain, "All the hours of preparing the soil,
-            planting the seed, watering, and then harvesting brings a sense of accomplishement. I can look back and
-            I know I've done something amazing." You can tell by the large smile on John's face... <a href="#">find
-                out more.</a></p>
-    </article>
-
-    <h3>Contact Information</h3>
-
-    <div class="contactdiv">
-        <img class="contactmap" src="/lesson11/images/map-of-preston.jpg" alt="Google Map of the Preston City and Area">
-        <section class="contactinfo">
-            <h4>&#10140; 800 N. State St. Preston, ID 83263</h4>
-            <h4>&#9742; 208-852-4000</h4>
-            <h4>&#9993; weatherforecast@sunny-cast.net</h4>
-            <a href="https://www.facebook.com" target="blank"><img class="socialicons"
+    
+    <section class="contactinfo">
+        <div class="container">
+            <h3>Contact Information</h3>
+            <div class="contactdiv">    
+            
+                <img class="contactmap" src="/lesson11/images/map-of-preston.jpg" alt="Google Map of the Preston City and Area">
+                <h4>&#10140; 800 N. State St. Preston, ID 83263</h4>
+                <h4>&#9742; 208-852-4000</h4>
+                <h4>&#9993; weatherforecast@sunny-cast.net</h4>
+                <a href="https://www.facebook.com" target="blank"><img class="socialicons"
                     src="/lesson11/images/facebook.png" alt="Facebook Icon"></a>
-            <a href="https://www.instagram.com" target="blank"><img class="socialicons"
+                <a href="https://www.instagram.com" target="blank"><img class="socialicons"
                     src="/lesson11/images/instagram.png" alt="Instagram Icon"></a>
-            <a href="https://www.pinterest.com/" target="blank"><img class="socialicons"
+                <a href="https://www.pinterest.com/" target="blank"><img class="socialicons"
                     src="/lesson11/images/pinterest.png" alt="Pinterest Icon"></a>
-            <a href="https://www.twitter.com" target="blank"><img class="socialicons" src="/lesson11/images/twitter.png"
+                <a href="https://www.twitter.com" target="blank"><img class="socialicons" src="/lesson11/images/twitter.png"
                     alt="Twitter Icon"></a>
-        </section>
-    </div>
-
+            </div>
+        </div>
     </section>
 
     <footer>
@@ -141,9 +122,8 @@
     </footer>
     <script src="/final/js/hamburger.js"></script>
     <script src="/final/js/weather.js"></script>
-    <script src="/final/js/longdates.js"></script>
+    <script src="/final/js/scripts.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-    <script src='/final/js/webfontload.js'></script>
 </body>
 
 </html>

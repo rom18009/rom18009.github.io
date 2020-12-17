@@ -1,44 +1,51 @@
 // Weather API Info
-const forecastURL = "https://api.openweathermap.org/data/2.5/onecall?lat=20.4999&lon=-86.9499&units=imperial&appid=f53db318c33586f3b186050f6fe7e3ea";
+const weatherURL = "https://api.openweathermap.org/data/2.5/onecall?lat=20.4999&lon=-86.9499&units=imperial&appid=f53db318c33586f3b186050f6fe7e3ea";
 
-fetch(forecastURL)
+//weather summary
+const reqURL = "https://api.openweathermap.org/data/2.5/onecall?lat=20.4999&lon=-86.9499&units=imperial&appid=f53db318c33586f3b186050f6fe7e3ea";
+fetch(reqURL)
     .then((response) => response.json())
     .then((jsObject) => {
-	 
-        // console.log(jsObject); // -> use to check within console
-        document.getElementById('current-description').textContent = jsObject.weather[0].description;
-        document.getElementById('current-temp').textContent = jsObject.main.temp;
-        document.getElementById('current-humidity').textContent = jsObject.main.humidity;
-		
-		var d = 1;
-        
-        // Weekday array
-        let weekday = new Array(7);
-        weekday[0] = "Sun";
-        weekday[1] = "Mon";
-        weekday[2] = "Tue";
-        weekday[3] = "Wed";
-        weekday[4] = "Thu";
-        weekday[5] = "Fri";
-        weekday[6] = "Sat";
-		
-		for (i = 0; i < jsObject.daily.length; i++) {
-        let date = new Date(jsObject.daily[i].dt * 1000)
-        let weather = weekDay[date.getDay()];
 
-        if ( d <= 3){
-           document.getElementById('weather' + d).textContent = weather;
+        const iconSrc = "https://openweathermap.org/img/w/" + jsObject.current.weather[0].icon + '.png';
+        const altText = jsObject.current.weather[0].description;
+        document.getElementById(`icon`).setAttribute('src', iconSrc);
+        document.getElementById(`icon`).setAttribute('alt', altText);
 
-           document.getElementById('forecast' + d).textContent = Math.ceil(jsObject.daily[i].temp.day) + '°F';
+        const temp = jsObject.current.temp;
+        document.getElementById('ctemperature').textContent = temp;
 
-           const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.daily[i].weather[0].icon + '.png';
-           const desc = jsObject.daily[i].weather[0].description;
-           document.getElementById('icon' + d).setAttribute('src', imagesrc);
-           document.getElementById('icon' + d).setAttribute('alt', desc);
-        
+        const desc = jsObject.current.weather[0].main;
+        document.getElementById('description').textContent = desc;
 
-           d++
+        const humid = jsObject.current.humidity;
+        document.getElementById('humidity').textContent = humid;
+    });
 
-       }
-   }
-});
+//3-day forecast
+const forecastURL = "https://api.openweathermap.org/data/2.5/onecall?lat=20.4999&lon=-86.9499&units=imperial&appid=f53db318c33586f3b186050f6fe7e3ea";
+fetch(forecastURL)
+    .then((res) => res.json())
+    .then(res => {
+        const {
+            daily
+        } = res;
+
+        const weekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+        for (let day = 0; day < daily.length; day++) {
+            const d = new Date(daily[day].temp.day);
+            console.log(d);
+            document.getElementById(`fcDay${day+1}`).textContent = weekdays[d.getDay()];
+            document.getElementById(`fcTemp${day+1}`).textContent = daily[day].temp.day;
+            const imgSrc = 'https://openweathermap.org/img/w/' + daily[day].weather[0].icon + '.png';
+            const altDesc = daily[day].weather[0].description;
+            document.getElementById(`fcIcon${day+1}`).setAttribute('src', imgSrc);
+            document.getElementById(`fcIcon${day+1}`).setAttribute('alt', altDesc);
+        }
+
+        //alerts
+        const alertEvent = jsObject.alert.event;
+        document.getElementById('alertevent').textContent = alertEvent;
+        const alertText = jsObject.alert.description;
+        document.getElementById('alertdesc').textContent = alertText;
+    });
