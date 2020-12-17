@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="author" content="Mark Romriell">
+    <title>~Scoots Landing Page</title>
+    <meta name="description"
+        content="~Scoots Home Landing Page with api calls for weather and three day forecast, summary of rentals link, social media links, navigation, and contact links">
+
+    <link rel="stylesheet" ref="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto+Slab:wght@500&display=swap">
+    <link rel="stylesheet" href="/scoots/css/normalize.css">
+    <link rel="stylesheet" href="/scoots/css/small.css">
+    <link rel="stylesheet" href="/scoots/css/medium.css">
+    <link rel="stylesheet" href="/scoots/css/large.css">
+    <link rel="icon" type="image/png" sizes="180x180" href="/scoots/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/scoots/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/scoots/images/favicon-16x16.png">
+    <link rel="manifest" href="/scoots/images/site.webmanifest">
+</head>
+
+<body>
+    <aside>
+        <div class="weatheralert">
+            <span class="announcebtn" onclick="closebutton()">&times;</span>
+            <span id="alert">No Current Alerts</span>
+        </div>
+    </aside>
+
+    <header>
+        <img src="/scoots/images/logo.png" alt="~SCOOTS Logo">
+    </header>
+
+    <nav>
+        <ul class="clearfix">
+            <li><a class="ham" href="#">&#9776; Menu</a></li>
+            <li class="active"><a href="/scoots/index.html">Home</a></li>
+            <li><a href="/scoots/rentals.html">Rentals</a></li>
+            <li><a href="/scoots/reservations.html">Reservations</a></li>
+            <li><a href="/scoots/tours.html">Tours</a></li>
+            <li><a href="/scootscontact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="herosection">
+            <picture class="heroimage">
+                <source media="(max-width: 450px)" srcset="/scoots/images/Cozumel1-450.jpg">
+                <source media="(min-width: 451px) and (max-width: 960px)" srcset="/scoots/images/Cozumel1-960.jpg">
+                <source media="(min-width: 961px)" srcset="/scoots/images/Cozumel1.jpg">
+                <img src="/scoots/images/Cozumel1.jpg" alt="Cozumel Sunset">
+            </picture>
+            <section class="weathersummary">
+                <h2>How's the Weather?</h2>
+                <p>Current Temperature: <span id="temperatureinput"></span> &#176;F</p>
+                <p>Currently: <span id="weatherdescription"></span></p>
+                <p>Humidity: <span id="weatherhumidity"></span>%</p>
+                <h2>3 Day Forecast</h2>
+                <div class="weathertable">
+                    <div class="dayofweek">
+                        <h3 id="dayofweek1">Day</h3>
+                        <img src="" alt="icon" id="icon1">
+                        <p id="forecast1"></p>
+                    </div>
+                    <div class="dayofweek">
+                        <h3 id="dayofweek2">Day</h3>
+                        <img src="" alt="icon" id="icon2">
+                        <p id="forecast2"></p>
+                    </div>
+                    <div class="dayofweek">
+                        <h3 id="dayofweek3">Day</h3>
+                        <img src="" alt="icon" id="icon3">
+                        <p id="forecast3"></p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <section class="calltoaction">
+            <h2>Welcome to ~Scoots</h2>
+            <p>We are a Motor Scooter Rental company located on the island of Cozumel off the coast of Mexixo in the
+                western Caribbean Sea. We have two rental locations. One is near the Playa del Carmen-Cozumel Ferry dock
+                in el Centro de Cozumel and the other is near the Terminal Puerta Maya further South along the coast. We
+                also offer Jeep and side-by-side ATV rentals.</p>
+            <p><button onclick="location.href='/scoots/reservations.html'" type="button">Make a Rental Reservation</button></p>
+        </section>
+
+        <section class="topsection">
+            <h2>Types of Rentals</h2>
+            <p>Click the links below to view more information about each category</p>
+            <div class="rentaltypes">
+                <figure>
+                    <a href="/scoots/rentals.html"><img src="/scoots/images/Cozumel7-450.jpg" alt="Honda Scooter"></a>
+                    <figcaption><a href="/scoots/rentals.html">Scooter Rental</a></figcaption>
+
+                </figure>
+                <figure>
+                    <a href="/scoots/rentals.html"><img src="/scoots/images/atv-sidebyside.jpg" alt="ATV Side-by-Side"></a>
+                    <figcaption><a href="/stoots/rentals.html">Side-by-Side ATV Rental</a></figcaption>
+
+                </figure>
+                <figure>
+                    <a href="/scoots/rentals.html"><img src="/scoots/images/jeep-wrangler.jpg" alt="Jeep Wrangler"></a>
+                    <figcaption><a href="/scoots/rentals.html">Jeep Rental</a></figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="lazyloadgallery">
+            <h2>Gallery</h2>
+            <figure>
+                <img data-src="/scoots/images/Cozumel2-450.jpg" src="/scoots/images/placeholder-2.png" alt="Vintage Truck">
+            </figure>
+            <figure>
+                <img data-src="/scoots/images/Cozumel6-450.jpg" src="/scoots/images/placeholder-2.png" alt="Cruise Ship">
+            </figure>
+            <figure>
+                <img data-src="/scoots/images/Cozumel15-450.jpg" src="/scoots/images/placeholder-2.png" alt="Idaho Moody Weather">
+            </figure>
+            <figure>
+                <img data-src="/scoots/images/Cozumel11-450.jpg" src="/scoots/images/placeholder-2.png" alt="Autumn Trees and Weather">
+            </figure>
+            <figure>
+                <img data-src="/scoots/images/Cozumel12-450.jpg" src="/scoots/images/placeholder-2.png" alt="Spring Weather">
+            </figure>
+            <figure>
+                <img data-src="/scoots/images/Cozumel14-450.jpg" src="/scoots/images/placeholder-2.png" alt="Snow-capped Peaks">
+            </figure>
+        </section>
+
+        <div class=""></div>
+    </main>
+
+    <footer>
+        <div class="footermenu">
+            <div>
+                <h3>Contact Information</h3>
+                <p>Email: information@scootsislandrentals.com</p>
+                <p>Phone: +52 987 869 1086</p>
+                <div class="sociallinks">
+                    <a href="https://facebook.com" target="_blank"><img src="/scoots/images/facebook.png" alt="Facebook"></a>
+                    <a href="https://twitter.com" target="_blank"><img src="/scoots/images/twitter.png" alt="Twitter"></a>
+                    <a href="https://instagram.com" target="_blank"><img src="/scoots/images/instagram.png" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyrightdetails">
+            <p><span id="currentYear"></span> ~Scoots &copy; | Site by Mark Romriell | <a href="/scoots/resource.html">Resource
+                    Page</a> | <span class="highlighted">Last Updated: <span id="lastUpdated"></span></span></p>
+        </div>
+    </footer>
+    <script src="/scoots/js/announcements.js"></script>
+    <script src="/scoots/js/hamburger.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="/scoots/js/webfontload.js"></script>
+    <script src="/scoots/js/weather.js"></script>
+    <script src="/scoots/js/forecast.js"></script>
+    <script src="/scoots/js/lazyloadcode.js"></script>
+    <script src="/scoots/js/currentYear.js"></script>
+    <script src="/scoots/js/lastupdated.js"></script>
+</body>
+
+</html>

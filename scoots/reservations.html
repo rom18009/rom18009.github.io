@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="author" content="Mark Romriell">
+    <title>~Scoots Reservations Page</title>
+    <meta name="description"
+        content="~Scoots Reservations Page for making reservations for motor rentals, prices/fees, and delivery options ">
+
+    <link rel="stylesheet" ref="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto+Slab:wght@500&display=swap">
+    <link rel="stylesheet" href="/scoots/css/normalize.css">
+    <link rel="stylesheet" href="/scoots/css/small.css">
+    <link rel="stylesheet" href="/scoots/css/medium.css">
+    <link rel="stylesheet" href="/scoots/css/large.css">
+    <link rel="icon" type="image/png" sizes="180x180" href="/scoots/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/scoots/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/scoots/images/favicon-16x16.png">
+    <link rel="manifest" href="/scoots/images/site.webmanifest">
+</head>
+
+<body>
+
+    <header>
+        <img src="/scoots/images/logo.png" alt="~SCOOTS Logo">
+        <h1 id="siteheader">~SCOOTS</h1>
+        <p class="subheading1">We Have Your Motor Rentals</p>
+    </header>
+
+    <nav>
+        <ul class="clearfix">
+            <li><a class="ham" href="#">&#9776; Menu</a></li>
+            <li><a href="/scoots/index.html">Home</a></li>
+            <li><a href="/scoots/rentals.html">Rentals</a></li>
+            <li class="active"><a href="/scoots/reservations.html">Reservations</a></li>
+            <li><a href="/scoots/tours.html">Tours</a></li>
+            <li><a href="/scoots/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="herosection">
+            <picture class="heroimage">
+                <source media="(max-width: 450px)" srcset="/scoots/images/Cozumel15-450.jpg">
+                <source media="(min-width: 451px) and (max-width: 960px)" srcset="/scoots/images/Cozumel15-960.jpg">
+                <source media="(min-width: 961px)" srcset="/scoots/images/Cozumel15.jpg">
+                <img src="/scoots/images/Cozumel15.jpg" alt="Cozumel Sunset">
+            </picture>
+        </div>
+
+        <section class="topsection">
+        <h2>Rental Reservation</h2>
+        <form method="get" action="/scoots/confirmation.html">
+                <label class="top">Full Name* <input type="text" name="fname" pattern="[A-Za-zÀ-ž\s]{5,}"
+                        required></label>
+                <label class="top">Email <input type="email" name="email" placeholder="email@domain.com"></label>
+                <label class="top">Phone* <input type="tel" name="phone" required></label>
+                <label class="top">Home State / Country <input type="text" name="country" required></label>
+                <label class="top">Date of Rental <input type="date" name="rentaldate"></label>
+                <label class="top">Period of Rental <input type="number" name="rentalperiod" required></label>
+                <label class="top">Rental Type (Preferred Vehicle) <input list="rentals" name="rentaltype" required>
+                    <datalist id="rentals">
+                        <option value="Honda Metro Scooter">
+                        <option value="Honda Dio Scooter">
+                        <option value="Honda PCX150 Scooter">
+                        <option value="Honda Pioneer ATV">
+                        <option value="Jeep Wrangler - 4 door with a/c">
+                        <option value="Jeep Wrangler - 2 door">
+                    </datalist>
+                </label>
+                <label class="top">Special Requirements / Comments: <textarea name="commentsrequirements"></textarea></label>
+
+            <input type="submit" value="Make Reservation" class="submitBtn">
+        </form>
+    </section>
+
+    <article class="mainarticle">
+        <h2>Rental Agreement Information</h2>
+        <ul>
+            <li>A $50 security deposit is required to confirm reservations.</li>
+            <li>A valid drivers license is required in hand at time of rental.</li>
+            <li>No one under 12 years of age are allowed to ride on the scooters.</li>
+            <li>Fuel charge not included.</li>
+            <li>Unlimited Mileage.</li>
+            <li>Liability insurance is free of charge.</li>
+            <li>Reservations rate requires 24 hour prior notification.</li>
+            <li>Free delivery to Cozumel hotel, Airbnb, or private residence for 2+ days rentals.</li>
+            <li>Payment via Google Pay, cash, credit card, debit card, or PayPal.</li>
+            <li>Rentals may be returned to either location.</li>
+        </ul>
+    </article>
+    </main>
+
+    <footer>
+        <div class="footermenu">
+            <div>
+                <h3>Contact Information</h3>
+                <p>Email: information@scootsislandrentals.com</p>
+                <p>Phone: +52 987 869 1086</p>
+                <div class="sociallinks">
+                    <a href="https://facebook.com" target="_blank"><img src="/scoots/images/facebook.png" alt="Facebook"></a>
+                    <a href="https://twitter.com" target="_blank"><img src="/scoots/images/twitter.png" alt="Twitter"></a>
+                    <a href="https://instagram.com" target="_blank"><img src="/scoots/images/instagram.png" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyrightdetails">
+            <p><span id="currentYear"></span> ~Scoots &copy; | Site by Mark Romriell | <a href="/scoots/resource.html">Resource
+                    Page</a> | <span class="highlighted">Last Updated: <span id="lastUpdated"></span></span></p>
+        </div>
+    </footer>
+    <script src="/scoots/js/announcements.js"></script>
+    <script src="/scoots/js/hamburger.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="/scoots/js/webfontload.js"></script>
+    <script src="/scoots/js/weather.js"></script>
+    <script src="/scoots/js/forecast.js"></script>
+    <script src="/scoots/js/lazyloadcode.js"></script>
+    <script src="/scoots/js/currentYear.js"></script>
+    <script src="/scoots/js/lastupdated.js"></script>
+</body>
+
+</html>
