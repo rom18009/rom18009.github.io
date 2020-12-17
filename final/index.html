@@ -21,109 +21,136 @@
 </head>
 
 <body>
+
     <header>
-        <div class="container">
-            <div id="sitelogo" src="/final/images/logo.png" alt="Sunny-cast weather logo">
-            </div>
-
-            <nav>
-                <ul class="nav">
-                    <li><a id="hamburger" href="#" onclick="menuToggle()">&#9776;</a></li>
-                    <li class="active"><a href="/final/index.html">Home</a></li>
-                    <li><a href="/final/rentals.html">Rentals</a></li>
-                    <li><a href="/final/reservations.html">Reservations</a></li>
-                    <li><a href="/final/tours.html">Tours</a></li>
-                    <li><a href="/final/contact.html">Contact</a></li>
-                </ul>
-            </nav>
-
+        <img class="sitelogo" src="/final/images/logo.png" alt="~SC00TS logo">
+        <div class="sitetitle">
+            <h1>~SCOOTS</h1>
+            <div class="sitemotto">Cozumel's Favorite Motor Rentals</div>
         </div>
     </header>
 
-    <section id="reservation-button">
-        <div class="container">
-            <div class="reservebutton">
-                <a href="/final/reservations.html" class="button">Reserve Your Ride Today</a>
-            </div>
-        </div>
-    </section>
+    <nav>
+        <ul class="clearfix">
+            <li><a id="hamburger" href="#" onclick="menuToggle()">&#9776;</a></li>
+            <li><a href="/lesson11/index.html">Home</a></li>
+            <li class="active"><a href="/lesson11/preston.html">Preston</a></li>
+            <li><a href="/lesson11/soda-springs.html">Soda Springs</a></li>
+            <li><a href="/lesson11/fish-haven.html">Fish Haven</a></li>
+            <li><a href="/lesson11/stormcenter.html">Storm Center</a></li>
+            <li><a href="/lesson11/gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
 
-    <section id="weatherinfo">
-        <div class="container">
-            <div class="weatherdiv">
-                <div class="current">
-                    <h2>Current Weather</h2>
-                    <p>Today, <span id="currentdate"></span></p>
-                    <p class="temp"><span id="ctemperature"></span>&deg; F <img src="#" alt="unknown" id="icon"></p>
-                    <p>Description: <span id="description"></span>
-                    <p>Humidity: <span id="humidity"></span>&deg; F</p>
+    <main>
+        <h2 id="weathername">Preston</h2>
 
-            </div>
+        <div class="herodiv">
+            <img class="heroimage" src="/lesson11/images/preston-hero.jpg"
+                alt="Image of farmhouse, red barn and yellow field">
 
-            <div class="forecastdiv">
-                <h2>3-Day Forecast</h2>
-                <div class="forecast">
-                    <div class="forecastbox">
-                        <span class="day" id="fcDay1"></span>
-                        <img src="#" alt="unknown" id="fcIcon1">
-                        <p class="degrees"><span id="fcTemp1"></span>&deg; F</p>
-                    </div>
-
-                    <div class="forecastbox">
-                        <span class="day" id="fcDay2"></span>
-                        <img src="#" alt="unknown" id="fcIcon2">
-                        <p class="degrees"><span id="fcTemp2"></span>&deg; F</p>
-                    </div>
-
-                    <div class="forecastbox">
-                        <span class="day" id="fcDay3"></span>
-                        <img src="#" alt="unknown" id="fcIcon3">
-                        <p class="degrees"><span id="fcTemp3"></span>&deg; F</p>
-                    </div>
+            <section class="weathersummary">
+                <h3 class="sumtitle">Weather Summary</h3>
+                <div class="sumnames">
+                    Currently:<br>
+                    Current Temp:<br>
+                    High Temp:<br>
+                    Low Temp:<br>
+                    Wind Chill:<br>
+                    Humidity:<br>
+                    Wind Speed:<br>
                 </div>
-            </div>
-        </div>
-    </section>
 
-
-    <section id="info">
-        <div class="container">
-            <h1>Testing</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum autem repudiandae blanditiis odit
-                voluptate sapiente ab laborum aut dolore quam ipsam reiciendis illo, iure quia, minus eum eligendi
-                laboriosam recusandae!</p>
+                <div class="sumvalues">
+                    <span id="currdescription"></span><br>
+                    <span id="current-temp"></span><br>
+                    <span id="hi-temp"></span><br>
+                    <span id="low-temp"></span><br>
+                    <span id="windchill"></span><br>
+                    <span id="humidity"></span>%<br>
+                    <span id="windspeed"></span> mph<br>
+                </div>
+            </section>
         </div>
-    </section>
-    
-    <section class="contactinfo">
-        <div class="container">
-            <h3>Contact Information</h3>
-            <div class="contactdiv">    
-            
-                <img class="contactmap" src="/lesson11/images/map-of-preston.jpg" alt="Google Map of the Preston City and Area">
+
+        <h3>5 Day Forecast</h3>
+        <div class="forecastdiv">
+
+            <section class="forecastheader"><span id="forecastdayone"></span></section>
+            <section class="forecastheader"><span id="forecastdaytwo"></span></section>
+            <section class="forecastheader"><span id="forecastdaythree"></span></section>
+            <section class="forecastheader"><span id="forecastdayfour"></span></section>
+            <section class="forecastheader"><span id="forecastdayfive"></span></section>
+
+            <section class="forecasticon"><img src="" alt="" class="forecastimg"></section>
+            <section class="forecasticon"><img src="" alt="" class="forecastimg"></section>
+            <section class="forecasticon"><img src="" alt="" class="forecastimg"></section>
+            <section class="forecasticon"><img src="" alt="" class="forecastimg"></section>
+            <section class="forecasticon"><img src="" alt="" class="forecastimg"></section>
+
+            <section class="forecastfooter"><span class="forecasttemp"></span></section>
+            <section class="forecastfooter"><span class="forecasttemp"></span></section>
+            <section class="forecastfooter"><span class="forecasttemp"></span></section>
+            <section class="forecastfooter"><span class="forecasttemp"></span></section>
+            <section class="forecastfooter"><span class="forecasttemp"></span></section>
+        </div>
+
+        <article>
+            <img class="story1img" src="/lesson11/images/napoleon_statue.jpg"
+                alt="Life size statue of Napoleon Dynamite">
+            <h3 class="story1title">From Small Town to Big Screen</h3>
+
+            <p class="story1text">Preston, Idaho started off with the Bear Lake Massacre in 1863, only a few miles
+                northwest of where the city is currently located. In 1866 Latter-Day Saints started to arrive in the
+                Cache Valley and in 1881 the small town was established. Today the population of Preston is just over
+                5,500 people. The mixture of agriculture and those looking to get away from the larger cities is what
+                makes up most of the population. In 2004, the movie "Napoleon Dynamite" was filmed in and around
+                locations surrounding Preston and has helped to get the small town some publicity.
+                <br><br>
+                In 2014 the cast members of comedy, "Napoleon Dynamite" gathered in Preston for the unveiling of a life
+                size statue of Napoleon Dynamite. The statue is even sporting the "Vote for Pedro" t-shirt and Moon
+                Boots ... <a href="#">more about napolean statue.</a>
+            </p>
+        </article>
+
+        <section class="eventssection">
+            <h2>Events</h2>
+            <div id="townevents"></div>
+        </section>
+
+        <h3>Contact Information</h3>
+
+        <div class="contactdiv">
+            <img class="contactmap" src="/lesson11/images/map-of-preston.jpg"
+                alt="Google Map of the Preston City and Area">
+            <section class="contactinfo">
                 <h4>&#10140; 800 N. State St. Preston, ID 83263</h4>
                 <h4>&#9742; 208-852-4000</h4>
                 <h4>&#9993; weatherforecast@sunny-cast.net</h4>
                 <a href="https://www.facebook.com" target="blank"><img class="socialicons"
-                    src="/lesson11/images/facebook.png" alt="Facebook Icon"></a>
+                        src="/lesson11/images/facebook.png" alt="Facebook Icon"></a>
                 <a href="https://www.instagram.com" target="blank"><img class="socialicons"
-                    src="/lesson11/images/instagram.png" alt="Instagram Icon"></a>
+                        src="/lesson11/images/instagram.png" alt="Instagram Icon"></a>
                 <a href="https://www.pinterest.com/" target="blank"><img class="socialicons"
-                    src="/lesson11/images/pinterest.png" alt="Pinterest Icon"></a>
-                <a href="https://www.twitter.com" target="blank"><img class="socialicons" src="/lesson11/images/twitter.png"
-                    alt="Twitter Icon"></a>
-            </div>
+                        src="/lesson11/images/pinterest.png" alt="Pinterest Icon"></a>
+                <a href="https://www.twitter.com" target="blank"><img class="socialicons"
+                        src="/lesson11/images/twitter.png" alt="Twitter Icon"></a>
+            </section>
         </div>
-    </section>
+
+    </main>
 
     <footer>
-        &copy; <span id="currentyear"></span> Sunny-Cast | Home | Mark A. Romriell | <br>
+        &copy; <span id="currentyear"></span> Sunny-Cast | Preston | Mark A. Romriell <br>
         <div><span id="currentdate"></span></div>
     </footer>
-    <script src="/final/js/hamburger.js"></script>
-    <script src="/final/js/weather.js"></script>
-    <script src="/final/js/scripts.js"></script>
+    <script src="/lesson11/js/hamburger.js"></script>
+    <script src="/lesson11/js/longdates.js"></script>
+    <script src="/lesson11/js/announcement.js"></script>
+    <script src="/lesson11/js/weather.js"></script>
+    <script src="/lesson11/js/cityevents.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="/lesson11/js/webfontload.js"></script>
 </body>
 
 </html>

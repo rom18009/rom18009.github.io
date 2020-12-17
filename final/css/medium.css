@@ -1,0 +1,193 @@
+@media only screen and (min-width: 40em) {
+
+	header {
+		display: grid;
+		grid-template-columns: 1fr 2fr 1fr;
+	}
+
+	.sitelogo {
+		margin: 1em;
+		width: 9em;
+		justify-self: end;
+		align-self: center;
+	}
+
+	.sitetitle {
+		margin-left: 1em;
+		justify-self: start;
+	}
+
+	header h1 {
+		font-size: 2.625em;
+	}
+
+	header h1,
+	header div {
+		text-align: center;
+		width: auto;
+		margin: auto;
+	}
+
+	.sitemotto {
+		font-size: large;
+
+	}
+
+	.clearfix {
+		display: flex;
+		justify-content: center;
+	}
+
+	.clearfix li {
+		display: block;
+		flex: 1 1 auto;
+	}
+
+	.clearfix a {
+		text-align: center;
+		font-size: 0.875em;
+		padding: 0.5em;
+	}
+
+	.clearfix li:first-child {
+		display: none;
+	}
+
+	.weathersummary {
+		position: absolute;
+		top: 30px;
+		left: 40px;
+		grid-template-columns: 3fr 2fr;
+		border-radius: 0.3125em;
+	}
+
+	.sumnames,
+	.sumvalues,
+	.sumtitle {
+		filter: drop-shadow(1px 1px 1px white);
+	}
+
+	.forecastdiv {
+		font-family: 'Cardo', serif;
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+		grid-gap: 1.25%;
+		padding: 0.313rem;
+		width: 80%;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.weekforecast {
+		grid-column: 1/6;
+		text-align: center;
+		margin: 1em 0 .625em 0;
+	}
+
+	h3 {
+		display: block;
+		/*width: 75%;
+		height: 20px;*/
+		padding: .75rem 1rem .5rem 1rem;
+		margin: 1.5rem auto 0 auto;
+	}
+
+	.forecastimg {
+		padding: 5px; margin: 0 auto;
+	}
+
+	#icon1 img {
+		max-width: 4rem;
+	}
+
+	.forecastdiv img {
+		display: block;
+		margin: auto;
+		width: 80%;
+	}
+
+	.forecastdiv section {
+		color: #FED766;
+		background-color: #808a88;
+		padding: .25em 0 .25em 0;
+		font-weight: 700;
+	}
+
+	.forecastdiv section.forecastheader,
+	.forecastdiv section.forecastfooter {
+		background-color: #272727;
+		padding: .5em;
+	}
+
+	.forecastdiv div {
+		box-shadow: 0 0 0.5em black;
+		border-radius: 0.3125em;
+		overflow: hidden;
+	}
+
+	.story1img {
+		float: right;
+		width: 30%;
+		margin: 0 0 .5em 1em;
+		border-radius: 0.3125em;
+	}
+
+	.contactdiv {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.contactmap {
+		display: block;
+		width: 38%;
+		height: 38%;
+		margin-right: 1.25em;
+	}
+
+	.contactinfo {
+		margin: auto;
+		text-align: left;
+		font-weight: initial;
+	}
+
+	.lazyloadgallery {
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 0.5em;
+	}
+
+	.lazyloadgallery h2:nth-child(1) {
+		grid-column: 1 / span 2;
+	}
+
+	.lazyloadgallery figure:hover {
+		box-shadow: 0 0 30px rgba(33, 33, 33, 1);
+	}
+
+	/* Town */
+	.towns section {
+		background-color: #272727;
+		text-align: center;
+		display: flex;
+		flex-direction: row;
+		border-radius: 0.5rem;
+		padding: 2em;
+	}
+
+	.towns div p {
+		color: white;
+	}
+
+	.towns section:nth-child(3) {
+		flex-direction: row-reverse;
+	}
+
+	.towns section img {
+		width: 50%;
+		margin: 1em;
+	}
+
+	.towns div {
+		width: 50%;
+	}
+
+}

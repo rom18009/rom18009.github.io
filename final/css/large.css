@@ -1,0 +1,75 @@
+/* 64em is also 1028px when basefont is 16px */
+@media only screen and (min-width: 64rem) {
+
+	.sitelogo {
+		width: 10em;
+	}
+
+	header h1 {
+		font-size: 3.25em
+	}
+
+	.sitemotto {
+		font-size: x-large;
+	}
+
+	.clearfix a {
+		font-size: 1.25em;
+	}
+
+	.lazyloadgallery {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-gap: 2em;
+		margin: 0 auto;
+		max-width: 100%;
+		padding: 0.2em 10em;
+	}
+
+	.lazyloadgallery h2:nth-child(1) {
+		grid-column: 1 / span 3;
+	}
+
+	.lazyloadgallery figure:hover {
+		box-shadow: 0 0 30px rgba(33, 33, 33, 1);
+	}
+
+	/* Form */
+	form label.sbs {
+		padding: 0.2rem 0.75em;
+	}
+
+	/* Town */
+	.towns {
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-gap: 2em;
+	}
+
+	.towns section {
+		display: flex;
+		flex-direction: column;
+		border-radius: 0.5rem;
+		padding: 2em;
+	}
+
+	.towns section:nth-child(3) {
+		flex-direction: column;
+	}
+
+	.towns section img {
+		width: 100%;
+		margin: 1em 0;
+	}
+
+	.towns h3 {
+		background: #3f3f3f;
+		border-radius: 0.5rem;
+		line-height: normal;
+		padding: 1.25em;
+
+	}
+
+	.towns div {
+		width: 100%;
+	}
+}
