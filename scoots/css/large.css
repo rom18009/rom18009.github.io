@@ -6,7 +6,6 @@
 	.mainarticle,
 	.topsection,
 	.bottomsection,
-	.fridayalert,
 	.lazyloadgallery,
 	.towns,
 	.eventssection,
@@ -74,12 +73,12 @@
 
 	.weathersummary {
 		position: absolute;
-		top: 42em;
+		top: 35em;
 		right: 8em;
 		color: white;
 		min-width: 20%;
 		padding: 0 1.5em 1.5em;
-		font-size: 0.9rem;
+		font-size: 0.7rem;
 	}
 
 	.weathersummary h2 {

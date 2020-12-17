@@ -1,5 +1,5 @@
 // Rental Information URL with API information
-const rentalURL = 'https://rom18009.github.io/final/data/rentalinfo.json';
+const rentalURL = "https://rom18009.github.io/scoots/data/rentalinfo.json";
 
 fetch(rentalURL)
     .then(function (response) {
@@ -22,7 +22,7 @@ fetch(rentalURL)
             let walkinfull = document.createElement('td');
             let image = document.createElement('img');
 
-            image.setAttribute('src', "images/" + rentals[i].imageurl);
+            image.setAttribute('src', "/scoots/images/" + rentals[i].imageurl);
             image.setAttribute('alt', rentals[i].rentaltype);
             vehicle.innerHTML = rentals[i].rentaltype;
             max.textContent = rentals[i].maxpersons;

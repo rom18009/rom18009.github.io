@@ -17,7 +17,7 @@ header,
 .calltoaction {
     max-width: 100%;
     margin: 0 auto;
-    padding: 1.5em 1em;
+    padding: 1em 1em;
 }
 
 .weatheralert {
@@ -56,17 +56,6 @@ header img {
 header {
     text-align: center;
 }
-
-/*#siteheader {
-    color: #2689C7;
-}
-
-.subheading1 {
-    font-size: 0.75em;
-    color: #005f8b;
-    margin-top: -1em;
-    font-style: oblique;
-}*/
 
 /* Navigation */
 
@@ -128,7 +117,7 @@ nav ul {
 /* Main */
 main a,
 main a:visited {
-    color: #e94f37;
+    color: #29ac9c;
 }
 
 main img {
@@ -148,7 +137,7 @@ main h2 {
 
 button {
     padding: 1em;
-    background-color: #e94f37;
+    background-color: #29ac9c;
     color: #000000;
     border: none;
     margin: 1em;
@@ -197,7 +186,7 @@ article figure figcaption {
     margin: 0 auto;
     max-width: 100%;
     padding: 0 1em 1em;
-    background-color: rgb(0, 95, 139, 0.8);
+    background-color: #2689C7;
     color: white;
     line-height: 1em;
     text-align: center;
@@ -362,7 +351,7 @@ tfoot td {
 
 .lazyloadgallery figcaption,
 .rentaltypes figcaption {
-    background-color: #bcad84;
+    background-color: #CF8C79;
     padding: 1em;
     margin: 0;
 }
@@ -380,13 +369,13 @@ tfoot td {
 /* Form */
 form fieldset {
     margin: 2rem 0;
-    border: 1px solid#bcad84;
+    border: 1px solid#CF8C79;
     border-radius: 10px;
     padding: 0.5rem 2%;
 }
 
 form legend {
-    color: #bcad84;
+    color: #CF8C79;
     margin: 0 1rem;
     padding: 0 0.5rem;
     font-size: 1.2rem;
@@ -396,7 +385,7 @@ form label .top,
 form div {
     display: block;
     padding-top: 1rem;
-    color: #e94f37;
+    color: #29ac9c;
     font-size: 1.2rem;
     font-weight: bold;
 }
@@ -428,7 +417,7 @@ form label.sbs input {
 
 form input.submitBtn {
     border: none;
-    background-color: #e94f37;
+    background-color: #29ac9c;
     color: white;
     border-radius: 1rem;
     padding: 0.75rem 1.5rem;
@@ -443,7 +432,7 @@ form input.submitBtn:hover {
 }
 
 form label.top input:required {
-    border: 2px dotted #e94f37;
+    border: 2px dotted #29ac9c;
 }
 
 form input,

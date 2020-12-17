@@ -7,7 +7,7 @@
         "reservationfull": 30,
         "walkinhalf": 25,
         "walkinfull": 35,
-        "imageurl": "honda-metro.jpg"
+        "imageurl": "rental-honda-metro.jpg"
       },
       {
         "rentaltype": "Honda Dio Scooter",
@@ -16,7 +16,7 @@
         "reservationfull": 40,
         "walkinhalf": 35,
         "walkinfull": 45,
-        "imageurl": "honda-dio.jpg"
+        "imageurl": "rental-honda-dio.png"
       },
       {
         "rentaltype": "Honda PCX150 Scooter",
@@ -25,7 +25,7 @@
         "reservationfull": 50,
         "walkinhalf": 45,
         "walkinfull": 55,
-        "imageurl": "honda-pcx150.jpg"
+        "imageurl": "rental-honda-pcx-150.jpg"
       },
       {
         "rentaltype": "Honda Pioneer ATV",
@@ -34,7 +34,7 @@
         "reservationfull": 70,
         "walkinhalf": 60,
         "walkinfull": 80,
-        "imageurl": "honda-pioneer.jpg"
+        "imageurl": "rental-honda-atv.jpg"
       },
       {
         "rentaltype": "Jeep Wrangler - 4 door with a/c",
@@ -43,7 +43,7 @@
         "reservationfull": 100,
         "walkinhalf": 85,
         "walkinfull": 125,
-        "imageurl": "jeep-wrangler4.jpg"
+        "imageurl": "rental-jeep-4dr.jpg"
       },
       {
         "rentaltype": "Jeep Wrangler - 2 door",
@@ -52,7 +52,7 @@
         "reservationfull": 85,
         "walkinhalf": 70,
         "walkinfull": 90,
-        "imageurl": "jeep-wrangler2.jpg"
+        "imageurl": "rental-jeep-2dr.jpg"
       }
     ]
   }
