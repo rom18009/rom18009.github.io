@@ -1,0 +1,79 @@
+/* Body Styling */
+
+body {
+    font-size: 1.125rem;
+    line-height: 1.5;
+    font-family: 'Roboto', serif;
+}
+
+header,
+main,
+nav,
+footer {
+    margin: 1rem auto;
+    max-width: 47.5rem;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+/* Header Sytling */
+
+header {
+    background-color: #f7ce3e;
+    color: #1a2930;
+    text-align: center;
+    border-radius: 0.75rem;
+    padding: 0.25rem;
+    margin-top: 2.5rem;
+}
+
+header img {
+    float: right;
+    filter: drop-shadow(0.1875rem 0.125rem 0.25rem grey);
+    margin: .5rem .5rem 0 0;
+    width: 5rem;
+}
+
+/* Heading Styling */
+
+h1 {
+    margin: .5rem 0 .5rem 0;
+    padding: 0.25rem;
+    font-size: xx-large;
+}
+
+h2 {
+    display: block;
+    border-bottom: 0.08125rem solid black;
+    max-width: 40.625rem;
+    padding-bottom: 0.3125rem;
+    margin: .5rem 0 .5rem 0;
+    font-size: 1.18rem;
+    font-weight: bold;
+}
+
+/* Footer Styling*/
+
+footer {
+    background-color: #0a1612;
+    padding: 0.125rem;
+    font-size: 0.875rem;
+    color: white;
+    text-align: center;
+    border-radius: .5rem;
+}
+
+footer p {
+    margin: .5rem 0 .5rem 0;
+}
+
+footer a {
+    color: white;
+}
+
+footer span {
+    display: inline;
+}
+
+footer div {
+    color: yellow;
+}
