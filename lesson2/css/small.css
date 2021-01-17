@@ -1,5 +1,4 @@
 /* Body Styling */
-
 body {
     font-size: 1.125rem;
     line-height: 1.5;
@@ -18,7 +17,6 @@ h3 {
 }
 
 /* Header Styling */
-
 header {
     background-color: #f7ce3e;
     color: #1a2930;
@@ -28,8 +26,9 @@ header {
     margin-top: 2.5rem;
 }
 
+/* Main */
 main {
-	display: grid;
+    display: grid;
     grid-template-columns: 1fr;
 }
 
@@ -45,16 +44,16 @@ main section h2 {
     text-align: center;
 }
 
+/* Image */
 img {
     display: block;
-	margin-left: auto;
+    margin-left: auto;
     margin-right: auto;
     padding-top: 12px;
     width: 95%;
 }
 
 /* Heading Styling */
-
 h1 {
     margin: .5rem 0 .5rem 0;
     padding: 0.25rem;
@@ -71,7 +70,6 @@ h2 {
 }
 
 /* Article */
-
 article {
     background-color: #f6f6f6;
     padding: 1em;
@@ -80,7 +78,6 @@ article {
 }
 
 /* Footer Styling*/
-
 footer {
     background-color: #0a1612;
     padding: 0.125rem;
