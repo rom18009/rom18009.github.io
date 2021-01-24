@@ -1,3 +1,4 @@
+/* Body Style */
 header,
 nav,
 main,
@@ -26,6 +27,7 @@ p {
     padding: 0;
   }
 
+  /* Navbar */
 #navbar {
     text-align: center;
     box-shadow: 0 2px 15px #696773;
@@ -36,14 +38,14 @@ p {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #FED766;
+    background-color: #26313A;
     font-family: 'Noto Sans', sans-serif;
     font-size: 25px;
 }
 
 #navbar ul li a {
     display: block;
-    color: #272727;
+    color: #E89700;
     text-align: center;
     padding: .75rem;
     text-decoration: none;
@@ -51,17 +53,21 @@ p {
 }
 
 #navbar a:hover {
-    background-color: #009FB7;
+    background-color: #5FB0D9;
 }
 
-h1 {
+header h1 {
     padding: 10px;
     font-family: 'Noto Sans', sans-serif;
     font-size: 45px;
+    margin-top: 20px;
+}
+
+h1, h2, h3 {
+    color: #D85423;
 }
 
 h2 {
-    color: #272727;
     font-size: 30px;
 }
 
@@ -74,6 +80,26 @@ ul li {
     font-size: 20px;
 }
 
+section {
+    line-height: 1.75;
+}
+
+.sample-header {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 45px;
+}
+
+.sample-navigation {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 25px;
+}
+
+.sample body {
+    font-family: 'Roboto', serif;
+    font-size: 18px;
+}
+
+/* Images */
 img {
     display: block;
     margin-left: auto;
@@ -83,7 +109,7 @@ img {
 
 /* Footer Styling*/
 footer {
-    background-color: #0a1612;
+    background-color: #26313A;
     padding: 0.125rem;
     font-size: 0.875rem;
     color: white;
@@ -93,7 +119,7 @@ footer {
 
 footer p {
     margin: .5rem 0 .5rem 0;
-    background-color: #0a1612;
+    background-color: #26313A;
 }
 
 footer a {
@@ -105,6 +131,6 @@ footer span {
 }
 
 footer div {
-    color: yellow;
+    color: #e89700;
     padding-bottom: .25rem;
 }
