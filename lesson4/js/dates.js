@@ -6,6 +6,7 @@ const options = {
 };
 document.getElementById('currentDate').textContent = new Date().toLocaleDateString('en-GB', options);
 
+// Current Year
 // document.getElementById('currentYear').textContent = new Date().getFullYear();
 
 // Shows Last Modified Date
