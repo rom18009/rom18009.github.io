@@ -1,0 +1,50 @@
+@media only screen and (min-width: 37.875em) {
+	/* Header */
+	header img {
+		width: 70%;
+		height: auto;
+	}
+	
+	.headings h1 {
+		font-size: 2.6rem;
+		margin: 0 0 0 17px;
+	}
+
+	/* Navigation Bar */
+	.navbar {
+		display: flex;
+		justify-content: center;
+	}
+
+	.navbar li {
+		border-bottom: none;
+		display: block;
+		flex: 1 1 auto;
+		border: red;
+	}
+
+	.navbar a {
+		text-align: center;
+		font-size: 1em;
+		padding: 1em;
+	}
+
+	.navbar li:first-child {
+		display: none;
+	}
+
+	/* Content */
+	.contentbox {
+		max-width: 700px;
+		border-radius: 5px;
+		
+	}
+
+	/* Footer */
+	footer {
+		max-width: 740px;
+		margin: auto;
+		border-radius: 5px;
+		
+	}
+}

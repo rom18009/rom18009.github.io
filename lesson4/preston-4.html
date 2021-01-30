@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Set Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- External Fonts API -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!-- Normalize External Source -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <!-- Style Sources -->
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <!-- Title and Description -->
+    <meta name="description"
+        content="Lesson4 - Preston Town Page | Mark Romriell in WDD 230, Winter 2020 Semester at Brigham Young University - Idaho">
+    <title>TruWeather | Home Page</title>
+</head>
+
+<body>
+    <!-- Header with logo, sitename, and motto -->
+    <header>
+        <picture>
+            <img src="images/truweather-128x128.png"
+                alt="Colorful logo for TruWeather with orange sun over blue and green mountains">
+        </picture>
+        <div class="headings">
+            <h1><span class="text-primary">T</span>ru<span class="text-primary">W</span>eather</h1>
+            <div class="motto">Weather that's honest!</div>
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul class="navbar">
+            <li><a class="hamburger" href="#">&#9776; Menu</a></li>
+            <li><a href="../index.html">Home</a></li>
+            <li class="active"><a href="preston-4.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <!-- Placeholders for future work -->
+        <h2>Preston Idaho</h2>
+        <div class="contentbox">Hero w/ weather summary</div>
+        <div class="contentbox">5 Day Forecast</div>
+        <div class="contentbox">Article</div>
+        <div class="contentbox">Contact Information</div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; <span class="text-primary">T</span>ru<span class="text-primary">W</span>eather | Attributions | Mark
+            A. Romriell | <a href="https://rom18009.github.io/">Portal Home Page</a></p>
+        <div><span id="currentDate"></span></div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/dates.js"></script>
+    <script src='js/hamburger.js'></script>
+</body>
+
+</html>

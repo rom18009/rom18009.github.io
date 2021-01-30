@@ -1,0 +1,136 @@
+/* Utilities Section */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.text-primary {
+    color: #D85423;
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #EFF1F3;
+}
+
+/* Header */
+header {
+    font-family: 'Noto Sans' sans-serif;
+    background-color: #26313A;
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #E89700;
+}
+
+header img {
+    width: 60px;
+    height: auto;
+}
+
+/* Headings */
+.headings h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    margin: 0 0 0 17px;
+}
+
+.motto {
+    font-style: italic;
+    letter-spacing: 1pt;
+    color: #EFF1F3;
+    margin-left: 20px;
+    font-size: .9rem;
+}
+
+h2, h3 {
+    font-family: 'Roboto', sans-serif;
+    color: #D85423
+}
+
+h2 {
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: .8rem;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #59A86A;
+    font-family: 'Noto Sans', sans-serif;
+    text-align: center;
+    border-bottom: none;
+}
+
+.navbar {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.navbar li {
+    display: none;
+}
+
+.navbar li:first-child {
+    display: block;
+}
+
+.responsive li {
+    display: block;
+}
+
+.navbar a {
+    display: block;
+    color: black;
+    font-weight: 700;
+    padding: 0.75rem;
+    text-decoration: none;
+    text-align: left;
+}
+
+.navbar a:hover {
+    color: black;
+    background-color: #5FB0D9;
+}
+
+.navbar .active {
+    border: 0.125em solid black;
+    border-radius: 0.125em;
+}
+
+/* Main Content */
+.contentbox {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    background-color: #bbbbbb;
+    border: 0.0625em dashed black;
+    margin: 0.625em auto;
+    padding: 0.75em;
+    color: #272727;
+    font-style: italic;
+    width: auto;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    align-items: center;
+    text-align: center;
+    background-color: #26313A;
+    color: #E89700;
+    padding: 1em;
+    border-radius: 5px;
+}
+
+footer p {
+    line-height: 1.6;
+}
+
+footer a {
+    text-decoration: none;
+    color: #E89700;
+}
