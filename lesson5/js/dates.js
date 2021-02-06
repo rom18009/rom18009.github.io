@@ -21,4 +21,3 @@ if (day == 5) {
 } else {
     announcement.style.display = "none";
 }
-
