@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Set Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- External Fonts API -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!-- Normalize External Source -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <!-- Style Sources -->
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <!-- Favicon -->
+    <link rel="icon" href="../favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="128x128" href="images/apple-touch-icon.png">
+    <!-- Title and Description -->
+    <meta name="description"
+        content="Lesson5 - Preston Town Page Continued | Mark Romriell in WDD 230, Winter 2020 Semester at Brigham Young University - Idaho">
+    <title>TruWeather | Home Page</title>
+</head>
+
+<body>
+    <!-- Announcement Banner -->
+    <aside id="announcement">Saturday = Preston Pancakes in the Park!
+        <br>9:00 a.m. Saturday at the city park pavilion.</aside>
+
+    <!-- Header with logo, sitename, and motto -->
+    <header>
+        <picture>
+            <a href="preston-5.html"><img src="images/truweather-128x128.png"
+                    alt="Colorful logo for TruWeather with orange sun over blue and green mountains"></a>
+        </picture>
+        <div class="headings">
+            <h1><span class="text-primary">T</span>ru<span class="text-primary">W</span>eather</h1>
+            <div class="motto">Weather that's honest!</div>
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul class="navbar">
+            <li><a class="hamburger" href="#">&#9776; Menu</a></li>
+            <li><a href="../index.html">Home</a></li>
+            <li class="active"><a href="preston-5.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <!-- Placeholders for future work -->
+        <h2 class="main_h2">Preston Idaho</h2>
+
+        <!-- Hero Image and Floating Weather Summary-->
+        <div class="herodiv">
+            <img class="heroimage" src="images/preston_hero_500x281.jpg"
+                alt="Image of the Preston area mountain range with snow and valley">
+            <section class="weathersummary">
+                <h3 class="ws_title">Weather Summary</h3>
+                <div class="ws_names">
+                    Currently:<br>
+                    Current Temp:<br>
+                    High Temp:<br>
+                    Low Temp:<br>
+                    Wind Chill:<br>
+                    Humidity:<br>
+                    Wind Speed:<br>
+                </div>
+
+                <div class="ws_values">
+                    <span class="current-desc">Cloudy</span><br>
+                    <span class="current-temp">36&deg;</span><br>
+                    <span class="hi-temp">36&deg;</span><br>
+                    <span class="low-temp">27&deg;</span><br>
+                    <span class="windchill">26&deg;</span><br>
+                    <span class="humidity">59%</span><br>
+                    <span class="windspeed">16 mph</span><br>
+                </div>
+            </section>
+        </div>
+
+        <!-- Five Day Forecast -->
+        <h2 class="fc_title">5 Day Forecast</h2>
+        <div class="forecastdiv">
+            <section class="fc_header"><span id="fc_dayone">
+                    <h4>Sun</h4>
+                </span></section>
+            <section class="fc_header"><span id="fc_daytwo">
+                    <h4>Mon</h4>
+                </span></section>
+            <section class="fc_header"><span id="fc_daythree">
+                    <h4>Tue</h4>
+                </span></section>
+            <section class="fc_header"><span id="fc_dayfour"></span>
+                <h4>Wed</h4>
+            </section>
+            <section class="fc_header"><span id="fc_dayfive"></span>
+                <h4>Thur</h4>
+            </section>
+
+            <section class="fc_icon"><img src="images/icon_cloudy.png" alt="Cloudy Icon" class="fc_img"></section>
+            <section class="fc_icon"><img src="images/icon_rainy.png" alt="Rainy Icon" class="fc_img"></section>
+            <section class="fc_icon"><img src="images/icon_rainy.png" alt="Rainy Icon" class="fc_img"></section>
+            <section class="fc_icon"><img src="images/icon_cloudy.png" alt="Cloudy Icon" class="fc_img"></section>
+            <section class="fc_icon"><img src="images/icon_sunny.png" alt="Sunny Icon" class="fc_img"></section>
+
+            <section class="fc_footer"><span class="fc_temp">36&deg;</span></section>
+            <section class="fc_footer"><span class="fc_temp">38&deg;</span></section>
+            <section class="fc_footer"><span class="fc_temp">39&deg;</span></section>
+            <section class="fc_footer"><span class="fc_temp">39&deg;</span></section>
+            <section class="fc_footer"><span class="fc_temp">42&deg;</span></section>
+        </div>
+
+<!-- Article 1 -->
+        <article class="article_1">
+            <img class="art1_img" src="images/article1_mild_winter.jpg"
+                alt="Preston Idaho with mountains, field with melting snow puddle in the middle">
+            <h3 class="art1_title">Mild Winter</h3>
+            <p class="art1_content">The winter of 2020-2021 has been pretty mild. Is this from Global Warming? Is it
+                just something else to add onto the Covid-19 ending of 2020? It's only February and spring is right
+                around the corner. Whatever the reasons the local farmers are still holding out hope for moisture in the
+                mountains. This is where their precious water for crops replentishes rivers, lakes, wells.
+            </p>
+        </article>
+
+<!-- Contact Information -->
+<div class="contactdiv">
+     <img class="contact_map" src="images/map_preston.png" alt="Google Map of the Preston City and Area">
+    <div class="contact_info">
+        <h3 class="contact_h3">Contact Information</h3>
+        <p>&#10140; 756 S. State St. Preston, ID 83263</p>
+        <p>&#9742; 208-852-4587</p>
+        <p>&#9993; info@truweather.com</p>
+        <a href="https://www.facebook.com" target="blank"><img class="socialicons"
+                src="images/contact_facebook.png" alt="Facebook Icon"></a>
+        <a href="https://www.instagram.com" target="blank"><img class="socialicons"
+                src="images/contact_instagram.png" alt="Instagram Icon"></a>
+        <a href="https://www.pinterest.com/" target="blank"><img class="socialicons"
+                src="images/contact_pinterest.png" alt="Pinterest Icon"></a>
+        <a href="https://www.twitter.com" target="blank"><img class="socialicons"
+                src="images/contact_twitter.png" alt="Twitter Icon"></a>
+    </div>
+</div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; <span class="text-primary">T</span>ru<span class="text-primary">W</span>eather | Attributions | Mark
+            A. Romriell | <a href="https://rom18009.github.io/">Portal Home Page</a></p>
+        <div><span id="currentDate"></span></div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/dates.js"></script>
+    <script src='js/hamburger.js'></script>
+</body>
+
+</html>

@@ -1,0 +1,136 @@
+@media only screen and (min-width: 42.250em) {
+
+	/* Header */
+	header img {
+		width: 70%;
+		height: auto;
+	}
+
+	.headings h1 {
+		font-size: 2.6rem;
+		margin: 0 0 0 17px;
+	}
+
+	/* Navigation Bar */
+	.navbar {
+		display: flex;
+		justify-content: center;
+	}
+
+	.navbar li {
+		display: block;
+		flex: 1 1 auto;
+	}
+
+	.navbar a {
+		text-align: center;
+		font-size: 1em;
+		padding: 1em;
+	}
+
+	.navbar li:first-child {
+		display: none;
+	}
+
+	/* Hero Area */
+	.weathersummary {
+		position: absolute;
+		top: 30px;
+		left: 40px;
+		grid-template-columns: 1fr;
+		border-radius: 0.3125em;
+		filter: drop-shadow(1px 2px 1px white);
+	}
+
+	/* Five Day Forecast */
+
+	.forecastdiv,
+	.fc_h3 {
+		display: block;
+	}
+
+	.forecastdiv {
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+		grid-gap: 1.25%;
+		padding: 0.313rem;
+		width: 80%;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.fc_img {
+		padding: 5px;
+		margin: 0 auto;
+		display: block;
+		margin: auto;
+		width: 80%;
+	}
+
+	.forecastdiv img {
+		display: block;
+		margin: auto;
+		width: 80%;
+	}
+
+	.forecastdiv section {
+		color: #FED766;
+		background-color: #808a88;
+		padding: .25em 0 .25em 0;
+		font-weight: 700;
+		border-radius: 2px;
+	}
+
+	.forecastdiv section.fc_header,
+	.forecastdiv section.fc_footer {
+		background-color: #26313A;
+		padding: .5em;
+	}
+
+	.forecastdiv div {
+		box-shadow: 0 0 0.5em black;
+		border-radius: 0.3125em;
+		overflow: hidden;
+	}
+
+	/* Article 1 */
+	.art1_img {
+		float: right;
+		width: 30%;
+	}
+
+	/* Contact Area */
+	.contactdiv {
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+
+	.contact_map {
+		display: grid;
+		grid-column: 1/2;
+		grid-row: 1;
+		width: 50%;
+		margin: auto;
+	}
+
+	.contact_info {
+		grid-column: 2/3;
+		grid-row: 1;
+		margin: auto;
+		/* text-align: left;
+		font-weight: initial; */
+	}
+
+	.contact_info .socialicons {
+		text-align: center;
+		margin: 1em;
+		width: 30px;
+	}
+
+
+	/* Footer */
+	footer {
+		margin: auto;
+		border-radius: 5px;
+	}
+}
