@@ -208,6 +208,8 @@ main {
     color: #000;
     letter-spacing: 1.25px;
     border-bottom: 0.125em solid #000000;
+    text-align: center;
+    color: white;
 }
 
 .contact_map {
