@@ -173,7 +173,7 @@ main {
     border: 1px solid black;
     background-color: #5FB0D9;
     color: #000000;
-    line-height: 1.5em;
+    line-height: 1.75em;
     padding: 2em;
     margin: 3em auto;
 }
@@ -188,6 +188,11 @@ main {
     border: 1px solid grey;
     margin: auto;
     border-radius: 0.3125em;
+}
+
+.article_1 p a {
+    text-decoration: none;
+    color: #FED766;
 }
 
 /* Contact Area */
