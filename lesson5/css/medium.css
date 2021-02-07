@@ -118,14 +118,16 @@
 		grid-row: 1;
 		width: 50%;
 		margin: auto;
+		border: 1px solid #E89700;
+		border-radius: 0.3125em;
+		filter: drop-shadow(1px 2px 1px grey);
+
 	}
 
 	.contact_info {
 		grid-column: 2/3;
 		grid-row: 1;
 		margin: auto;
-		/* text-align: left;
-		font-weight: initial; */
 	}
 
 	.contact_info .socialicons {

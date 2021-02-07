@@ -187,6 +187,7 @@ main {
 
 /* Contact Area */
 .contactdiv {
+    border: 1px solid black;
     background-color: #59A86A;
     padding: 2em;
     display: grid;
