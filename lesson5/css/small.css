@@ -171,11 +171,15 @@ main {
 
 .article_1 {
     border: 1px solid black;
-    background-color: #cacaca;
+    background-color: #5FB0D9;
     color: #000000;
     line-height: 1.5em;
     padding: 2em;
     margin: 3em auto;
+}
+
+.art1_title {
+    color:aliceblue;
 }
 
 .art1_img {
