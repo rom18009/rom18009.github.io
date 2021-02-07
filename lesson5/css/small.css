@@ -179,7 +179,8 @@ main {
 }
 
 .art1_title {
-    color:aliceblue;
+    color: white;
+    letter-spacing: 1.25px;
 }
 
 .art1_img {
@@ -200,6 +201,7 @@ main {
 
 .contact_h3 {
     color: #000;
+    letter-spacing: 1.25px;
     border-bottom: 0.125em solid #000000;
 }
 
