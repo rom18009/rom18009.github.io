@@ -175,12 +175,12 @@ main {
     color: #000000;
     line-height: 1.5em;
     padding: 2em;
-    margin: 2em auto;
+    margin: 3em auto;
 }
 
 .art1_img {
     width: 100%;
-    border: 1px solid #000;
+    border: 1px solid grey;
     margin: auto;
     border-radius: 0.3125em;
 }
