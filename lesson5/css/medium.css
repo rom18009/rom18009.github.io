@@ -32,6 +32,14 @@
 		display: none;
 	}
 
+	.navbar li:hover {
+        border-top: 0.125em solid #5FB0D9;
+        border-bottom: 0.125em solid #5FB0D9;
+    }
+    .navbar .active:hover {
+        border: 0.125em solid black !important;
+    }
+
 	/* Hero Area */
 	.weathersummary {
 		position: absolute;
