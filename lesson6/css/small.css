@@ -184,7 +184,7 @@ main {
 }
 
 .art1_title {
-    color: white;
+    color: #000000;
     letter-spacing: 1.25px;
 }
 
@@ -197,7 +197,7 @@ main {
 
 .article_1 p a {
     text-decoration: none;
-    color: #FED766;
+    color: #ffee00;
 }
 
 /* Contact Area */
@@ -210,11 +210,10 @@ main {
 }
 
 .contact_h3 {
-    color: #000;
+    color: #000000;
     letter-spacing: 1.25px;
     border-bottom: 0.125em solid #000000;
     text-align: center;
-    color: white;
 }
 
 .contact_map {
