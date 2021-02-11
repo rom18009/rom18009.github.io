@@ -120,7 +120,7 @@ main {
 }
 
 /* Hero Div */
-.herodiv picture {
+.herodiv {
     position: relative;
     margin-bottom: 1.2em;
 }
@@ -140,6 +140,11 @@ main {
     font-weight: bold;
     box-shadow: 0 0 0.5em black;
     padding: 0.5em;
+}
+
+.weathersummary .ws_names li,
+.weathersummary .ws_values li {
+    list-style: none;
 }
 
 .ws_title {
