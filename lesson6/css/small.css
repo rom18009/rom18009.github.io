@@ -186,18 +186,20 @@ main {
 .art1_title {
     color: #000000;
     letter-spacing: 1.25px;
+    border-bottom: 0.125em solid #000000;
+    font-size: 22px;
+    margin-bottom: 8px;
 }
 
 .art1_img {
     width: 100%;
-    border: 1px solid grey;
     margin: auto;
-    border-radius: 0.3125em;
 }
 
 .article_1 p a {
     text-decoration: none;
-    color: #ffee00;
+    font-style: italic;
+    color: #FED766;
 }
 
 /* Contact Area */

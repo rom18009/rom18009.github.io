@@ -51,7 +51,7 @@
 		filter: drop-shadow(1px 2px 1px white);
 	}
 
-	.main_h2  {
+	.main_h2 {
 		font-size: 32px;
 	}
 
@@ -110,6 +110,7 @@
 	/* Article 1 */
 	.art1_img {
 		float: right;
+		padding-left: 12px;
 		width: 30%;
 	}
 
