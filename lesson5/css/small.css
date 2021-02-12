@@ -120,7 +120,7 @@ main {
 }
 
 /* Hero Div */
-.herodiv picture {
+.herodiv {
     position: relative;
     margin-bottom: 1.2em;
 }
@@ -139,6 +139,7 @@ main {
     grid-gap: .60em;
     font-weight: bold;
     box-shadow: 0 0 0.5em black;
+    opacity: .85;
     padding: 0.5em;
 }
 
