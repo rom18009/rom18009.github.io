@@ -202,6 +202,18 @@ main {
     color: #FED766;
 }
 
+/* Lazy Load */
+.lazyload {
+    width: 300px;
+    margin: auto;
+}
+
+.lazyoad img {
+    width: 300px;
+    height: 400px;
+    border: 2px solid #e1e1e1;
+}
+
 /* Contact Area */
 .contactdiv {
     border: 1px solid black;
@@ -219,7 +231,13 @@ main {
 }
 
 .contact_map {
-    display: none;
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 1;
+    margin: auto;
+    border: 1px solid #E89700;
+    border-radius: 0.3125em;
+    filter: drop-shadow(1px 2px 1px grey);
 }
 
 .contact_info {
