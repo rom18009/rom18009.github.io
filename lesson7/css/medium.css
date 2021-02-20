@@ -133,6 +133,15 @@
 		width: 30px;
 	}
 
+	/* Gallery Container */
+	.gallery_container {
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 0.5em;
+	}
+
+	.gallery_container h2:nth-child(1) {
+		grid-column: 1 / span 2;
+	}
 
 	/* Footer */
 	footer {

@@ -202,7 +202,7 @@ main {
     color: #FED766;
 }
 
-/* Lazy Load */
+/* Lazy Load Assignment*/
 .lazyload {
     width: 300px;
     margin: auto;
@@ -218,6 +218,42 @@ main {
     width: 300px;
     height: 400px;
     border: 2px solid #000;
+}
+
+/* Gallery Container */
+.gallery_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-content: center;
+    grid-gap: 1em;
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 1.8em 10em;
+}
+
+.gallery_container img {
+    filter: blur(0em);
+    transition: 0.5s;
+}
+
+.gallery_container img[data-src] {
+    filter: blur(0.2em);
+}
+
+.gallery_container figure {
+    text-align: center;
+    margin: 0;
+}
+
+.gallery_container figcaption {
+    background-color: #dddddd;
+    padding: 1em;
+    margin: 0;
+}
+
+.gallery_container h2 {
+    text-align: center;
 }
 
 /* Contact Area */
@@ -264,7 +300,7 @@ main {
 footer {
     align-items: center;
     text-align: center;
-    background-color: #26313A;
+    background-color: #000;
     color: #E89700;
     padding: 1em;
     border-radius: 5px;
