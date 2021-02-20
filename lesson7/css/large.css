@@ -26,10 +26,6 @@
 		padding: 1.8em 10em;
 	}
 
-	.gallery_container h2:nth-child(1) {
-		grid-column: 1 / span 3;
-	}
-
 	.gallery_container figure:hover {
 		box-shadow: 0 0 30px rgba(33, 33, 33, 1);
 	}

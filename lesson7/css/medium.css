@@ -139,10 +139,6 @@
 		grid-gap: 0.5em;
 	}
 
-	.gallery_container h2:nth-child(1) {
-		grid-column: 1 / span 2;
-	}
-
 	/* Footer */
 	footer {
 		margin: auto;
