@@ -223,7 +223,7 @@ main {
 /* Gallery Container */
 .gallery_container {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(1, auto);
     justify-content: center;
     align-content: center;
     grid-gap: 1em;

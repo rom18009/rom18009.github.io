@@ -115,6 +115,12 @@
 		width: 30%;
 	}
 
+	/* Gallery Container */
+	.gallery_container {
+		grid-template-columns: repeat(2, auto);
+		grid-gap: 0.5em;
+	}
+
 	/* Contact Area */
 	.contactdiv {
 		display: grid;
@@ -131,12 +137,6 @@
 		text-align: center;
 		margin: 1em;
 		width: 30px;
-	}
-
-	/* Gallery Container */
-	.gallery_container {
-		grid-template-columns: 1fr 1fr;
-		grid-gap: 0.5em;
 	}
 
 	/* Footer */
