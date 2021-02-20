@@ -1,42 +1,36 @@
-const images = document.querySelectorAll('img');
+// https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Loading
+// From Source code - https://github.com/mdn/pwa-examples/tree/master/js13kpwa
 
-const options = {
-    // If the image gets within 50px in the Y axis, start the download.
-    rootMargin: '0px',
-    threshold: 0.1
+// Progressive loading images
+const imagesToLoad = document.querySelectorAll("img[data-src]");
+
+// 
+const imgOptions = {
+    threshold: 0,
+    rootMargin: "0px 0px 100px 0px"
 };
 
-const fetchImage = (img) => {
-    console.log(img)
-    return new Promise((resolve, reject) => {
-        const image = new Image();
-        image.src = img;
-        image.onload = resolve;
-        image.onerror = reject;
+const loadImages = (image) => {
+    image.setAttribute('src', image.getAttribute('data-src'));
+    image.onload = () => {
+        image.removeAttribute('data-src');
+    };
+};
+if ('IntersectionObserver' in window) {
+    const imgObserver = new IntersectionObserver((items, observer) => {
+        items.forEach((item) => {
+            if (item.isIntersecting) {
+                loadImages(item.target);
+                imgObserver.unobserve(item.target);
+            }
+        });
+    });
+
+    imagesToLoad.forEach((img) => {
+        imgObserver.observe(img);
+    });
+} else {
+    imagesToLoad.forEach((img) => {
+        loadImages(img);
     });
 }
-
-const loadImage = (image) => {
-    const src = image.dataset.src;
-    fetchImage(src).then(() => {
-        console.log(src)
-        image.src = src
-    })
-}
-
-const handleIntersection = (entries, observer) => {
-    entries.forEach(entry => {
-        if (entry.intersectionRatio > 0) {
-            console.log(entry.intersectionRatio);
-            loadImage(entry.target)
-            observer.unobserve(entry.target);
-        }
-    })
-}
-
-// The observer for the images on the page
-const observer = new IntersectionObserver(handleIntersection, options);
-
-images.forEach(img => {
-    observer.observe(img);
-})
