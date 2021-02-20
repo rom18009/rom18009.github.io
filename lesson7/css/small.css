@@ -244,12 +244,11 @@ main {
 .gallery_container figure {
     text-align: center;
     margin: 0;
-    padding: 0 0 5px 0;
     background-color: rgb(207, 207, 207);
 }
 
 .gallery_container figcaption {
-    padding: 1em;
+    padding: .5em;
     margin: 0;
 }
 
