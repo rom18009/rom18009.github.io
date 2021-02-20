@@ -20,7 +20,7 @@
 	.gallery_container {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
-		grid-gap: 2em;
+		grid-gap: 1.25em;
 		margin: 0 auto;
 		max-width: 100%;
 		padding: 1.8em 10em;
