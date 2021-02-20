@@ -208,10 +208,16 @@ main {
     margin: auto;
 }
 
-.lazyoad img {
+.lazyload picture img[data-src] {
+    filter: blur(2em);
+}
+
+.lazyoad picture img {
+    filter: blur(0em);
+    transition: filter 0.5s;
     width: 300px;
     height: 400px;
-    border: 2px solid #e1e1e1;
+    border: 2px solid #000;
 }
 
 /* Contact Area */
