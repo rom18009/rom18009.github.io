@@ -34,7 +34,7 @@ header {
     color: #E89700;
 }
 
-header.sitelogo img {
+header img {
     width: 60px;
     height: auto;
     float: left;
