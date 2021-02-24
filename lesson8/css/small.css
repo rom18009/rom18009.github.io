@@ -423,34 +423,6 @@ footer a {
 }
 
 /* Lesson 8 - Table Build Activity */
-body {
-    background-color: #EFF1F3;
-}
-
-footer {
-    margin: 1.25em auto;
-}
-
-header {
-    background-color: #696773;
-}
-
-header h1 {
-    color: #FED766;
-    filter: drop-shadow(0.15em 0.125em 0.15em black);
-    text-align: center;
-    font-size: xx-large;
-    margin: auto;
-}
-
-header,
-body,
-main,
-table,
-footer {
-    font-family: 'Roboto', sans-serif;
-    padding: 1em;
-}
 
 table {
     box-shadow: 10px 10px 10px #628ca6;
