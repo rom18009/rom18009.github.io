@@ -1,0 +1,52 @@
+/* Lesson 8 - Table Build Activity */
+
+table {
+    box-shadow: 10px 10px 10px #628ca6;
+    margin: 1em auto 6em auto;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+#table_head {
+    background-color: #7fb9c2;
+    color: black;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: .35em;
+}
+
+th {
+    background-color: #628ca6;
+    color: white;
+}
+
+tr {
+    background-color: #e7f0ed;
+}
+
+tr:nth-child(even) {
+    background-color: #e7ffed;
+}
+
+tbody tr:nth-child(4) td:nth-child(3) {
+    background-color: #628ca6;
+    color: white;
+}
+
+tbody tr:nth-child(5) td:first-child {
+    font-style: italic;
+}
+
+tfoot td {
+    font-size: .75em;
+    background-color: #7fb9c2;
+}
+
+table,
+th,
+tr,
+td {
+    border: 2px solid #A9A9A9;
+    border-collapse: collapse;
+    padding: .5em;
+}
