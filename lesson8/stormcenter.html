@@ -55,78 +55,75 @@
         </ul>
     </nav>
     <main>
-        <!-- Placeholders for future work -->
+        <!-- Main Header -->
         <h2 class="main_h2">Storm Center Submission</h2>
+        <p>Welcome to the TruWeather Storm Center Submission page. Fill out the forms fields below and click on the "Report" button to submit.</p>
+        <!-- Form Area-->
+        <section class="stormcenter">
+            <form name="my-forms" action="/lesson8/thanks.html" method="GET">
+                <fieldset>
+                    <legend>Personal Details</legend>
+                    <label class="top">Full Name* <input type="text" name="fullname" pattern="[A-Za-z]{5,}"
+                            required></label>
+                    <label class="top">Email <input type="email" name="email" placeholder="someone@gmail.com"></label>
+                    <label class="top">Phone* <input type="tel" name="phone" placeholder="##########" required></label>
+                    <label class="top">Zip Code* <input type="number" name="zipcode" required></label>
+                </fieldset>
 
-        <!-- Hero Image and Floating Weather Summary-->
-        <div class="herodiv">
-            <picture>
-                <source srcset="images/wdd230_image_franklin800.jpg" media="(min-width: 676px) and (max-width: 1023px)">
-                <source srcset="images/wdd230_image_franklin1100.jpg" media="(min-width: 1024px)">
-                <img class="heroimage" alt="the rolling hills of idaho" src="images/wdd230_image_franklin500.jpg">
-            </picture>
-            <section class="weathersummary">
-                <h3 class="ws_title">Weather Summary</h3>
-                <div class="ws_names">
-                    <ul>
-                        <li>Currently:</li>
-                        <li>Current Temp:</li>
-                        <li>High Temp:</li>
-                        <li>Low Temp:</li>
-                        <li>Wind Chill:</li>
-                        <li>Humidity:</li>
-                        <li>Wind Speed:</li>
-                    </ul>
-                </div>
+                <fieldset>
+                    <legend>Storm Information</legend>
+                    <label class="top">Storm Date <input type="date" name="stormdate"></label>
+                    <label class="top">Storm Severity <input list="stormtype" name="type">
+                        <datalist id="stormtype">
+                            <option value="Flash Flood">
+                            <option value="Hail">
+                            <option value="Hurricane">
+                            <option value="Thunderstorm">
+                            <option value="Tornado">
+                        </datalist>
+                    </label>
 
-                <div class="ws_values">
-                    <ul>
-                        <li><span id="current-desc">Cloudy</span></li>
-                        <li><span id="current-temp">29</span>&deg;</li>
-                        <li><span id="high-temp">45</span>&deg;</li>
-                        <li><span id="low-temp">27</span>&deg;</li>
-                        <li><span id="windchill"></span></li>
-                        <li><span id="humidity">59</span>%</li>
-                        <li><span id="windspeed">40</span> mph</li>
-                    </ul>
-                </div>
-            </section>
-        </div>
+                    <label class="top">Storm Severity Rating: &nbsp;&nbsp;&nbsp;
+                        <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks"
+                            oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                        <span id="ratingvalue">5</span>
+                    </label>
+                    <datalist id="tickmarks">
+                        <option value="0">
+                        <option value="1">
+                        <option value="2">
+                        <option value="3">
+                        <option value="4">
+                        <option value="5">
+                        <option value="6">
+                        <option value="7">
+                        <option value="8">
+                        <option value="9">
+                        <option value="10">
+                    </datalist>
+                    <label class="top">Storm Region
+                        <select name="region" id="region" onchange="selectResponse()">
+                            <option selected disabled>Select Region...</option>
+                            <option value="preston">Preston</option>
+                            <option value="sodasprings">Soda Springs</option>
+                            <option value="fishhaven">Fish Haven</option>
+                        </select>
+                    </label>
+                    <div class="danger">User in-danger?</div>
+                    <label class="sbs"><input type="radio" name="danger" value="yes"> Yes</label>
+                    <label class="sbs"><input type="radio" name="danger" value="maybe"> Maybe</label>
+                    <label class="sbs"><input type="radio" name="danger" value="no"> No</label>
+                </fieldset>
 
-        <!-- Five Day Forecast -->
-        <h2 class="fc_title">5 Day Forecast</h2>
-        <div class="forecastdiv">
-            <div class="fc_header"><span id="fc_dayone"></span>Sun</div>
-            <div class="fc_header"><span id="fc_daytwo"></span>Mon</div>
-            <div class="fc_header"><span id="fc_dayfour"></span>Wed</div>
-            <div class="fc_header"><span id="fc_daythree"></span>Tue</div>
-            <div class="fc_header"><span id="fc_dayfive"></span>Thur</div>
+                <fieldset>
+                    <legend>Additional Information</legend>
+                    <label class="top">Comments: <textarea name="comments"></textarea></label>
+                </fieldset>
 
-            <div class="fc_icon"><img src="images/icon_cloudy.png" alt="Cloudy Icon" class="fc_img"></div>
-            <div class="fc_icon"><img src="images/icon_rainy.png" alt="Rainy Icon" class="fc_img"></div>
-            <div class="fc_icon"><img src="images/icon_rainy.png" alt="Rainy Icon" class="fc_img"></div>
-            <div class="fc_icon"><img src="images/icon_cloudy.png" alt="Cloudy Icon" class="fc_img"></div>
-            <div class="fc_icon"><img src="images/icon_sunny.png" alt="Sunny Icon" class="fc_img"></div>
+                <input type="submit" value="Report" class="btnReport">
 
-            <div class="fc_footer"><span class="fc_temp">36&deg;</span></div>
-            <div class="fc_footer"><span class="fc_temp">38&deg;</span></div>
-            <div class="fc_footer"><span class="fc_temp">39&deg;</span></div>
-            <div class="fc_footer"><span class="fc_temp">39&deg;</span></div>
-            <div class="fc_footer"><span class="fc_temp">42&deg;</span></div>
-        </div>
-
-        <!-- Article 1 -->
-        <article class="article_1">
-            <img class="art1_img" src="images/article1_mild_winter.jpg"
-                alt="Preston Idaho with mountains, field with melting snow puddle in the middle">
-            <h3 class="art1_title">Mild Winter</h3>
-            <p class="art1_content">The winter of 2020-2021 has been pretty mild. Is this from Global Warming? Is it
-                just something else to add onto the Covid-19 ending of the year 2020? It's only February and spring is
-                right around the corner and whatever the reasons, the local farmers are still holding out hope for
-                moisture in the mountains. This is where their precious water for crops replenishes rivers, lakes,
-                and wells... <a href="#">Click here to follow the story</a>
-            </p>
-        </article>
+            </form>
+        </section>
 
         <!-- Contact Information -->
         <div class="contactdiv">
@@ -158,7 +155,7 @@
     <!-- Scripts -->
     <script src='js/dates.js'></script>
     <script src='js/hamburger.js'></script>
-    <script src='js/windchill.js'></script>
+    <script src='js/form.js'></script>
     <!-- Web Font Loader Activity -->
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script src="js/webfont.js"></script>

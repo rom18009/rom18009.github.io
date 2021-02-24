@@ -113,14 +113,6 @@ nav {
     border-radius: 0.125em;
 }
 
-/* Main  */
-main {
-    max-width: 1060px;
-    margin: 0.625em auto;
-    margin-bottom: 0;
-    padding: 10px 0px 0px 0px ;
-}
-
 /* Hero Div */
 .herodiv {
     position: relative;
@@ -168,6 +160,14 @@ main {
     color: #FED766;
 }
 
+/* Main  */
+main {
+    max-width: 1060px;
+    margin: 0.625em auto;
+    margin-bottom: 0;
+    padding: 10px 0px 0px 0px ;
+}
+
 /* Forecast Area */
 .forecastdiv,
 .fc_title {
@@ -176,16 +176,17 @@ main {
 
 /* Main Content */
 
-.article_1 {
+main article.article_1 {
     border: 1px solid black;
     background-color: #5FB0D9;
     color: #000000;
     line-height: 1.75em;
     padding: 2em;
     margin: 3em auto;
+    width: 100%;
 }
 
-.art1_title {
+main article.article_1 h3 {
     color: #000000;
     letter-spacing: 1.25px;
     border-bottom: 0.125em solid #000000;
@@ -193,15 +194,16 @@ main {
     margin-bottom: 8px;
 }
 
-.art1_img {
-    width: 100%;
-    margin: auto;
+main article.article_1 img {
+    width: 50%;
+    margin: 0 0 0 3%;
+    float: right;
 }
 
-.article_1 p a {
+main article.article_1 p a {
     text-decoration: none;
     font-style: italic;
-    color: #FED766;
+    color: aliceblue;
 }
 
 /* Lazy Load Assignment*/
@@ -260,23 +262,125 @@ main div.gallery_container figure.gallery_photo figcaption {
     font-size: .90em;
 }
 
+/* Form Area */
+
+section.stormreporting {
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 1.5em 1em;
+}
+
+main section.stormcenter form fieldset {
+    margin: 2rem;
+    border: 1px solid #0064a7;
+    border-radius: 5px;
+    padding: 0.5rem 2%;
+}
+
+form legend {
+    color: #0064a7;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0 1rem;
+    padding: 0 0.5rem;
+}
+
+form label.top,
+form div {
+    display: block;
+    padding-top: 1rem;
+    font-size: 1.2rem;
+}
+
+form label.top,
+form label.top select {
+    display: block;
+    color: #272727;
+    width: 85%;
+    max-width: 30rem;
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+
+form label.top  {
+    display: block;
+}
+
+form label.sbs {
+    display: block;
+    padding: 0.75em 0.75em;
+    color: #272727;
+    
+}
+
+form label.sbs input {
+    width: auto;
+    margin-left: 0.125rem;
+}
+
+main section.stormcenter fieldset div.danger {
+    color: #d20a0a;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0.75em 0.75em;
+}
+
+main section.stormcenter fieldset label.top textarea {
+    padding: 1rem;
+    line-height: 1.5;
+    border-radius: 0.313rem;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px #999;
+}
+
+main section.stormcenter input.btnReport {
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: #E89700;
+    color: #272727;
+    border-radius: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    margin: 0 0 2rem;
+    width: 15rem;
+}
+
+form input.btnReport:hover {
+    background-color: #009FB7;
+    border-radius: 0.5rem;
+}
+
+form label.top input:required {
+    border: #ff0000 solid 0.112rem;
+}
+
+form label.top input:required:valid {
+    border: green solid 0.125rem;
+}
+
+form input,
+form textarea {
+    border-radius: 0.3rem;
+    width: 85%;
+    padding: 0.5em;
+}
+
 /* Contact Area */
-.contactdiv {
-    border: 1px solid black;
+main div.contactdiv {
+    border: .75px solid black;
     background-color: #59A86A;
     padding: 2em;
     display: grid;
     grid-template-columns: 1fr;
 }
 
-.contact_h3 {
+main div.contactdiv h3 {
     color: #000000;
     letter-spacing: 1.25px;
     border-bottom: 0.125em solid #000000;
     text-align: center;
 }
 
-.contact_map {
+main div.contactdiv .contact_map {
     display: grid;
     grid-column: 1/2;
     grid-row: 1;
@@ -286,7 +390,7 @@ main div.gallery_container figure.gallery_photo figcaption {
     filter: drop-shadow(1px 2px 1px grey);
 }
 
-.contact_info {
+main div.contact_info {
     font-weight: bold;
     text-align: left;
     line-height: 2;
@@ -294,7 +398,7 @@ main div.gallery_container figure.gallery_photo figcaption {
     padding: 0 10px;
 }
 
-.contact_info .socialicons {
+main div.contact_info .socialicons {
     text-align: center;
     margin: .25em;
     width: 35px;
@@ -307,7 +411,6 @@ footer {
     background-color: #000;
     color: #E89700;
     padding: 1em;
-    border-radius: 5px;
 }
 
 footer p {

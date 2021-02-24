@@ -26,7 +26,8 @@
 		/* padding: 1.8em 10em; */
 	}
 
-	main .gallery_container figure.gallery_photo:hover {
+	main div.gallery_container figure.gallery_photo:hover {
 		box-shadow: 0 0 30px rgba(33, 33, 33, 1);
 	}
+
 }
