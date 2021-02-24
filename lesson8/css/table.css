@@ -1,14 +1,14 @@
 /* Lesson 8 - Table Build Activity */
 
 table {
-    box-shadow: 10px 10px 10px #628ca6;
+    box-shadow: 10px 10px 10px #4e7894;
     margin: 1em auto 6em auto;
     text-align: center;
     font-size: 1.2em;
 }
 
 #table_head {
-    background-color: #7fb9c2;
+    background-color: #7cb4bd;
     color: black;
     font-size: 1.5em;
     font-weight: bold;
@@ -16,20 +16,20 @@ table {
 }
 
 th {
-    background-color: #628ca6;
+    background-color: #5d8aa7;
     color: white;
 }
 
 tr {
-    background-color: #e7f0ed;
+    background-color: #ebf5f1;
 }
 
 tr:nth-child(even) {
-    background-color: #e7ffed;
+    background-color: #e4fdf3;
 }
 
 tbody tr:nth-child(4) td:nth-child(3) {
-    background-color: #628ca6;
+    background-color: #5d8aa7;
     color: white;
 }
 
@@ -39,7 +39,7 @@ tbody tr:nth-child(5) td:first-child {
 
 tfoot td {
     font-size: .75em;
-    background-color: #7fb9c2;
+    background-color: #7cb4bd;
 }
 
 table,
