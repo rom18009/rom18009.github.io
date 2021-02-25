@@ -129,7 +129,6 @@
 
 	.contact_info {
 		grid-column: 2/3;
-		grid-row: 1fr;
 		margin: auto;
 	}
 
