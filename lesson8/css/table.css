@@ -1,7 +1,7 @@
 /* Lesson 8 - Table Build Activity */
 
 table {
-    box-shadow: 10px 10px 10px #4e7894;
+    box-shadow: 10px 10px 10px #a2a7aa;
     margin: 1em auto 6em auto;
     text-align: center;
     font-size: 1.2em;
@@ -28,13 +28,9 @@ tr:nth-child(even) {
     background-color: #e4fdf3;
 }
 
-tbody tr:nth-child(4) td:nth-child(3) {
+tbody tr td.nov_salesgoal {
     background-color: #5d8aa7;
     color: white;
-}
-
-tbody tr:nth-child(5) td:first-child {
-    font-style: italic;
 }
 
 tfoot td {
