@@ -7,7 +7,7 @@ const imagesToLoad = document.querySelectorAll("img[data-src]");
 // From Kevin Powell - https://www.youtube.com/watch?v=mC93zsEsSrg&ab_channel=KevinPowell
 const imgOptions = {
     threshold: 0,
-    rootMargin: "0px 0px 100px 0px"
+    rootMargin: "0px 0px -500px 0px"
 };
 
 const loadImages = (image) => {
@@ -19,6 +19,7 @@ const loadImages = (image) => {
 if ('IntersectionObserver' in window) {
     const imgObserver = new IntersectionObserver((items, observer) => {
         items.forEach((item) => {
+            // console.log(item);
             if (item.isIntersecting) {
                 loadImages(item.target);
                 imgObserver.unobserve(item.target);
