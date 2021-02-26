@@ -6,7 +6,7 @@ const imagesToLoad = document.querySelectorAll("img[data-src]");
 
 // From Kevin Powell - https://www.youtube.com/watch?v=mC93zsEsSrg&ab_channel=KevinPowell
 const imgOptions = {
-    threshold: 0,
+    threshold: .5,
     rootMargin: "0px 0px -500px 0px"
 };
 
