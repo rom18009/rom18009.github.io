@@ -1,5 +1,9 @@
 /* Lesson 8 - Table Build Activity */
 
+h1 {
+    text-align: center;
+}
+
 table {
     box-shadow: 10px 10px 10px #a2a7aa;
     margin: 1em auto 6em auto;
