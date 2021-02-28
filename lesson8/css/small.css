@@ -74,7 +74,7 @@ main section.thankyou {
     margin-bottom: 20px;
 }
 
-main section.stormcenter p {
+main section.stormhead p {
     text-align: center;
     line-height: 1.5;
     padding: 2%;
@@ -278,13 +278,13 @@ main div.gallery_container figure.gallery_photo figcaption {
 
 /* Form Area */
 
-section.stormreporting {
+main div.stormreporting {
     margin: 0 auto;
     max-width: 100%;
     padding: 1.5em 1em;
 }
 
-main section.stormcenter form fieldset {
+main div.stormcenter form fieldset {
     margin: 2rem;
     border: 1px solid #0064a7;
     border-radius: 5px;
@@ -332,14 +332,14 @@ form label.sbs input {
     margin-left: 0.125rem;
 }
 
-main section.stormcenter fieldset div.danger {
+main div.stormcenter fieldset div.danger {
     color: #d20a0a;
     font-weight: bold;
     text-transform: uppercase;
     padding: 0.75em 0.75em;
 }
 
-main section.stormcenter fieldset label.top textarea {
+main div.stormcenter fieldset label.top textarea {
     padding: 1rem;
     line-height: 1.5;
     border-radius: 0.313rem;
@@ -347,7 +347,7 @@ main section.stormcenter fieldset label.top textarea {
     box-shadow: 1px 1px 1px #999;
 }
 
-main section.stormcenter input.btnReport {
+main div.stormcenter input.btnReport {
     font-size: 1.5rem;
     font-weight: bold;
     background-color: #E89700;
