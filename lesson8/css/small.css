@@ -74,6 +74,13 @@ main section.thankyou {
     margin-bottom: 20px;
 }
 
+main section.stormcenter p {
+    text-align: center;
+    line-height: 1.5;
+    padding: 2%;
+    margin-bottom: 10px;
+}
+
 /* Navigation Bar */
 nav {
     background-color: #59A86A;
