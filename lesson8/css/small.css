@@ -278,10 +278,10 @@ main div.gallery_container figure.gallery_photo figcaption {
 
 /* Form Area */
 
-main div.stormreporting {
+main div.stormcenter {
     margin: 0 auto;
-    max-width: 100%;
-    padding: 1.5em 1em;
+    min-width: 30px;
+    padding: 0;
 }
 
 main div.stormcenter form fieldset {
@@ -291,7 +291,7 @@ main div.stormcenter form fieldset {
     padding: 0.5rem 2%;
 }
 
-form legend {
+main div.stormcenter form legend {
     color: #0064a7;
     font-size: 1.2rem;
     font-weight: bold;
@@ -299,15 +299,15 @@ form legend {
     padding: 0 0.5rem;
 }
 
-form label.top,
-form div {
+main div.stormcenter form label.top,
+main div.stormcenter form div {
     display: block;
     padding-top: 1rem;
     font-size: 1.2rem;
 }
 
-form label.top,
-form label.top select {
+main div.stormcenter form label.top,
+main div.stormcenter form label.top select {
     display: block;
     color: #272727;
     width: 85%;
@@ -316,18 +316,18 @@ form label.top select {
     padding: 1rem;
 }
 
-form label.top {
+main div.stormcenter form label.top {
     display: block;
 }
 
-form label.sbs {
+main div.stormcenter form label.sbs {
     display: block;
     padding: 0.75em 0.75em;
     color: #272727;
 
 }
 
-form label.sbs input {
+main div.stormcenter form label.sbs input {
     width: auto;
     margin-left: 0.125rem;
 }
@@ -358,21 +358,21 @@ main div.stormcenter input.btnReport {
     width: 15rem;
 }
 
-form input.btnReport:hover {
+main div.stormcenter form input.btnReport:hover {
     background-color: #009FB7;
     border-radius: 0.5rem;
 }
 
-form label.top input:required {
+main div.stormcenter form label.top input:required {
     border: #ff0000 solid 0.112rem;
 }
 
-form label.top input:required:valid {
+main div.stormcenter form label.top input:required:valid {
     border: green solid 0.125rem;
 }
 
-form input,
-form textarea {
+main div.stormcenter form input,
+main div.stormcenter form textarea {
     border-radius: 0.3rem;
     width: 85%;
     padding: 0.5em;
