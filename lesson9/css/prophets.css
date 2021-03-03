@@ -14,7 +14,8 @@ body {
 
 header,
 main,
-.cards {
+.cards,
+footer {
     margin: 1.25em auto;
     max-width: 1060px;
 }
@@ -27,10 +28,19 @@ header {
     margin: 2px auto;
 }
 
+footer {
+    align-items: center;
+    text-align: center;
+    background-color: #26313A;
+    color: #ffd077;
+    padding: 6px;
+}
+
 /* Small Viewport */
 @media only screen and (min-width: 520px) {
 
-    header {
+    header,
+    footer {
         border-radius: 5px;
     }
 
