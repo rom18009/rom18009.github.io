@@ -25,7 +25,7 @@ header {
     background-color: #26313A;
     color: #ffd077;
     padding: 6px;
-    margin: 2px auto;
+    margin: auto;
 }
 
 footer {
@@ -33,7 +33,7 @@ footer {
     text-align: center;
     background-color: #26313A;
     color: #ffd077;
-    padding: 6px;
+    padding: 6px; 
 }
 
 /* Small Viewport */
@@ -74,9 +74,9 @@ footer {
 
 .cards section {
     border: 1px solid #5c5a66;
-    padding: 0.4em;
+    padding: 6px;
     text-align: center;
-    background-color: rgb(167, 166, 166);
+    background-color: #A6A6A6;
 }
 
 .cards section h2 {
