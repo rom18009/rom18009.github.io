@@ -94,11 +94,6 @@ footer {
     margin: 1em auto;
 }
 
-.returnlink {
-    text-align: center;
-}
-
-
 /* Medium Viewport */
 @media only screen and (min-width: 600px) {
 
