@@ -52,75 +52,21 @@
     </nav>
     <main>
         <!-- Placeholders for future work -->
-        <h2 class="main_h2">Preston Idaho</h2>
+        <h2 class="main_h2">TruWeather Home</h2>
 
-        <!-- Hero Image and Floating Weather Summary-->
-        <div class="herodiv">
-            <picture>
-                <source srcset="images/wdd230_image_franklin800.jpg" media="(min-width: 676px) and (max-width: 1023px)">
-                <source srcset="images/wdd230_image_franklin1100.jpg" media="(min-width: 1024px)">
-                <img class="heroimage" alt="the rolling hills of idaho" src="images/wdd230_image_franklin500.jpg">
-            </picture>
-            <section class="weathersummary">
-                <h3 class="ws_title">Weather Summary</h3>
-                <div class="ws_names">
-                    <ul>
-                        <li>Currently:</li>
-                        <li>Current Temp:</li>
-                        <li>High Temp:</li>
-                        <li>Low Temp:</li>
-                        <li>Wind Chill:</li>
-                        <li>Humidity:</li>
-                        <li>Wind Speed:</li>
-                    </ul>
-                </div>
-
-                <div class="ws_values">
-                    <ul>
-                        <li><span id="current-desc">Cloudy</span></li>
-                        <li><span id="current-temp">29</span>&deg;</li>
-                        <li><span id="high-temp">45</span>&deg;</li>
-                        <li><span id="low-temp">27</span>&deg;</li>
-                        <li><span id="windchill"></span></li>
-                        <li><span id="humidity">59</span>%</li>
-                        <li><span id="windspeed">40</span> mph</li>
-                    </ul>
-                </div>
-            </section>
-        </div>
-
-        <!-- Five Day Forecast -->
-        <h2 class="fc_title">5 Day Forecast</h2>
-        <div class="forecastdiv">
-            <div class="fc_header"><span id="fc_dayone"></span>Sun</div>
-            <div class="fc_header"><span id="fc_daytwo"></span>Mon</div>
-            <div class="fc_header"><span id="fc_dayfour"></span>Wed</div>
-            <div class="fc_header"><span id="fc_daythree"></span>Tue</div>
-            <div class="fc_header"><span id="fc_dayfive"></span>Thur</div>
-
-            <div class="fc_icon"><img src="images/icon_cloudy.png" alt="Cloudy Icon" class="fc_img"></div>
-            <div class="fc_icon"><img src="images/icon_rainy.png" alt="Rainy Icon" class="fc_img"></div>
-            <div class="fc_icon"><img src="images/icon_rainy.png" alt="Rainy Icon" class="fc_img"></div>
-            <div class="fc_icon"><img src="images/icon_cloudy.png" alt="Cloudy Icon" class="fc_img"></div>
-            <div class="fc_icon"><img src="images/icon_sunny.png" alt="Sunny Icon" class="fc_img"></div>
-
-            <div class="fc_footer"><span class="fc_temp">36&deg;</span></div>
-            <div class="fc_footer"><span class="fc_temp">38&deg;</span></div>
-            <div class="fc_footer"><span class="fc_temp">39&deg;</span></div>
-            <div class="fc_footer"><span class="fc_temp">39&deg;</span></div>
-            <div class="fc_footer"><span class="fc_temp">42&deg;</span></div>
-        </div>
+        <div class="towns"></div>
 
         <!-- Article 1 -->
-        <article class="article_1">
-            <img class="art1_img" src="images/article1_mild_winter.jpg"
-                alt="Preston Idaho with mountains, field with melting snow puddle in the middle">
-            <h3 class="art1_title">Mild Winter</h3>
-            <p class="art1_content">The winter of 2020-2021 has been pretty mild. Is this from Global Warming? Is it
-                just something else to add onto the Covid-19 ending of the year 2020? It's only February and spring is
-                right around the corner and whatever the reasons, the local farmers are still holding out hope for
-                moisture in the mountains. This is where their precious water for crops replenishes rivers, lakes,
-                and wells... <a href="#">Click here to follow the story</a>
+        <article class="article_2">
+            <img class="art2_img" src="images/article2_avalanche.jpg"
+                alt="Avalanche in rugged, rocky mountain side">
+            <h3 class="art2_title">Dangerous Avalanche Conditions</h3>
+            <p class="art2_content">Of the last couple of weeks the local Preston Sheriff's office has been getting
+                overwhelming amounts of calls involving outdoor anthusiates needing rescued. Most backcountry areas 
+                around Preston are a dream for thrill seekers, but the weather conditions are turning thrills into 
+                tragedy. There have been two fatal avalanches and mutliple people needing help. The accumulation of 
+                several feet of new snow on top of dryer almost sugary snow is the perfect recipe for avalanches...<a
+                    href="https://www.idahostatejournal.com/freeaccess/local-sheriffs-inundated-with-rescue-calls-warn-of-treacherous-avalanche-conditions/article_60c078dc-4a96-586a-a2bc-198cc6db6cce.html">Click to follow the story</a>
             </p>
         </article>
 
@@ -152,9 +98,9 @@
     </footer>
 
     <!-- Scripts -->
-    <script src='js/dates.js'></script>
-    <script src='js/hamburger.js'></script>
-    <script src='js/windchill.js'></script>
+    <script src="js/dates.js"></script>
+    <script src="js/hamburger.js"></script>
+    <script src="js/towns.js"></script>
     <!-- Web Font Loader Activity -->
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script src="js/webfont.js"></script>

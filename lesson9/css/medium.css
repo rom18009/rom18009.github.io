@@ -1,6 +1,7 @@
 @media only screen and (min-width: 42.250em) {
 
 	/* Header */
+
 	header img {
 		width: 70%;
 		height: auto;
@@ -12,6 +13,7 @@
 	}
 
 	/* Navigation Bar */
+
 	.navbar {
 		display: flex;
 		justify-content: center;
@@ -42,6 +44,7 @@
 	}
 
 	/* Hero Area */
+
 	.weathersummary {
 		position: absolute;
 		top: 30px;
@@ -57,6 +60,7 @@
 	}
 
 	/* Five Day Forecast */
+
 	.forecastdiv,
 	.fc_h3 {
 		display: block;
@@ -103,12 +107,42 @@
 	}
 
 	.forecastdiv div {
-		/* box-shadow: 0 0 0.5em black; */
 		border-radius: 0.3125em;
 		overflow: hidden;
 	}
 
+	/* Homepage Towns*/
+
+	.towns section {
+		background-color: #272727;
+		text-align: center;
+		display: flex;
+		flex-direction: row;
+		margin: .5rem;
+		border-radius: 0.5rem;
+		padding: 2em;
+	}
+
+	.towns div p {
+		color: white;
+	}
+
+	.towns section:nth-child(3) {
+		flex-direction: row-reverse;
+	}
+
+	.towns section img {
+		width: 50%;
+		margin: 1em;
+	}
+
+	.towns div {
+		width: 50%;
+		line-height: 1.5;
+	}
+
 	/* Article 1 */
+
 	.art1_img {
 		float: right;
 		padding-left: 12px;
@@ -116,12 +150,14 @@
 	}
 
 	/* Gallery Container */
+
 	main div.gallery_container {
 		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 		grid-gap: 0.5em;
 	}
 
 	/* Contact Area */
+
 	main div.contactdiv {
 		display: grid;
 		grid-template-columns: 1fr;
@@ -139,6 +175,7 @@
 	}
 
 	/* Footer */
+
 	footer {
 		margin: auto;
 	}

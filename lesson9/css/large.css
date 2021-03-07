@@ -2,6 +2,7 @@
 @media only screen and (min-width: 64rem) {
 
 	/* Header */
+
 	header img {
 		width: 100%;
 	}
@@ -16,7 +17,44 @@
 		margin-left: 17px;
 	}
 
+	.towns {
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-gap: 2em;
+	}
+
+	.towns section {
+		display: flex;
+		flex-direction: column;
+		margin: .5rem auto;
+		border-radius: 0.5rem;
+		padding: 2em;
+	}
+
+	.towns section:nth-child(3) {
+		flex-direction: column;
+	}
+
+	.towns section img {
+		width: 100%;
+		margin: 1em 0;
+		justify-content: end;
+	}
+
+	.towns h3 {
+		/* background: #3f3f3f; */
+		border-radius: 0.5rem;
+		padding: 1.25em;
+		font-size: 20px;
+	}
+
+	.towns div {
+		width: 100%;
+	}
+
+	
+
 	/* Gallery Container */
+
 	main div.gallery_container {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));

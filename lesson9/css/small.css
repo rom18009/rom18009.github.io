@@ -188,7 +188,7 @@ main {
     display: none;
 }
 
-/* Main Content */
+/* Article1 Content */
 
 main article.article_1 {
     border: 1px solid black;
@@ -220,7 +220,98 @@ main article.article_1 p a {
     color: aliceblue;
 }
 
+/* Article 2 Content */
+
+main article.article_2 {
+    border: 1px solid black;
+    background-color: #ffd077;
+    color: #000000;
+    line-height: 1.75em;
+    padding: 2em;
+    margin: 3em auto;
+    width: 100%;
+}
+
+main article.article_2 h3 {
+    color: #000000;
+    letter-spacing: 1.25px;
+    border-bottom: 0.125em solid #000000;
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+main article.article_2 img {
+    width: 50%;
+    margin: 0 0 0 3%;
+    float: right;
+}
+
+main article.article_2 p a {
+    text-decoration: none;
+    font-style: italic;
+    font-weight: bolder;
+    color: #000000;
+}
+
+/* Homepage Towns */
+
+.towns {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-content: center;
+    grid-gap: 0.5em;
+}
+
+.towns section {
+    background-color: #272727;
+    text-align: center;
+    margin: .5rem auto;
+    border-radius: 0.5rem;
+    padding: 0.4em;
+}
+
+.towns h2 {
+    color: #FED766;
+    font-weight: bold;
+    text-align: center;
+    line-height: 0.8;
+}
+
+.towns h3 {
+    color: #ff922c;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.towns div {
+    line-height: 1.5;
+}
+
+.towns div p {
+    color: white;
+}
+
+.towns section img {
+    width: 90%;
+    margin: 1em auto;
+}
+
+.Preston {
+    order: 1;
+}
+
+.Soda {
+    order: 2;
+}
+
+.Fish {
+    order: 3;
+}
+
 /* Lazy Load Assignment*/
+
 .lazyload {
     width: 300px;
     margin: auto;
@@ -239,6 +330,7 @@ main article.article_1 p a {
 }
 
 /* Gallery Container */
+
 main div.gallery_container {
     display: grid;
     grid-template-columns: repeat(1, auto);
@@ -324,7 +416,6 @@ main div.stormcenter form label.sbs {
     display: block;
     padding: 0.75em 0.75em;
     color: #272727;
-
 }
 
 main div.stormcenter form label.sbs input {
