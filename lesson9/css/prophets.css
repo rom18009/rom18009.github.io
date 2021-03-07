@@ -37,6 +37,7 @@ footer {
 }
 
 /* Small Viewport */
+
 @media only screen and (min-width: 520px) {
 
     header,

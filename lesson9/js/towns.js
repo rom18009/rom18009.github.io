@@ -1,3 +1,5 @@
+// Adpated from the prophets JSON Activity : https://byui.instructure.com/courses/125488/assignments/5028225?module_item_id=13622842
+
 const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
 
 fetch(requestURL)

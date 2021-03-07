@@ -253,7 +253,7 @@ main article.article_2 p a {
     color: #000000;
 }
 
-/* Homepage Towns */
+/* Town JSON Info */
 
 .towns {
     display: grid;
@@ -297,6 +297,8 @@ main article.article_2 p a {
     width: 90%;
     margin: 1em auto;
 }
+
+/* Town Order Set */
 
 .Preston {
     order: 1;
