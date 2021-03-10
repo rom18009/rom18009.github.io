@@ -1,5 +1,4 @@
 // API URL from OpenWeatherMap.org
-
 const apiURL = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=f53db318c33586f3b186050f6fe7e3ea';
 
 fetch(apiURL)
@@ -26,13 +25,12 @@ fetch(apiURL)
     });
 
 // Forecast API from OpenWeatherMap.org
-
 const forecastURL = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=f53db318c33586f3b186050f6fe7e3ea';
 
 fetch(forecastURL)
     .then((response) => response.json())
     .then((jsObject) => {
-        // OpenWeatherMAP.org Forecast Array for Week
+        // OpenWeatherMAP.org Forecast Array for Weekdays
         var weekday = new Array(7);
         weekday[0] = "Sun";
         weekday[1] = "Mon";
@@ -44,6 +42,8 @@ fetch(forecastURL)
 
         var fcHeader = document.getElementsByClassName("fc_header");
         var fcImg = document.getElementsByClassName("fc_img");
+
+        // dt_txt to pull 6 pm (18:00:00) data
         var data = jsObject.list.filter(item => item.dt_txt.includes("18:00:00"));
         var fcTemp = document.getElementsByClassName("fc_temp");
 
