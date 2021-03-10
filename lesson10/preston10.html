@@ -33,7 +33,7 @@
     <!-- Header with logo, sitename, and motto -->
     <header>
         <div class="sitelogo">
-            <a href="preston.html"><img src="images/truweather-128x128.png"
+            <a href="home.html"><img src="images/truweather-128x128.png"
                     alt="Colorful logo for TruWeather with orange sun over blue and green mountains"></a>
         </div>
         <div class="headings">
@@ -47,7 +47,7 @@
         <ul class="navbar">
             <li><a class="hamburger" href="#">&#9776; Menu</a></li>
             <li><a href="index.html">Home</a></li>
-            <li class="active"><a href="preston.html">Preston</a></li>
+            <li class="active"><a href="preston10.html">Preston</a></li>
             <li><a href="#">Soda Springs</a></li>
             <li><a href="#">Fish Haven</a></li>
             <li><a href="stormcenter.html">Storm Center</a></li>
@@ -56,7 +56,7 @@
     </nav>
     <main>
         <!-- Placeholders for future work -->
-        <h2 class="main_h2">Preston Idaho</h2>
+        <h2 class="main_h2">Preston, Idaho</h2>
 
         <!-- Hero Image and Floating Weather Summary-->
         <div class="herodiv">
@@ -81,38 +81,38 @@
 
                 <div class="ws_values">
                     <ul>
-                        <li><span id="current-desc">Cloudy</span></li>
-                        <li><span id="current-temp">29</span>&deg;</li>
-                        <li><span id="high-temp">45</span>&deg;</li>
-                        <li><span id="low-temp">27</span>&deg;</li>
+                        <li><span id="current-desc"></span></li>
+                        <li><span id="current-temp"></span>&deg;</li>
+                        <li><span id="high-temp"></span>&deg;</li>
+                        <li><span id="low-temp"></span>&deg;</li>
                         <li><span id="windchill"></span></li>
-                        <li><span id="humidity">59</span>%</li>
-                        <li><span id="windspeed">40</span> mph</li>
+                        <li><span id="humidity"></span>%</li>
+                        <li><span id="windspeed"></span> mph</li>
                     </ul>
                 </div>
             </section>
         </div>
 
-        <!-- Five Day Forecast -->
+        <!-- Five Day Forecast removed content for API input-->
         <h2 class="fc_title">5 Day Forecast</h2>
         <div class="forecastdiv">
-            <div class="fc_header"><span id="fc_dayone"></span>Sun</div>
-            <div class="fc_header"><span id="fc_daytwo"></span>Mon</div>
-            <div class="fc_header"><span id="fc_daythree"></span>Tue</div>
-            <div class="fc_header"><span id="fc_dayfour"></span>Wed</div>
-            <div class="fc_header"><span id="fc_dayfive"></span>Thur</div>
+            <div class="fc_header"><span id="fc_dayone"></span></div>
+            <div class="fc_header"><span id="fc_daytwo"></span></div>
+            <div class="fc_header"><span id="fc_daythree"></span></div>
+            <div class="fc_header"><span id="fc_dayfour"></span></div>
+            <div class="fc_header"><span id="fc_dayfive"></span></div>
 
-            <div class="fc_icon"><img src="images/icon_cloudy.png" alt="Cloudy Icon" class="fc_img"></div>
-            <div class="fc_icon"><img src="images/icon_rainy.png" alt="Rainy Icon" class="fc_img"></div>
-            <div class="fc_icon"><img src="images/icon_rainy.png" alt="Rainy Icon" class="fc_img"></div>
-            <div class="fc_icon"><img src="images/icon_cloudy.png" alt="Cloudy Icon" class="fc_img"></div>
-            <div class="fc_icon"><img src="images/icon_sunny.png" alt="Sunny Icon" class="fc_img"></div>
+            <div class="fc_icon"><img src="" alt="" class="fc_img"></div>
+            <div class="fc_icon"><img src="" alt="" class="fc_img"></div>
+            <div class="fc_icon"><img src="" alt="" class="fc_img"></div>
+            <div class="fc_icon"><img src="" alt="" class="fc_img"></div>
+            <div class="fc_icon"><img src="" alt="" class="fc_img"></div>
 
-            <div class="fc_footer"><span class="fc_temp">36&deg;</span></div>
-            <div class="fc_footer"><span class="fc_temp">38&deg;</span></div>
-            <div class="fc_footer"><span class="fc_temp">39&deg;</span></div>
-            <div class="fc_footer"><span class="fc_temp">39&deg;</span></div>
-            <div class="fc_footer"><span class="fc_temp">42&deg;</span></div>
+            <div class="fc_footer"><span class="fc_temp"></span></div>
+            <div class="fc_footer"><span class="fc_temp"></span></div>
+            <div class="fc_footer"><span class="fc_temp"></span></div>
+            <div class="fc_footer"><span class="fc_temp"></span></div>
+            <div class="fc_footer"><span class="fc_temp"></span></div>
         </div>
 
         <!-- Article 1 -->
@@ -152,13 +152,13 @@
     <footer>
         <p>&copy; <span class="text-primary">T</span>ru<span class="text-primary">W</span>eather | Attributions | Mark
             A. Romriell | <a href="https://rom18009.github.io/">Portal Home Page</a></p>
-        <div><span id="currentDate"></span></div>
+        <div><a href="https://openweathermap.org//" target="_blank">OpenWeather.org</a> | <span id="currentDate"></span></div>
     </footer>
 
     <!-- Scripts -->
     <script src="js/dates.js"></script>
     <script src="js/hamburger.js"></script>
-    <script src="js/windchill.js"></script>
+    <script src="js/weatherapi.js"></script>
     <!-- Web Font Loader Activity -->
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script src="js/webfont.js"></script>
