@@ -9,14 +9,11 @@ const options = {
 };
 document.getElementById('currentDate').textContent = new Date().toLocaleDateString('en-GB', options);
 
-// // Current Year
-// document.getElementById('currentYear').textContent = new Date().getFullYear();
-
 // Shows Friday Announcement Banner if Day equals 5
 day = new Date().getDay();
 let announcement = document.getElementById("announcement");
 
-if (day == 5) {
+if (day == 1) {
     announcement.style.display = "block";
 } else {
     announcement.style.display = "none";
