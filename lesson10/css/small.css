@@ -1,0 +1,530 @@
+/* Utilities Section */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.text-primary {
+    color: #D85423;
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #EFF1F3;
+}
+
+/* Announcement */
+#announcement {
+    color: #000;
+    font-weight: 600;
+    background-color: #E89700;
+    padding: .60em;
+    text-align: center;
+}
+
+/* Header */
+header {
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #26313A;
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #E89700;
+}
+
+header img {
+    width: 60px;
+    height: auto;
+    float: left;
+}
+
+/* Headings */
+.headings h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    margin: 0 0 0 17px;
+}
+
+.motto {
+    font-style: italic;
+    letter-spacing: 1pt;
+    color: #EFF1F3;
+    margin-left: 20px;
+    font-size: .9rem;
+}
+
+h2,
+h3 {
+    font-family: 'Roboto', sans-serif;
+    color: #D85423;
+}
+
+h2 {
+    font-size: 1.5em;
+    text-align: center;
+    margin: .8rem auto;
+}
+
+main section.thankyou {
+    text-align: center;
+    line-height: 1.5;
+    padding: 2%;
+    margin-bottom: 20px;
+}
+
+main section.stormhead p {
+    text-align: center;
+    line-height: 1.5;
+    padding: 2%;
+    margin-bottom: 10px;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #59A86A;
+    font-family: 'Noto Sans', sans-serif;
+    text-align: center;
+    border-bottom: none;
+}
+
+.navbar {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.navbar li {
+    display: none;
+}
+
+.navbar li:first-child {
+    display: block;
+}
+
+.responsive li {
+    display: block;
+}
+
+.navbar a {
+    display: block;
+    color: black;
+    font-weight: 700;
+    padding: 0.75rem;
+    text-decoration: none;
+    text-align: left;
+}
+
+.navbar a:hover {
+    color: black;
+    background-color: #5FB0D9;
+}
+
+.navbar .active {
+    border: 0.125em solid #26313A;
+    border-radius: 0.125em;
+}
+
+/* Hero Div */
+.herodiv {
+    position: relative;
+    margin-bottom: 1.2em;
+}
+
+.heroimage {
+    display: block;
+    width: 100%;
+    margin: auto;
+}
+
+.weathersummary {
+    color: #000000;
+    background-color: #5FB0D9;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: .60em;
+    font-weight: bold;
+    box-shadow: 0 0 0.5em black;
+    padding: 0.5em;
+}
+
+.weathersummary .ws_names li,
+.weathersummary .ws_values li {
+    list-style: none;
+}
+
+.ws_title {
+    color: aliceblue;
+    grid-column: 1/3;
+    width: 90%;
+    border-bottom: 0.125em solid #000000;
+    justify-self: center;
+    text-align: center;
+    margin: 0;
+    padding-bottom: .2em;
+}
+
+.ws_names {
+    text-align: right;
+}
+
+.ws_values {
+    color: #FED766;
+}
+
+/* Main  */
+main {
+    max-width: 1060px;
+    margin: 0.625em auto;
+    margin-bottom: 0;
+    padding: 10px 0px 0px 0px;
+}
+
+/* Forecast Area */
+.forecastdiv,
+.fc_title {
+    display: none;
+}
+
+/* Article1 Content */
+
+main article.article_1 {
+    border: 1px solid black;
+    background-color: #5FB0D9;
+    color: #000000;
+    line-height: 1.75em;
+    padding: 2em;
+    margin: 3em auto;
+    width: 100%;
+}
+
+main article.article_1 h3 {
+    color: #000000;
+    letter-spacing: 1.25px;
+    border-bottom: 0.125em solid #000000;
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+main article.article_1 img {
+    width: 50%;
+    margin: 0 0 0 3%;
+    float: right;
+}
+
+main article.article_1 p a {
+    text-decoration: none;
+    font-style: italic;
+    color: aliceblue;
+}
+
+/* Article 2 Content */
+
+main article.article_2 {
+    border: 1px solid black;
+    background-color: #ffd077;
+    color: #000000;
+    line-height: 1.75em;
+    padding: 2em;
+    margin: 3em auto;
+    width: 100%;
+}
+
+main article.article_2 h3 {
+    color: #000000;
+    letter-spacing: 1.25px;
+    border-bottom: 0.125em solid #000000;
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+main article.article_2 img {
+    width: 50%;
+    margin: 0 0 0 3%;
+    float: right;
+}
+
+main article.article_2 p a {
+    text-decoration: none;
+    font-style: italic;
+    font-weight: bolder;
+    color: #000000;
+}
+
+/* Town JSON Info */
+
+.towns {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-content: center;
+    grid-gap: 0.5em;
+}
+
+.towns section {
+    background-color: #272727;
+    text-align: center;
+    margin: .5rem auto;
+    border-radius: 0.5rem;
+    padding: 0.4em;
+}
+
+.towns h2 {
+    color: #FED766;
+    font-weight: bold;
+    text-align: center;
+    line-height: 0.8;
+}
+
+.towns h3 {
+    color: #ff922c;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.towns div {
+    line-height: 1.5;
+}
+
+.towns div p {
+    color: white;
+}
+
+.towns section img {
+    width: 90%;
+    margin: 1em auto;
+}
+
+/* Town Order Set */
+
+.Preston {
+    order: 1;
+}
+
+.Soda {
+    order: 2;
+}
+
+.Fish {
+    order: 3;
+}
+
+/* Lazy Load Assignment*/
+
+.lazyload {
+    width: 300px;
+    margin: auto;
+}
+
+.lazyload picture img[data-src] {
+    filter: blur(2em);
+}
+
+.lazyoad picture img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+    width: 300px;
+    height: 400px;
+    border: 2px solid #000;
+}
+
+/* Gallery Container */
+
+main div.gallery_container {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    justify-content: center;
+    align-content: center;
+    grid-gap: 1em;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0em .75em 2em .75em;
+}
+
+
+main div.gallery_container figure.gallery_photo {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    background-color: rgb(207, 207, 207);
+}
+
+main div.gallery_container .gallery_photo img {
+    width: 100%;
+    filter: blur(0em);
+    transition: 2s;
+}
+
+main div.gallery_container figure.gallery_photo img[data-src] {
+    filter: blur(0.2em);
+}
+
+main div.gallery_container figure.gallery_photo figcaption {
+    width: 100%;
+    padding: .5em;
+    margin: 0;
+    text-align: center;
+    font-size: .90em;
+}
+
+/* Form Area */
+
+main div.stormcenter {
+    margin: 0 auto;
+    min-width: 30px;
+    padding: 0;
+}
+
+main div.stormcenter form fieldset {
+    margin: 2rem;
+    border: 1px solid #0064a7;
+    border-radius: 5px;
+    padding: 0.5rem 2%;
+}
+
+main div.stormcenter form legend {
+    color: #0064a7;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0 1rem;
+    padding: 0 0.5rem;
+}
+
+main div.stormcenter form label.top,
+main div.stormcenter form div {
+    display: block;
+    padding-top: 1rem;
+    font-size: 1.2rem;
+}
+
+main div.stormcenter form label.top,
+main div.stormcenter form label.top select {
+    display: block;
+    color: #272727;
+    width: 85%;
+    max-width: 30rem;
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+
+main div.stormcenter form label.top {
+    display: block;
+}
+
+main div.stormcenter form label.sbs {
+    display: block;
+    padding: 0.75em 0.75em;
+    color: #272727;
+}
+
+main div.stormcenter form label.sbs input {
+    width: auto;
+    margin-left: 0.125rem;
+}
+
+main div.stormcenter fieldset div.danger {
+    color: #d20a0a;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0.75em 0.75em;
+}
+
+main div.stormcenter fieldset label.top textarea {
+    padding: 1rem;
+    line-height: 1.5;
+    border-radius: 0.313rem;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px #999;
+}
+
+main div.stormcenter input.btnReport {
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: #E89700;
+    color: #272727;
+    border-radius: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    margin: 0 0 2rem;
+    width: 15rem;
+}
+
+main div.stormcenter form input.btnReport:hover {
+    background-color: #009FB7;
+    border-radius: 0.5rem;
+}
+
+main div.stormcenter form label.top input:required {
+    border: #ff0000 solid 0.112rem;
+}
+
+main div.stormcenter form label.top input:required:valid {
+    border: green solid 0.125rem;
+}
+
+main div.stormcenter form input,
+main div.stormcenter form textarea {
+    border-radius: 0.3rem;
+    width: 85%;
+    padding: 0.5em;
+}
+
+/* Contact Area */
+main div.contactdiv {
+    border: .75px solid black;
+    background-color: #59A86A;
+    padding: 2em;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+main div.contactdiv h3 {
+    color: #000000;
+    letter-spacing: 1.25px;
+    border-bottom: 0.125em solid #000000;
+    text-align: center;
+}
+
+main div.contactdiv .contact_map {
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 1;
+    margin: auto;
+    border: 1px solid #E89700;
+    border-radius: 0.3125em;
+    filter: drop-shadow(1px 2px 1px grey);
+}
+
+main div.contact_info {
+    font-weight: bold;
+    text-align: left;
+    line-height: 2;
+    margin: 2em;
+    padding: 0 10px;
+}
+
+main div.contact_info .socialicons {
+    text-align: center;
+    margin: .25em;
+    width: 35px;
+}
+
+/* Footer */
+footer {
+    align-items: center;
+    text-align: center;
+    background-color: #000;
+    color: #E89700;
+    padding: 1em;
+}
+
+footer p {
+    line-height: 1.6;
+}
+
+footer a {
+    text-decoration: none;
+    color: #FED766;
+}
