@@ -192,7 +192,7 @@ main {
 
 main article.article_1 {
     border: 1px solid black;
-    background-color: #5FB0D9;
+    background-color: #FED766;
     color: #000000;
     line-height: 1.75em;
     padding: 2em;
@@ -217,7 +217,7 @@ main article.article_1 img {
 main article.article_1 p a {
     text-decoration: none;
     font-style: italic;
-    color: aliceblue;
+    color: #000000;
 }
 
 /* Article 2 Content */
