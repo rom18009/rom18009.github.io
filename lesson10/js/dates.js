@@ -12,7 +12,7 @@ document.getElementById('currentDate').textContent = new Date().toLocaleDateStri
 // Shows Friday Announcement Banner if Day equals 5
 day = new Date().getDay();
 let announcement = document.getElementById("announcement");
-console.log(jsObject);
+
 if (day == 5) {
     announcement.style.display = "block";
 } else {
