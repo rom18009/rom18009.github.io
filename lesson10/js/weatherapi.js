@@ -15,11 +15,11 @@ fetch(apiURL)
         // Calculate Windchill (from current-temp - jsObject.main.temp & windspeed - jsObject.wind.speed) for wc (windchill) variable
         let t = (Math.round(jsObject.main.temp));
         let s = (Math.round(jsObject.wind.speed));
-        let wc = "N/A";
+        let wc = "n/a";
         if (t <= 50 && s >= 3.0) {
             let calc = (35.74 + (.6215 * t)) - (35.75 * (Math.pow(s, .16))) + (.4275 * (t * (Math.pow(s, .16))));
             wc = Math.round(calc) + " &#176;F";
-        }
+        } 
         // Inject wc var into windchill innerHTML element
         document.getElementById("windchill").innerHTML = wc;
     });
