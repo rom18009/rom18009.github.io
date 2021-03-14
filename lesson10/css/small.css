@@ -139,6 +139,8 @@ nav {
     margin: auto;
 }
 
+/* Weather Summary */
+
 .weathersummary {
     color: #000000;
     background-color: #5FB0D9;
@@ -172,6 +174,10 @@ nav {
 
 .ws_values {
     color: #FED766;
+}
+
+#current-desc {
+    text-transform: capitalize;
 }
 
 /* Main  */
