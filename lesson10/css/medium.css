@@ -59,6 +59,10 @@
 		font-size: 32px;
 	}
 
+	#current-desc {
+		text-transform: capitalize;
+	}
+
 	/* Five Day Forecast */
 
 	.forecastdiv,
