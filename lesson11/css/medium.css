@@ -143,18 +143,14 @@
 
 	/* Article Images */
 
-	.art1_img {
+	.art1_img,
+	.art2_img,
+	.art3_img,
+	.art4_img {
 		float: right;
 		padding-left: 12px;
 		width: 30%;
 	}
-
-	.art2_img {
-		float: right;
-		padding-left: 12px;
-		width: 30%;
-	}
-
 
 	/* Gallery Container */
 

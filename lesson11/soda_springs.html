@@ -55,17 +55,17 @@
         </ul>
     </nav>
     <main>
-        <!-- Placeholders for future work -->
-        <h2 class="main_h2">Soda Springs, Idaho</h2>
+        <!-- Main Header ID -->
+        <h2 id="main_h2">Soda Springs, Idaho</h2>
 
         <!-- Hero Image and Floating Weather Summary-->
         <div class="herodiv">
             <picture>
-                <source srcset="images/hero_images/hero_preston_800.jpg"
+                <source srcset="images/hero_images/hero_soda_springs_800.jpg"
                     media="(min-width: 676px) and (max-width: 1023px)">
-                <source srcset="images/hero_images/hero_preston_1100.jpg" media="(min-width: 1024px)">
-                <img class="heroimage" alt="Mountain area around Preston, ID"
-                    src="images/hero_images/hero_preston_500.jpg">
+                <source srcset="images/hero_images/hero_soda_springs_1100.jpg" media="(min-width: 1024px)">
+                <img class="heroimage" alt="Geyser shooting up in the air in Soda Springs, ID"
+                    src="images/hero_images/hero_soda_springs_500.jpg">
             </picture>
             <section class="weathersummary">
                 <h3 class="ws_title">Weather Summary</h3>
@@ -119,21 +119,27 @@
         </div>
 
         <!-- Article 1 -->
-        <article class="article_1">
-            <img class="art1_img" src="images/article1_mild_winter.jpg"
-                alt="Preston Idaho with mountains, field with melting snow puddle in the middle">
-            <h3 class="art1_title">Mild Winter</h3>
-            <p class="art1_content">The winter of 2020-2021 has been pretty mild. Is this from Global Warming? Is it
-                just something else to add onto the Covid-19 ending of the year 2020? It's only February and spring is
-                right around the corner and whatever the reasons, the local farmers are still holding out hope for
-                moisture in the mountains. This is where their precious water for crops is replenished in rivers, lakes,
-                and wells... <a href="#">Click here to follow the story</a>
+        <article class="article_3">
+            <img class="art3_img" src="images/article3_soda-water.jpg"
+                alt="Arm reaching into soda water spring to fill cup">
+            <h3 class="art3_title">What's in the Water?</h3>
+            <p class="art3_content">Settlers on the Oregon Trail used to stop in Soda Springs for water from one of the
+                nearly thousand fresh mineral water springs. The naturally carbonated water is still an attraction for
+                this small Idaho city. Hooper Springs has a pavilion over a carbonated spring where to this day you
+                can still dip a cup into the spring to try some of the water. Some say that the water is lightly
+                carbonated, a bit sweeter and more mineralized than bottled carbonated water that can be found in... <a
+                    href="#"> continue reading here.</a>
             </p>
         </article>
 
+        <section class="eventssection">
+            <h2>Events</h2>
+            <div id="townevents"></div>
+        </section>
+
         <!-- Contact Information -->
         <div class="contactdiv">
-            <img class="contact_map" src="images/map_preston.png" alt="Google Map of the Preston City and Area">
+            <img class="contact_map" src="images/map_soda_springs.jpg" alt="Google Map of the Preston City and Area">
             <div class="contact_info">
                 <h3 class="contact_h3">Contact Information</h3>
                 <p>&#10140; 756 S. State St. Preston, ID 83263</p>
@@ -163,6 +169,7 @@
     <script src='js/dates.js'></script>
     <script src='js/hamburger.js'></script>
     <script src='js/weatherapi_ss.js'></script>
+    <script src='js/events.js'></script>
     <!-- Web Font Loader Activity -->
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script src='js/webfont.js'></script>
