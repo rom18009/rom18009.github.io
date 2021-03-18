@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Set Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- External Fonts API -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!-- Normalize External Source -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <!-- Style Sources -->
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <!-- Favicon -->
+    <link rel="icon" href="../favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="128x128" href="images/apple-touch-icon.png">
+    <!-- Title and Description -->
+    <meta name="description"
+        content="Fish Haven Town Weather Site with OpenWeatherMap.org API| Mark Romriell in WDD 230, Winter 2020 Semester at Brigham Young University - Idaho">
+    <title>TruWeather | Fish Haven</title>
+</head>
+
+<body>
+    <!-- Announcement Banner -->
+    <aside id="announcement">Saturday = Preston Pancakes in the Park!
+        <br>9:00 a.m. Saturday at the city park pavilion.</aside>
+
+    <!-- Header with logo, sitename, and motto -->
+    <header>
+        <div class="sitelogo">
+            <a href="index.html"><img src="images/truweather-128x128.png"
+                    alt="Colorful logo for TruWeather with orange sun over blue and green mountains"></a>
+        </div>
+        <div class="headings">
+            <h1><span class="text-primary">T</span>ru<span class="text-primary">W</span>eather</h1>
+            <div class="motto">Weather that's honest!</div>
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul class="navbar">
+            <li><a class="hamburger" href="#">&#9776; Menu</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="soda_springs.html">Soda Springs</a></li>
+            <li class="active"><a href="fish_haven.html">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <!-- Placeholders for future work -->
+        <h2 class="main_h2">Fish Haven, Idaho</h2>
+
+        <!-- Hero Image and Floating Weather Summary-->
+        <div class="herodiv">
+            <picture>
+                <source srcset="images/hero_images/hero_preston_800.jpg"
+                    media="(min-width: 676px) and (max-width: 1023px)">
+                <source srcset="images/hero_images/hero_preston_1100.jpg" media="(min-width: 1024px)">
+                <img class="heroimage" alt="Mountain area around Preston, ID"
+                    src="images/hero_images/hero_preston_500.jpg">
+            </picture>
+            <section class="weathersummary">
+                <h3 class="ws_title">Weather Summary</h3>
+                <div class="ws_names">
+                    <ul>
+                        <li>Currently:</li>
+                        <li>Current Temp:</li>
+                        <li>High Temp:</li>
+                        <li>Low Temp:</li>
+                        <li>Wind Chill:</li>
+                        <li>Humidity:</li>
+                        <li>Wind Speed:</li>
+                    </ul>
+                </div>
+
+                <!-- Modified content to allow for API information -->
+                <div class="ws_values">
+                    <ul>
+                        <li><span id="current-desc"></span></li>
+                        <li><span id="current-temp"></span></li>
+                        <li><span id="high-temp"></span></li>
+                        <li><span id="low-temp"></span></li>
+                        <li><span id="windchill"></span></li>
+                        <li><span id="humidity"></span>%</li>
+                        <li><span id="windspeed"></span> mph</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+
+        <!-- Five Day Forecast removed content for API input-->
+        <h2 class="fc_title">5 Day Forecast</h2>
+        <div class="forecastdiv">
+            <div class="fc_header"><span id="fc_dayone"></span></div>
+            <div class="fc_header"><span id="fc_daytwo"></span></div>
+            <div class="fc_header"><span id="fc_daythree"></span></div>
+            <div class="fc_header"><span id="fc_dayfour"></span></div>
+            <div class="fc_header"><span id="fc_dayfive"></span></div>
+
+            <div class="fc_icon"><img src="#" alt="#" class="fc_img"></div>
+            <div class="fc_icon"><img src="#" alt="#" class="fc_img"></div>
+            <div class="fc_icon"><img src="#" alt="#" class="fc_img"></div>
+            <div class="fc_icon"><img src="#" alt="#" class="fc_img"></div>
+            <div class="fc_icon"><img src="#" alt="#" class="fc_img"></div>
+
+            <div class="fc_footer"><span class="fc_temp"></span></div>
+            <div class="fc_footer"><span class="fc_temp"></span></div>
+            <div class="fc_footer"><span class="fc_temp"></span></div>
+            <div class="fc_footer"><span class="fc_temp"></span></div>
+            <div class="fc_footer"><span class="fc_temp"></span></div>
+        </div>
+
+        <!-- Article 1 -->
+        <article class="article_1">
+            <img class="art1_img" src="images/article1_mild_winter.jpg"
+                alt="Preston Idaho with mountains, field with melting snow puddle in the middle">
+            <h3 class="art1_title">Mild Winter</h3>
+            <p class="art1_content">The winter of 2020-2021 has been pretty mild. Is this from Global Warming? Is it
+                just something else to add onto the Covid-19 ending of the year 2020? It's only February and spring is
+                right around the corner and whatever the reasons, the local farmers are still holding out hope for
+                moisture in the mountains. This is where their precious water for crops is replenished in rivers, lakes,
+                and wells... <a href="#">Click here to follow the story</a>
+            </p>
+        </article>
+
+        <!-- Contact Information -->
+        <div class="contactdiv">
+            <img class="contact_map" src="images/map_preston.png" alt="Google Map of the Preston City and Area">
+            <div class="contact_info">
+                <h3 class="contact_h3">Contact Information</h3>
+                <p>&#10140; 756 S. State St. Preston, ID 83263</p>
+                <p>&#9742; 208-852-4587</p>
+                <p>&#9993; info@truweather.com</p>
+                <a href="https://www.facebook.com" target="blank"><img class="socialicons"
+                        src="images/contact_facebook.png" alt="Facebook Icon"></a>
+                <a href="https://www.instagram.com" target="blank"><img class="socialicons"
+                        src="images/contact_instagram.png" alt="Instagram Icon"></a>
+                <a href="https://www.pinterest.com/" target="blank"><img class="socialicons"
+                        src="images/contact_pinterest.png" alt="Pinterest Icon"></a>
+                <a href="https://www.twitter.com" target="blank"><img class="socialicons"
+                        src="images/contact_twitter.png" alt="Twitter Icon"></a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer + OpenWeatherMap.org link for -->
+    <footer>
+        <p>&copy; <span class="text-primary">T</span>ru<span class="text-primary">W</span>eather | Attributions | Mark
+            A. Romriell | <a href="https://rom18009.github.io/">Portal Home Page</a></p>
+        <div><a href="https://openweathermap.org//" target="_blank">OpenWeather.org</a> | <span id="currentDate"></span>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src='js/dates.js'></script>
+    <script src='js/hamburger.js'></script>
+    <script src='js/weatherapi_fh.js'></script>
+    <!-- Web Font Loader Activity -->
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src='js/webfont.js'></script>
+</body>
+
+</html>

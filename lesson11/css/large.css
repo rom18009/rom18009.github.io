@@ -1,0 +1,70 @@
+/* 64em is also 1028px when basefont is 16px */
+@media only screen and (min-width: 64rem) {
+
+	/* Header */
+
+	header img {
+		width: 100%;
+	}
+
+	.headings h1 {
+		font-size: 3rem;
+	}
+
+	.motto {
+		letter-spacing: 1.5pt;
+		font-size: larger;
+		margin-left: 17px;
+	}
+
+	/* Town JSON Info */
+
+	.towns {
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-gap: 2em;
+	}
+
+	.towns section {
+		display: flex;
+		flex-direction: column;
+		margin: .5rem auto;
+		border-radius: 0.5rem;
+		padding: 2em;
+	}
+
+	.towns section:nth-child(3) {
+		flex-direction: column;
+	}
+
+	.towns section img {
+		width: 100%;
+		margin: 1em 0;
+		justify-content: end;
+	}
+
+	.towns h3 {
+		border-radius: 0.5rem;
+		padding: 1.25em;
+		font-size: 20px;
+	}
+
+	.towns div {
+		width: 100%;
+	}
+
+
+	/* Gallery Container */
+
+	main div.gallery_container {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		grid-gap: 1.25em;
+		margin: 0 auto;
+		width: 100%;
+	}
+
+	main div.gallery_container figure.gallery_photo:hover {
+		box-shadow: 0 0 30px rgba(33, 33, 33, 1);
+	}
+
+}
