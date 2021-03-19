@@ -55,7 +55,7 @@
 		opacity: .85;
 	}
 
-	.main_h2 {
+	#main_h2 {
 		font-size: 32px;
 	}
 
@@ -125,6 +125,10 @@
 
 	.towns div p {
 		color: white;
+	}
+
+	.towns section:nth-child(2) {
+		flex-direction: row-reverse;
 	}
 
 	.towns section:nth-child(3) {

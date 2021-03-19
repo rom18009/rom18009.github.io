@@ -377,6 +377,7 @@ main article.article_4 p a {
     font-size: 1em;
     font-weight: bold;
     text-align: center;
+    padding-bottom: 10px;
 }
 
 .towns div {
@@ -385,6 +386,8 @@ main article.article_4 p a {
 
 .towns div p {
     color: white;
+    padding-bottom: 15px;
+    font-size: 15px;
 }
 
 .towns section img {
