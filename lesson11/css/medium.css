@@ -69,7 +69,7 @@
 	.forecastdiv {
 		display: grid;
 		grid-template-columns: repeat(5, 1fr);
-		grid-gap: 1.25%;
+		grid-gap: 1.75%;
 		padding: 0.313rem;
 		width: 80%;
 		margin: 0 auto;

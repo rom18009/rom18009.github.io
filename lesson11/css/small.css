@@ -210,7 +210,7 @@ main article.article_1 {
     color: #000000;
     line-height: 1.75em;
     padding: 2em;
-    margin: 3em auto;
+    margin: 2em auto;
     width: 100%;
 }
 
@@ -242,7 +242,7 @@ main article.article_2 {
     color: #000000;
     line-height: 1.75em;
     padding: 2em;
-    margin: 3em auto;
+    margin: 2em auto;
     width: 100%;
 }
 
@@ -268,7 +268,7 @@ main article.article_3 {
     color: #000000;
     line-height: 1.75em;
     padding: 2em;
-    margin: 3em auto;
+    margin: 2em auto;
     width: 100%;
 }
 
@@ -301,7 +301,7 @@ main article.article_4 {
     color: #000000;
     line-height: 1.75em;
     padding: 2em;
-    margin: 3em auto;
+    margin: 2em auto;
     width: 100%;
 }
 
@@ -315,7 +315,7 @@ main article.article_4 h3 {
 
 main article.article_4 img {
     width: 45%;
-    margin: 0 0 0 6%;
+    margin: 0 0 0 7%;
     float: right;
 }
 
@@ -334,9 +334,9 @@ main article.article_4 p a {
     background-color: #696773;
     color: white;
     line-height: 1.5em;
-    padding: 2em;
+    padding: 1.25em;
     margin: 1.5em auto;
-    max-width: 848px;
+    max-width: 1060px;
 }
 
 .eventssection h2 {
