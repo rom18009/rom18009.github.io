@@ -1,0 +1,81 @@
+{
+  "businesses": [
+    {
+	  "name": "Summit Eyecare",
+	  "address": "301 S 4th Ave",
+	  "city": "Pocatello",
+	  "state": "ID",
+	  "zipcode": "83201",
+	  "phone": "(208) 637-0841",
+	  "order": 1,
+	  "logo": "https://summiteyeexperience.com/storage/app/media/15_logo_New_11-17-15.png",
+	  "url": "https://summiteyeexperience.com/"
+	},
+    {
+	  "name": "Racine Olson",
+	  "address": "201 E. Center",
+	  "city": "Pocatello",
+	  "state": "ID",
+	  "zipcode": "83201",
+	  "phone": "(208) 232-6101",	  
+	  "order": 2,
+	  "logo": "https://www.racinelaw.net/images/justia-racinelaw-net.png",
+	  "url": "https://www.racinelaw.net/"
+	},
+    {
+	  "name": "University Financial Group, LLC",
+	  "address": "500 S. 11th Ste. #403",
+	  "city": "Pocatello",
+	  "state": "ID",
+	  "zipcode": "83201",
+	  "phone": "(208) 234-1800",
+	  "order": 3,
+	  "logo": "https://static.fmgsuite.com/media/images/4abe4340-e258-40fa-bea5-54b186bd18db.png",
+	  "url": "https://www.myunifi.com/"
+	},
+    {
+	  "name": "Farm Bureau Mutual Insurance Company of Idaho",
+	  "address": "275 Tierra Vista Drive",
+	  "city": "Pocatello",
+	  "state": "ID",
+	  "zipcode": "83201",
+	  "phone": "(208) 232-7914",
+	  "order": 4,
+	  "logo": "https://www.idahofarmbureauinsurance.com/contents/data/2018/07/farm-bureau-logo.png",
+	  "url": "https://www.idahofarmbureauinsurance.com/"	  
+	},
+    {
+	  "name": "Buddy's, Inc.",
+	  "address": "626 E Lewis St.",
+	  "city": "Pocatello",
+	  "state": "ID",
+	  "zipcode": "83201",
+	  "phone": "(208) 233-1172",
+	  "order": 5,
+	  "logo": "https://le-cdn.hibuwebsites.com/f4f688b0d38b4cb68f9172888fe40d14/dms3rep/multi/opt/logo-55609928-190w.png",
+	  "url": "https://www.buddysitalian.com/"
+	},
+    {
+	  "name": "The TMJ Center",
+	  "address": "1777 East Clark #240",
+	  "city": "Pocatello",
+	  "state": "ID",
+	  "zipcode": "83201",
+	  "phone": "(208) 234-7246",
+	  "order": 6,
+	  "logo": "https://le-cdn.hibuwebsites.com/c82b6a1fc6114372b86a12d18933c2a2/dms3rep/multi/opt/The-TMJ-Sleep-Center-logo-320w.png",
+	  "url": "https://www.thetmjsleepcenter.com/"
+	},
+    {
+	  "name": "Zoo Idaho",
+	  "address": "P.O. Box 4169",
+	  "city": "Pocatello",
+	  "state": "ID",
+	  "zipcode": "83205",
+	  "phone": "(208) 234-6196",
+	  "order": 7,
+	  "logo": "https://zooidaho.org/wp-content/uploads/2016/03/zoo-logo.png",
+	  "url": "https://members.pocatelloidaho.com/list/member/zoo-idaho-8047"
+	}
+  ]
+}
