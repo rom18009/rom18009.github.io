@@ -1,5 +1,5 @@
 WebFont.load({
     google: {
-        families: ['Noto Sans', 'Roboto']
+        families: ['Open Sans', 'Roboto']
     }
 });

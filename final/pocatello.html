@@ -6,7 +6,8 @@
     <!-- Set Viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- External Fonts API -->
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Roboto:wght@300;400&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Roboto:wght@300;400&display=swap"
         rel="stylesheet">
     <!-- Normalize External Source -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
@@ -16,258 +17,138 @@
     <link rel="stylesheet" href="css/large.css">
     <!-- Favicon -->
     <link rel="icon" href="../favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="128x128" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon_32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="128x128" href="images/favicon/apple-touch-icon.png">
     <!-- Title and Description -->
     <meta name="description"
         content="Final Project - Chamber of Commerce Site | Mark Romriell in WDD 230, Winter 2020 Semester at Brigham Young University - Idaho">
-    <title>Pocatello Chamber of Commerce - Home</title>
+    <title>Pocatello Chamber of Commerce - Pocatello Page</title>
 </head>
 
-<body id="home">
-    <header class="hero">
-        <div id="navbar" class="navbar top">
-            <h1 class="logo">
-                <span class="text-primary">Pocatello</span>Chamber
-            </h1>
-            <nav>
-                <ul>
-                    <li class="active"><a href="index.html">Home</a></li>
-                    <li><a href="pocatello.html">Pocatello</a></li>
-                    <li><a href="join.html">Join</a></li>
-                    <li><a href="directory.html">Directory</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-
-        <div class="content">
-            <h1>The Sky Is The Limit</h1>
-            <p>We provide world class financial assistance</p>
-            <a href="join.html" class="btn"><i class="fas fa-chevron-right"></i> Read More</a>
-        </div>
+<body>
+    <!-- Header with logo-->
+    <header>
+        <div class="sitelogo"><a href="index.html"><img src="images/mainlogo.jpg"
+                    alt="Green on white Pocatello Chamber logo"></a></div>
     </header>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul class="navbar">
+            <li><a class="hamburger" href="#">&#9776; Menu</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="pocatello.html">Pocatello</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
 
     <main>
-        <!-- About: Icons -->
-        <section id="about" class="icons bg-light">
-            <div class="flex-items">
-                <div>
-                    <i class="fas fa-university fa-2x"></i>
-                    <div>
-                        <h3>Investment Banking</h3>
-                        <p>
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                            Tempore, iusto!
-                        </p>
-                    </div>
-                </div>
-                <div>
-                    <i class="fas fa-book-reader fa-2x"></i>
-                    <div>
-                        <h3>Portfolio Manager</h3>
-                        <p>
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                            Tempore, iusto!
-                        </p>
-                    </div>
-                </div>
-                <div>
-                    <i class="fas fa-pencil-alt fa-2x"></i>
-                    <div>
-                        <h3>Tax & Custodial</h3>
-                        <p>
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                            Tempore, iusto!
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <!-- Hero Image and Floating Weather Summary-->
+        <div class="herodiv">
+            <picture>
+                <source srcset="images/hero_images/pocatello_hero_med.jpg"
+                    media="(min-width: 676px) and (max-width: 1023px)">
+                <source srcset="images/hero_images/pocatello_hero_large.jpg"
+                    media="(min-width: 1024px) and (max-width: 1100px)">
+                <img class="heroimage" alt="Pocatello Chamber of Commerce at night"
+                    src="images/hero_images/pocatello_hero_small.jpg">
+            </picture>
 
-        <!-- About:Solutions -->
-        <section class="solutions flex-columns">
-            <div class="row">
-                <div class="column">
-                    <div class="column-1">
-                        <img src="images/home/people.jpg" alt="" />
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="column-2 bg-primary">
-                        <h4>What you are looking for</h4>
-                        <h2>We provide bespoke solutions</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias
-                            illum, animi earum ea amet sequi reiciendis sit corporis sunt
-                            iusto cupiditate odio maxime adipisci cumque eligendi nemo
-                            dolore id itaque?
-                        </p>
-                        <a href="#" class="btn btn-outline">
-                            <i class="fas fa-chevron"></i>
-                            Read More
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
+            <h2 id="main_h2">Pocatello Image Gallery</h2>
 
-        <!-- Cases -->
-        <section id="cases" class="cases flex-grid section-padding">
-            <header class="section-header">
-                <h4>This is what we do</h4>
-                <h2>Business Cases</h2>
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat,
-                    dolore!
-                </p>
-            </header>
-            <div class="row">
-                <div class="column">
-                    <a href="images/cases/cases1.jpg" data-lightbox="cases" data-title="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat,
-              dolore!">
-                        <img src="images/cases/cases1.jpg" alt="" />
-                    </a>
-                    <a href="images/cases/cases2.jpg" data-lightbox="cases" data-title="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat,
-              dolore!">
-                        <img src="images/cases/cases2.jpg" alt="" />
-                    </a>
-                </div>
-                <div class="column">
-                    <a href="images/cases/cases3.jpg" data-lightbox="cases" data-title="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat,
-            dolore!">
-                        <img src="images/cases/cases3.jpg" alt="" />
-                    </a>
-                    <a href="images/cases/cases4.jpg" data-lightbox="cases" data-title="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat,
-              dolore!">
-                        <img src="images/cases/cases4.jpg" alt="" />
-                    </a>
-                </div>
-                <div class="column">
-                    <a href="images/cases/cases5.jpg" data-lightbox="cases" data-title="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat,
-            dolore!">
-                        <img src="images/cases/cases5.jpg" alt="" />
-                    </a>
-                    <a href="images/cases/cases6.jpg" data-lightbox="cases" data-title="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat,
-              dolore!">
-                        <img src="images/cases/cases6.jpg" alt="" />
-                    </a>
-                </div>
-                <div class="column">
-                    <a href="images/cases/cases7.jpg" data-lightbox="cases" data-title="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat,
-            dolore!">
-                        <img src="images/cases/cases7.jpg" alt="" />
-                    </a>
-                    <a href="images/cases/cases8.jpg" data-lightbox="cases" data-title="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat,
-              dolore!">
-                        <img src="images/cases/cases8.jpg" alt="" />
-                    </a>
-                </div>
+            <!-- Gallery Area-->
+            <!-- Figure and figcaption semtantic elements https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure -->
+            <div class="gallery_container">
+                <figure class="gallery_photo">
+                    <img src="images/gallery/img400_placeholder.jpg" data-src="images/gallery/img400_downtown.jpg"
+                        alt="Downtown Pocatello">
+                    <figcaption>Historic Downtown Buildings</figcaption>
+                </figure>
+                <figure class="gallery_photo">
+                    <img src="images/gallery/img400_placeholder.jpg" data-src="images/gallery/img400_barn.jpg"
+                        alt="Weathered Old Barn">
+                    <figcaption>Weathered old barn near Pocatello shows the heritage of settlers</figcaption>
+                </figure>
+                <figure class="gallery_photo">
+                    <img src="images/gallery/img400_placeholder.jpg" data-src="images/gallery/img400_fall.jpg"
+                        alt="Autumn colored trees in the mountains by Pocatello">
+                    <figcaption>Various hiking and biking trails just minutes away</figcaption>
+                </figure>
+                <figure class="gallery_photo">
+                    <img src="images/gallery/img400_placeholder.jpg" data-src="images/gallery/img400_isu.jpg"
+                        alt="Idaho State University Campus with the Holt Arena">
+                    <figcaption>Idaho State University Campus with the Holt Arena</figcaption>
+                </figure>
+                <figure class="gallery_photo">
+                    <img src="images/gallery/img400_placeholder.jpg" data-src="images/gallery/img400_farm_expo.jpg"
+                        alt="Farm / Argicultural Expo inside the ISU Holt Arena">
+                    <figcaption>Farm / Argicultural Equipment Expo inside the ISU Holt Arena</figcaption>
+                </figure>
+                <figure class="gallery_photo">
+                    <img src="images/gallery/img400_placeholder.jpg" data-src="images/gallery/img400_forthall.jpg"
+                        alt="Forthall on the edge of the Forthall Indian Reservation">
+                    <figcaption>Forthall on the edge of the Forthall Indian Reservation</figcaption>
+                </figure>
+                <figure class="gallery_photo">
+                    <img src="images/gallery/img400_placeholder.jpg" data-src="images/gallery/img400_simplot.jpg"
+                        alt="J.R. Simplot Factory at night with colorful orange and yellow lights">
+                    <figcaption>J.R. Simplot Factory on the edge of Pocatello</figcaption>
+                </figure>
+                <figure class="gallery_photo">
+                    <img src="images/gallery/img400_placeholder.jpg" data-src="images/gallery/img400_train.jpg"
+                        alt="Union Pacific Raiload Train Engine">
+                    <figcaption>Union Pacific Raiload Train Engine</figcaption>
+                </figure>
+                <figure class="gallery_photo">
+                    <img src="images/gallery/img400_placeholder.jpg" data-src="images/gallery/img400_simplot_square.jpg"
+                        alt="Modern metal sculture / fountain in Simplot Square">
+                    <figcaption>Modern metal sculture / fountain in Simplot Square</figcaption>
+                </figure>
             </div>
-        </section>
 
-        <!-- Blog -->
-        <section id="blog" class="blog flex-columns flex-reverse">
-            <div class="row">
-                <div class="column">
-                    <div class="column-1">
-                        <img src="images/home/blog.jpg" alt="" />
+            <!-- Contact Information -->
+            <div class="contactdiv">
+                <div class="mapouter">
+                    <div class="gmap_canvas"><iframe width="250" height="250" id="gmap_canvas"
+                            src="https://maps.google.com/maps?q=324%20South%20Main,%20Pocatello&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><br>
                     </div>
                 </div>
-                <div class="column">
-                    <div class="column-2 bg-secondary">
-                        <h4>April 16 2020</h4>
-                        <h2>Blog Post One</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias
-                            illum, animi earum ea amet sequi reiciendis sit corporis sunt
-                            iusto cupiditate odio maxime adipisci cumque eligendi nemo
-                            dolore id itaque?
-                        </p>
-                        <a href="blog.html" class="btn btn-outline">
-                            <i class="fas fa-chevron"></i>
-                            Read Our Blog
-                        </a>
-                    </div>
+                <div class="contact_info">
+                    <h3 class="contact_h3">Contact Information</h3>
+                    <p>&#10140; 324 South Main Pocatello, ID 83204</p>
+                    <p>&#9742; (208) 233-1525</p>
+                    <p>&#9993; info@pocatelloidaho.com/</p>
+                    <a href="https://www.facebook.com" target="blank"><img class="socialicons"
+                            src="images/social/contact_facebook.png" alt="Facebook Icon"></a>
+                    <a href="https://www.instagram.com" target="blank"><img class="socialicons"
+                            src="images/social/contact_instagram.png" alt="Instagram Icon"></a>
+                    <a href="https://www.pinterest.com/" target="blank"><img class="socialicons"
+                            src="images/social/contact_pinterest.png" alt="Pinterest Icon"></a>
+                    <a href="https://www.twitter.com" target="blank"><img class="socialicons"
+                            src="images/social/contact_twitter.png" alt="Twitter Icon"></a>
                 </div>
             </div>
-        </section>
-
-        <!-- Team -->
-        <section id="team" class="team section-padding">
-            <header class="section-header">
-                <h4>Who we are</h4>
-                <h2>Our Professional Team</h2>
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat,
-                    dolore!
-                </p>
-            </header>
-            <div class="flex-items">
-                <div>
-                    <img src="images/team/person1.jpg" alt="" />
-                    <h4>John Doe</h4>
-                    <p>President</p>
-                </div>
-                <div>
-                    <img src="images/team/person2.jpg" alt="" />
-                    <h4>Jane Doe</h4>
-                    <p>Vice President</p>
-                </div>
-                <div>
-                    <img src="images/team/person3.jpg" alt="" />
-                    <h4>Steve Smith</h4>
-                    <p>Marketing Head</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact -->
-        <section id="contact" class="contact flex-columns">
-            <div class="row">
-                <div class="column">
-                    <div class="column-1">
-                        <img src="images/home/contact.jpg" alt="" />
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="column-2 bg-light">
-                        <h2>Request Callback</h2>
-                        <form action="" class="callback-form">
-                            <div class="form-control">
-                                <label for="name"></label>
-                                <input type="text" name="name" id="name" placeholder="Enter name" />
-                            </div>
-                            <div class="form-control">
-                                <label for="email"></label>
-                                <input type="email" name="email" id="email" placeholder="Enter email" />
-                            </div>
-                            <div class="form-control">
-                                <label for="phone"></label>
-                                <input type="text" name="phone" id="phone" placeholder="Enter phone" />
-                            </div>
-                            <input type="submit" value="Send" id="submit" class="btn" />
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
     </main>
 
-    <footer class="footer bg-dark">
-        <div class="social">
-            <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
-            <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
-            <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
-            <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+    <!-- Footer + OpenWeatherMap.org link for -->
+    <footer>
+        <p>&copy; Pocatello Chamber of Commerce | Attributions | Mark
+            A. Romriell | <a href="https://pocatelloidaho.com/">Actual Pocatello Chamber Site</a></p>
+        <div><a href="https://openweathermap.org//" target="_blank">OpenWeather.org</a> | <span id="currentDate"></span>
         </div>
-        <p>Copyright &copy; 2020 - EdgeLedger</p>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.5.0.min.js"
-        integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
-    <script src="js/navbar.js"></script>
-    <script src="js/lightbox.min.js"></script>
+
+    <!-- Scripts -->
+    <script src='js/dates.js'></script>
+    <script src='js/lazyload.js'></script>
+    <script src='js/hamburger.js'></script>
+    <script src='js/events.js'></script>
+    <!-- Web Font Loader Activity -->
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src='js/webfont.js'></script>
 </body>
 
 </html>

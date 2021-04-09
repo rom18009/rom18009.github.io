@@ -6,7 +6,8 @@
     <!-- Set Viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- External Fonts API -->
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Roboto:wght@300;400&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Roboto:wght@300;400&display=swap"
         rel="stylesheet">
     <!-- Normalize External Source -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
@@ -16,11 +17,155 @@
     <link rel="stylesheet" href="css/large.css">
     <!-- Favicon -->
     <link rel="icon" href="../favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="128x128" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon_32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="128x128" href="images/favicon/apple-touch-icon.png">
     <!-- Title and Description -->
     <meta name="description"
         content="Final Project - Chamber of Commerce Site | Mark Romriell in WDD 230, Winter 2020 Semester at Brigham Young University - Idaho">
     <title>Pocatello Chamber of Commerce - Join</title>
 </head>
+
+<body>
+
+    <!-- Header with logo-->
+    <header>
+        <div class="sitelogo"><a href="index.html"><img src="images/mainlogo.jpg"
+                    alt="Green on white Pocatello Chamber logo"></a></div>
+    </header>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul class="navbar">
+            <li><a class="hamburger" href="#">&#9776; Menu</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pocatello.html">Pocatello</a></li>
+            <li class="active"><a href="join.html">Join</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+
+        <!-- Hero Image -->
+        <div class="herodiv">
+            <picture>
+                <source srcset="images/hero_images/join_hero_med.jpg"
+                    media="(min-width: 676px) and (max-width: 1023px)">
+                <source srcset="images/hero_images/join_hero_large.jpg"
+                    media="(min-width: 1024px) and (max-width: 1100px)">
+                <img class="heroimage" alt="Pocatello Chamber of Commerce at night"
+                    src="images/hero_images/join_hero_small.jpg">
+            </picture>
+
+            <!-- Form Area-->
+            <div class="joinform">
+                <form name="my-forms" action="thankyou.html" method="GET">
+                    <fieldset>
+                        <legend>Personal information</legend>
+                        <label class="top">First Name* <input type="text" name="fname" pattern="[A-Za-z\s]{1,}"
+                                required></label>
+                        <label class="top">Last Name* <input type="text" name="lname" pattern="[A-Za-z\s]{1,}"
+                                required></label>
+                        <label class="top">Title <br><input type="text" name="title" pattern="[A-Za-z\s]{1,}"></label>
+                        <label class="top">Email* <br><input type="email" name="email" placeholder="name@domain.com"
+                                required></label>
+                        <label class="top">Cell Phone* <input type="tel" name="phone"></label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Business Information</legend>
+                        <label class="top">Business Name <br><input type="text" name="busname" pattern="[A-Za-z\s]{1,}"
+                                required></label>
+                        <label class="top">Business Address <br><input type="text" name="busadd"></label>
+                        <label class="top">Business Website <br><input type="text" name="website"></label>
+                        <label class="top">Business Description <br><input type="text" name="busdesc"></label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Membership Level</legend>
+                        <label class="sbs"><input type="radio" name="memlevel" value="yes"> Non-Profit ($100)</label>
+                        <label class="sbs"><input type="radio" name="memlevel" value="yes"> Bronze ($200)</label>
+                        <label class="sbs"><input type="radio" name="memlevel" value="yes"> Silver ($400)</label>
+                        <label class="sbs"><input type="radio" name="memlevel" value="yes"> Gold ($1000)</label>
+                    </fieldset>
+                    <input type="submit" value="Submit" class="btnReport">
+                </form>
+            </div>
+
+            <h2 class="contacttbl">Membership Level Key</h2>
+
+            <table>
+                <tr>
+                    <th>Level</th>
+                    <th>Price</th>
+                    <th>Benefits</th>
+                </tr>
+                <tr>
+                    <td>Non-Profit</td>
+                    <td>$100</td>
+                    <td>Directory Listing, Social Media Posts</td>
+
+                </tr>
+                <tr>
+                    <td>Bronze</td>
+                    <td>$200</td>
+                    <td>Directory Listing, Social Media Posts, Luncheon Tickets</td>
+                </tr>
+                <tr>
+                    <td>Silver</td>
+                    <td>$400</td>
+                    <td>Directory Listing, Social Media Posts, Luncheon Tickets, Sponsorship with ad in the Idaho State
+                        Paper</td>
+                </tr>
+                <tr>
+                    <td>Gold</td>
+                    <td>$1000</td>
+                    <td>Directory Listing, Social Media Posts, Luncheon Tickets, Sponsorship with 3 month media slot on
+                        local tv station </td>
+                </tr>
+            </table>
+
+            <!-- Contact Information -->
+            <div class="contactdiv">
+                <div class="mapouter">
+                    <div class="gmap_canvas"><iframe width="250" height="250" id="gmap_canvas"
+                            src="https://maps.google.com/maps?q=324%20South%20Main,%20Pocatello&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><br>
+                    </div>
+                </div>
+                <div class="contact_info">
+                    <h3 class="contact_h3">Contact Information</h3>
+                    <p>&#10140; 324 South Main Pocatello, ID 83204</p>
+                    <p>&#9742; (208) 233-1525</p>
+                    <p>&#9993; info@pocatelloidaho.com/</p>
+                    <a href="https://www.facebook.com" target="blank"><img class="socialicons"
+                            src="images/social/contact_facebook.png" alt="Facebook Icon"></a>
+                    <a href="https://www.instagram.com" target="blank"><img class="socialicons"
+                            src="images/social/contact_instagram.png" alt="Instagram Icon"></a>
+                    <a href="https://www.pinterest.com/" target="blank"><img class="socialicons"
+                            src="images/social/contact_pinterest.png" alt="Pinterest Icon"></a>
+                    <a href="https://www.twitter.com" target="blank"><img class="socialicons"
+                            src="images/social/contact_twitter.png" alt="Twitter Icon"></a>
+                </div>
+            </div>
+    </main>
+
+    <!-- Footer + OpenWeatherMap.org link for -->
+    <footer>
+        <p>&copy; Pocatello Chamber of Commerce | Attributions | Mark
+            A. Romriell | <a href="https://pocatelloidaho.com/">Actual Pocatello Chamber Site</a></p>
+        <div><a href="https://openweathermap.org//" target="_blank">OpenWeather.org</a> | <span id="currentDate"></span>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src='js/dates.js'></script>
+    <script src="js/form.js"></script>
+    <script src='js/hamburger.js'></script>
+    <script src='js/events.js'></script>
+    <!-- Web Font Loader Activity -->
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src='js/webfont.js'></script>
+</body>
+
+</html>

@@ -17,9 +17,9 @@
     <link rel="stylesheet" href="css/large.css">
     <!-- Favicon -->
     <link rel="icon" href="../favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="128x128" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon_32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="128x128" href="images/favicon/apple-touch-icon.png">
     <!-- Title and Description -->
     <meta name="description"
         content="Final Project - Chamber of Commerce Site | Mark Romriell in WDD 230, Winter 2020 Semester at Brigham Young University - Idaho">
@@ -29,40 +29,180 @@
 <body>
     <!-- Announcement Banner -->
     <aside>
-        <div class="announcement">
-            <span class="announcement_button" onclick="closebutton()">&times;</span>
+        <div class="announcement"><span class="announcement_button" onclick="closebutton()">&times;</span>
             <span id="alert">No Weather Alert</span>
         </div>
     </aside>
 
-    <!-- Header with logo, sitename, and motto -->
+    <!-- Header with logo-->
     <header>
-        
-
-        <!-- Navigation Bar -->
-        <nav>
-            <div class="sitelogo"><a href="index.html"><img src="images/mainlogo.jpg" alt="Green on white Pocatello Chamber logo"></a></div>
-            
-            <ul class="navbar">
-                <li><a class="hamburger" href="#">&#9776; Menu</a></li>
-                <li class="active"><a href="index.html">Home</a></li>
-                <li><a href="pocatello.html">Pocatello</a></li>
-                <li><a href="join.html">Join</a></li>
-                <li><a href="directory.html">Directory</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-
+        <div class="sitelogo"><a href="index.html"><img src="images/mainlogo.jpg"
+                    alt="Green on white Pocatello Chamber logo"></a></div>
     </header>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul class="navbar">
+            <li><a class="hamburger" href="#">&#9776; Menu</a></li>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="pocatello.html">Pocatello</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
 
     <main>
+        <!-- Hero Image and Floating Weather Summary-->
+        <div class="herodiv">
+            <picture>
+                <source srcset="images/hero_images/home_hero_med.jpg"
+                    media="(min-width: 676px) and (max-width: 1023px)">
+                <source srcset="images/hero_images/home_hero_large.jpg" media="(min-width: 1024px)">
+                <img class="heroimage" alt="Pocatello Chamber of Commerce at night"
+                    src="images/hero_images/home_hero_small.jpg">
+            </picture>
 
+            <!-- Page Header over Hero -->
+            <div class="home_centered">
+                <h3>Pocatello Chamber of Commerce</h3>
+            </div>
+
+            <a href="join.html"><button class="btn">Join Now</button></a>
+
+            <div class="weathercontainer">
+                <section class="weathersummary">
+                    <h3 class="ws_title">Weather Summary</h3>
+                    <div class="ws_names">
+                        <ul>
+                            <li>Currently: <span id="current-desc"></span></li>
+                            <li>Current Temp: <span id="current-temp"></span></li>
+                            <li>Humidity: <span id="humidity" %></span></li>
+                        </ul>
+                    </div>
+                    <div class="ws_values">
+                    </div>
+                    <h2 class="fc_title">3 Day Forecast</h2>
+                    <div class="forecastdiv">
+                        <div class="fc_header">
+                            <h3 id="fc_dayone"></h3>
+                        </div>
+                        <div class="fc_header">
+                            <h3 id="fc_daytwo"></h3>
+                        </div>
+                        <div class="fc_header">
+                            <h3 id="fc_daythree"></h3>
+                        </div>
+
+                        <div class="fc_icon"><img src="#" alt="#" class="fc_img"></div>
+                        <div class="fc_icon"><img src="#" alt="#" class="fc_img"></div>
+                        <div class="fc_icon"><img src="#" alt="#" class="fc_img"></div>
+
+                        <div class="fc_footer"><span class="fc_temp"></span></div>
+                        <div class="fc_footer"><span class="fc_temp"></span></div>
+                        <div class="fc_footer"><span class="fc_temp"></span></div>
+                    </div>
+            </div>
+            </section>
+        </div>
+        <!-- Purpose -->
+        <article class="article_1">
+            <h3 class="art1_title">What We Are About</h3>
+            <p class="art1_content">The Pocatello Chamber of Commerce strengthens our local economy, promotes the
+                community, connects local businesses, advocates in the interest of business with government, and
+                develops community leaders. Key Message: The Pocatello Chamber of Commerce serves our business
+                community with remarkable opportunities through networking, advocating and educating not only
+                Chamber members but community members, too.</p>
+        </article>
+
+        <!-- Article 1 - Business Ad -->
+        <article class="article_2">
+            <img class="art2_img" src="images/idahostatejournal.jpg"
+                alt="Preston Idaho with mountains, field with melting snow puddle in the middle">
+            <h3 class="art2_title">Idaho State Journal</h3>
+            <p class="art2_content">The Idaho State Journal is a U.S. daily newspaper serving the Pocatello, Idaho,
+                area. The paper has a circulation of 17,116 daily, 17,825 Sunday. Prior owner Pioneer News Group sold
+                its papers to Adams Publishing Group in 2017. The Idaho State Journal began publication in 1890 as
+                the Pocatello Tribune.<a href="https://www.idahostatejournal.com/">Website</a>
+            </p>
+        </article>
+        <!-- Article 2 - Business Ad -->
+        <article class="article_3">
+            <img class="art3_img" src="images/iccu-logo.png"
+                alt="Preston Idaho with mountains, field with melting snow puddle in the middle">
+            <h3 class="art3_title">Idaho Central Credit Union</h3>
+            <p class="art3_content">Idaho Central is the premier credit union in Idaho and offers full-service locations
+                throughout the Treasure Valley, Magic Valley, Eastern Idaho, and North Idaho. We continue to look for
+                expansion opportunities in order to meet the needs of our members. While growth is vital to our success,
+                we remain focused on our mission, “Helping Members Achieve Financial Success,” by providing
+                exceptional service and diverse products to our membership.<a href="https://www.iccu.com/">Website</a>
+            </p>
+        </article>
+        <!-- Article 3 - Business Ad -->
+        <article class="article_4">
+            <img class="art4_img" src="images/Barries_logo_white-red.png" alt="Barries Ski and Sports">
+            <h3 class="art1_title">Barries Ski and Sports</h3>
+            <p class="art1_content">Barries Ski and Sports is a local business in Pocatello. They sell, services, trade
+                ski equipment, hiking and bicyles and most everything that deals with getting outdoors and into the
+                mountains. They have a very well known reputation for great deals and being true to their word. In
+                the community they give back through sponserships to local sports
+                clubs. <a href="https://www.barriessports.com/">Website</a>
+            </p>
+            </p>
+        </article>
+        <!-- Events -->
+        <section class="eventssection">
+            <h2>Events</h2>
+            <div id="townevents">
+                <h3>Run with the Big Dogs</h3>
+                <p>Saturday Apr 24, 2021</p>
+                <p>9:00 AM - 12:00 PM MDT</p>
+                <p><a href="https://www.pocatelloshelterfriends.org/run-with-the-big-dogs">Website</a></p>
+                <h3>AMVETS Pancake Breakfast</h3>
+                <p>Saturday May 1, 2021</p>
+                <p>8:00 AM - 11:00 AM MDT</p>
+                <p>Memorial Building, 300 North Johnson</p>
+                <h3>Live Horse Races</h3>
+                <p>Saturday May 8, 2021</p>
+                <p>12:30 PM - 5:00 PM MDT</p>
+                <p>Pocatello Downs Bannock County Event Center 10588 Fairgrounds Way</p>
+                <p>Fees/Admission - $2.00</p>
+                <h3>Pocatello Elks #674 Charity Golf Tournament</h3>
+                <p>Sunday Jun 27, 2021</p>
+                <p>8:00 AM - 3:00 PM MDT</p>
+                <p>June 27th, 2021 8:00 AM SHOTGUN START</p>
+                <p>RIVERSIDE GOLF COURSE 3550 BANNOCK HWY. POCATELLO, IDAHO</p>
+            </div>
+        </section>
+
+        <!-- Contact Information -->
+        <div class="contactdiv">
+            <div class="mapouter">
+                <div class="gmap_canvas"><iframe width="250" height="250" id="gmap_canvas"
+                        src="https://maps.google.com/maps?q=324%20South%20Main,%20Pocatello&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><br>
+                </div>
+            </div>
+            <div class="contact_info">
+                <h3 class="contact_h3">Contact Information</h3>
+                <p>&#10140; 324 South Main Pocatello, ID 83204</p>
+                <p>&#9742; (208) 233-1525</p>
+                <p>&#9993; info@pocatelloidaho.com/</p>
+                <a href="https://www.facebook.com" target="blank"><img class="socialicons"
+                        src="images/social/contact_facebook.png" alt="Facebook Icon"></a>
+                <a href="https://www.instagram.com" target="blank"><img class="socialicons"
+                        src="images/social/contact_instagram.png" alt="Instagram Icon"></a>
+                <a href="https://www.pinterest.com/" target="blank"><img class="socialicons"
+                        src="images/social/contact_pinterest.png" alt="Pinterest Icon"></a>
+                <a href="https://www.twitter.com" target="blank"><img class="socialicons"
+                        src="images/social/contact_twitter.png" alt="Twitter Icon"></a>
+            </div>
+        </div>
     </main>
 
     <!-- Footer + OpenWeatherMap.org link for -->
     <footer>
-        <p>&copy; <span class="text-primary">T</span>ru<span class="text-primary">W</span>eather | Attributions | Mark
-            A. Romriell | <a href="https://rom18009.github.io/">Portal Home Page</a></p>
+        <p>&copy; Pocatello Chamber of Commerce | Attributions | Mark
+            A. Romriell | <a href="https://pocatelloidaho.com/">Actual Pocatello Chamber Site</a></p>
         <div><a href="https://openweathermap.org//" target="_blank">OpenWeather.org</a> | <span id="currentDate"></span>
         </div>
     </footer>

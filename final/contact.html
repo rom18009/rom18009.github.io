@@ -6,7 +6,8 @@
     <!-- Set Viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- External Fonts API -->
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Roboto:wght@300;400&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Roboto:wght@300;400&display=swap"
         rel="stylesheet">
     <!-- Normalize External Source -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
@@ -16,12 +17,232 @@
     <link rel="stylesheet" href="css/large.css">
     <!-- Favicon -->
     <link rel="icon" href="../favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="128x128" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon_32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="128x128" href="images/favicon/apple-touch-icon.png">
     <!-- Title and Description -->
     <meta name="description"
         content="Final Project - Chamber of Commerce Site | Mark Romriell in WDD 230, Winter 2020 Semester at Brigham Young University - Idaho">
     <title>Pocatello Chamber of Commerce - Contact</title>
 </head>
 
+<body>
+
+    <!-- Header with logo -->
+    <header>
+        <div class="sitelogo"><a href="index.html"><img src="images/mainlogo.jpg"
+                    alt="Green on white Pocatello Chamber logo"></a></div>
+    </header>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul class="navbar">
+            <li><a class="hamburger" href="#">&#9776; Menu</a></li>
+            <li></li><a href="index.html">Home</a></li>
+            <li><a href="pocatello.html">Pocatello</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li class="active"><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Hero Image and Floating Weather Summary-->
+        <div class="herodiv">
+            <picture>
+                <source srcset="images/hero_images/contact_hero_med.jpg"
+                    media="(min-width: 676px) and (max-width: 1023px)">
+                <source srcset="images/hero_images/contact_hero_large.jpg" media="(min-width: 1024px)">
+                <img class="heroimage" alt="Pocatello Chamber of Commerce at night"
+                    src="images/hero_images/contact_hero_small.jpg">
+            </picture>
+
+            <!-- Form Area-->
+            <div class="joinform">
+                <form name="my-forms" action="thankyou.html" method="GET">
+                    <fieldset>
+                        <legend>Personal Details</legend>
+                        <label class="top">Full Name* <input type="text" name="fullname" pattern="[A-Za-z\s]{4,}"
+                                required></label>
+                        <label class="top">Phone* <input type="tel" name="phone" required></label>
+                        <label class="top">Email <br><input type="email" name="email"
+                                placeholder="name@domain.com"></label>
+                        <label class="top">Comments: <textarea name="comments"></textarea></label>
+                    </fieldset>
+                    <input type="submit" value="Submit" class="btnReport">
+                </form>
+
+                <!-- Board of Directors List -->
+                <h2 class="contacttbl">Executive Committee</h2>
+
+                <table>
+                    <tr>
+                        <th>Name</th>
+                        <th>Position</th>
+                        <th>Company</th>
+                    </tr>
+                    <tr>
+                        <td>Jeffery Glissendorf</td>
+                        <td>Board Chair</td>
+                        <td>TownePlace Suites</td>
+                    </tr>
+                    <tr>
+                        <td>Ari Price</td>
+                        <td>Board Chair Elect</td>
+                        <td>Gold’s Gym Pocatello</td>
+                    </tr>
+                    <tr>
+                        <td>Robert Cuoio</td>
+                        <td>Finance Chair</td>
+                        <td>The Hospital Cooperative</td>
+                    </tr>
+                    <tr>
+                        <td>DeAnn Wilson</td>
+                        <td>Past Board Chair</td>
+                        <td>Denny’s Wrecker Service</td>
+                    </tr>
+                    <tr>
+                        <td>Danielle Cooley</td>
+                        <td>Community Services</td>
+                        <td>America Family Insurance</td>
+                    </tr>
+                    <tr>
+                        <td>Jameson Johnson</td>
+                        <td>Member Services</td>
+                        <td>McDonald’s</td>
+                    </tr>
+                    <tr>
+                        <td>Laura Smith</td>
+                        <td>Government Affairs</td>
+                        <td>Idaho Central Credit Union</td>
+                    </tr>
+                </table>
+
+                <h2 class="contacttbl">Board Members</h2>
+
+                <table>
+                    <tr>
+                        <th>Name</th>
+                        <th>Company</th>
+                    </tr>
+                    <tr>
+                        <td>Art Beery</td>
+                        <td>Cole Chevrolet, Nissan, Kia</td>
+                    </tr>
+                    <tr>
+                        <td>Nate Carter</td>
+                        <td>Portneuf Medical Center</td>
+                    </tr>
+                    <tr>
+                        <td>Krystal Chanda</td>
+                        <td>A&E Engineering</td>
+                    </tr>
+                    <tr>
+                        <td>Alan Jenkins</td>
+                        <td>JP Associates</td>
+                    </tr>
+                    <tr>
+                        <td>Echo Marshall</td>
+                        <td>Shoshone Bannock Casino Hotel</td>
+                    </tr>
+                    <tr>
+                        <td>Kirby Shepherd</td>
+                        <td>J.R. Simplot Co.</td>
+                    </tr>
+                    <tr>
+                        <td>Justin Jackson</td>
+                        <td>ON Semiconductor, Inc.</td>
+                    </tr>
+                    <tr>
+                        <td>Kevin Bailey</td>
+                        <td>United Way of Southeastern Idaho</td>
+                    </tr>
+                    <tr>
+                        <td>Will Jenson</td>
+                        <td>Idaho National Lab</td>
+                    </tr>
+                    <tr>
+                        <td>Mayor Blad</td>
+                        <td>City of Pocatello</td>
+                    </tr>
+                    <tr>
+                        <td>Rick Cheatum</td>
+                        <td>Chief of Chiefs</td>
+                    </tr>
+                    <tr>
+                        <td>Cassey Leatham</td>
+                        <td>Leadership Pocatello</td>
+                    </tr>
+                    <tr>
+                        <td>Mayor England</td>
+                        <td>City of Chubbuck</td>
+                    </tr>
+                    <tr>
+                        <td>Steve England</td>
+                        <td>Pocatello-Chubbuck Auditorium District</td>
+                    </tr>
+                    <tr>
+                        <td>Doug Howell</td>
+                        <td>School District 25</td>
+                    </tr>
+                    <tr>
+                        <td>Stephanie Palagi</td>
+                        <td>Historic Downtown Pocatello</td>
+                    </tr>
+                    <tr>
+                        <td>MiaCate Kennedy I</td>
+                        <td>Bannock Development</td>
+                    </tr>
+                    <tr>
+                        <td>Commissioner Tovey</td>
+                        <td>Bannock County</td>
+                    </tr>
+
+                </table>
+
+
+
+                <!-- Contact Information -->
+                <div class="contactdiv">
+                    <div class="mapouter">
+                        <div class="gmap_canvas"><iframe width="250" height="250" id="gmap_canvas"
+                                src="https://maps.google.com/maps?q=324%20South%20Main,%20Pocatello&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><br>
+                        </div>
+                    </div>
+                    <div class="contact_info">
+                        <h3 class="contact_h3">Contact Information</h3>
+                        <p>&#10140; 324 South Main Pocatello, ID 83204</p>
+                        <p>&#9742; (208) 233-1525</p>
+                        <p>&#9993; info@pocatelloidaho.com/</p>
+                        <a href="https://www.facebook.com" target="blank"><img class="socialicons"
+                                src="images/social/contact_facebook.png" alt="Facebook Icon"></a>
+                        <a href="https://www.instagram.com" target="blank"><img class="socialicons"
+                                src="images/social/contact_instagram.png" alt="Instagram Icon"></a>
+                        <a href="https://www.pinterest.com/" target="blank"><img class="socialicons"
+                                src="images/social/contact_pinterest.png" alt="Pinterest Icon"></a>
+                        <a href="https://www.twitter.com" target="blank"><img class="socialicons"
+                                src="images/social/contact_twitter.png" alt="Twitter Icon"></a>
+                    </div>
+                </div>
+    </main>
+
+    <!-- Footer + OpenWeatherMap.org link for -->
+    <footer>
+        <p>&copy; Pocatello Chamber of Commerce | Attributions | Mark
+            A. Romriell | <a href="https://pocatelloidaho.com/">Actual Pocatello Chamber Site</a></p>
+        <div><a href="https://openweathermap.org//" target="_blank">OpenWeather.org</a> | <span id="currentDate"></span>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src='js/dates.js'></script>
+    <script src='js/hamburger.js'></script>
+    <script src='js/apiforecast.js'></script>
+    <script src='js/apiweather.js'></script>
+    <script src='js/events.js'></script>
+    <!-- Web Font Loader Activity -->
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src='js/webfont.js'></script>
+</body>
+
+</html>

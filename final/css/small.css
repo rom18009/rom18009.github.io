@@ -11,16 +11,16 @@
 }
 
 body {
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     background-color: #EFF1F3;
 }
 
 /* Announcement */
 
 .announcement {
-    color: #000;
+    color: white;
     font-weight: 600;
-    background-color: #E89700;
+    background-color: #86B3D1;
     padding: .60em;
     text-align: center;
 }
@@ -28,28 +28,15 @@ body {
 /* Header */
 
 header {
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     background-color: white;
     padding: 5px 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #E89700;
+    color: white;
 }
 
-header .sitelogo {
-    justify-content: left;
-}
-
-header .navbar {
-    justify-content: right;
-}
-
-header img {
-    width: 60px;
-    height: auto;
-    float: left;
-}
 
 /* Headings */
 
@@ -70,13 +57,12 @@ header img {
 h2,
 h3 {
     font-family: 'Roboto', sans-serif;
-    color: #D85423;
+    color: black;
 }
 
 h2 {
     font-size: 1.5em;
     text-align: center;
-    margin: .8rem auto;
 }
 
 main section.thankyou {
@@ -96,22 +82,18 @@ main section.stormhead p {
 /* Navigation Bar */
 
 nav {
-    background-color: #59A86A;
-    font-family: 'Noto Sans', sans-serif;
+    background-color: #474852;
+    font-family: 'Open Sans', sans-serif;
     text-align: center;
     border-bottom: none;
 }
 
 .navbar {
     overflow: hidden;
-    margin: 0;
+    width: fit-content;
+    margin: 0 auto;
     padding: 0;
     text-align: center;
-}
-
-nav ul {
-    list-style: none;
-    background-color: #222;
 }
 
 .navbar li {
@@ -126,30 +108,38 @@ nav ul {
     display: block;
 }
 
+
 .navbar a {
     display: block;
-    color: black;
-    font-weight: 700;
+    color: white;
+    font-weight: 600;
     padding: 0.75rem;
     text-decoration: none;
-    text-align: left;
+    text-align: center;
 }
 
 .navbar a:hover {
     color: black;
-    background-color: #5FB0D9;
+    background-color: #8E8268;
 }
 
 .navbar .active {
-    border: 0.125em solid #26313A;
+    border: 0.125em solid #AAA0A0;
     border-radius: 0.125em;
+}
+
+/* Main  */
+
+main.heroimage {
+    margin: 0;
+    margin-bottom: 0;
+    padding-bottom: 10px;
 }
 
 /* Hero Div */
 
 .herodiv {
     position: relative;
-    margin-bottom: 1.2em;
 }
 
 .heroimage {
@@ -158,17 +148,59 @@ nav ul {
     margin: auto;
 }
 
+.herodiv div.home_centered {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1.5;
+}
+
+.herodiv div.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1.5;
+}
+
+.herodiv h3 {
+    display: none;
+}
+
+.herodiv .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #8E8268;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border: 1px solid white;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.herodiv .btn:hover {
+    background-color: #844D36;
+}
+
 /* Weather Summary */
 
 .weathersummary {
     color: #000000;
     background-color: #5FB0D9;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-gap: .60em;
     font-weight: bold;
-    box-shadow: 0 0 0.5em black;
+    box-shadow: 0 0 0.1em black;
     padding: 0.5em;
+    line-height: 1.15;
 }
 
 .weathersummary .ws_names li,
@@ -177,7 +209,7 @@ nav ul {
 }
 
 .ws_title {
-    color: aliceblue;
+    color: white;
     grid-column: 1/3;
     width: 90%;
     border-bottom: 0.125em solid #000000;
@@ -188,24 +220,15 @@ nav ul {
 }
 
 .ws_names {
-    text-align: right;
+    text-align: center;
 }
 
-.ws_values {
+.ws_names span {
     color: #FED766;
 }
 
 #current-desc {
     text-transform: capitalize;
-}
-
-/* Main  */
-
-main {
-    max-width: 1060px;
-    margin: 0.625em auto;
-    margin-bottom: 0;
-    padding: 10px 0px 0px 0px;
 }
 
 /* Forecast Area */
@@ -219,7 +242,7 @@ main {
 
 main article.article_1 {
     border: 1px solid black;
-    background-color: #FED766;
+    background-color: white;
     color: #000000;
     line-height: 1.75em;
     padding: 2em;
@@ -233,12 +256,6 @@ main article.article_1 h3 {
     border-bottom: 0.125em solid #000000;
     font-size: 22px;
     margin-bottom: 8px;
-}
-
-main article.article_1 img {
-    width: 50%;
-    margin: 0 0 0 3%;
-    float: right;
 }
 
 main article.article_1 p a {
@@ -268,16 +285,23 @@ main article.article_2 h3 {
 }
 
 main article.article_2 img {
-    width: 50%;
+    width: 30%;
     margin: 0 0 0 3%;
     float: right;
+}
+
+main article.article_2 p a {
+    text-decoration: none;
+    font-style: italic;
+    font-weight: 600;
+    color: #000000;
 }
 
 /* Article 3 Content */
 
 main article.article_3 {
     border: 1px solid black;
-    background-color: #ffd077;
+    background-color: #AAA0A0;
     color: #000000;
     line-height: 1.75em;
     padding: 2em;
@@ -294,9 +318,10 @@ main article.article_3 h3 {
 }
 
 main article.article_3 img {
-    width: 45%;
+    width: 25%;
     margin: 0 0 0 5%;
     float: right;
+    background-color: green;
 }
 
 main article.article_3 p a {
@@ -310,7 +335,7 @@ main article.article_3 p a {
 
 main article.article_4 {
     border: 1px solid black;
-    background-color: #ffd077;
+    background-color: #86B3D1;
     color: #000000;
     line-height: 1.75em;
     padding: 2em;
@@ -327,9 +352,10 @@ main article.article_4 h3 {
 }
 
 main article.article_4 img {
-    width: 45%;
+    width: 12%;
     margin: 0 0 0 7%;
     float: right;
+    background-color: black;
 }
 
 main article.article_4 p a {
@@ -342,14 +368,13 @@ main article.article_4 p a {
 /* Town Events */
 
 .eventssection {
-    font-family: 'Cardo', serif;
+    font-family: 'Open Sans', sans-serif;
     border: 1px solid #FED766;
     background-color: #696773;
     color: white;
-    line-height: 1.5em;
+    line-height: 1.5;
     padding: 1.25em;
     margin: 1.5em auto;
-    max-width: 1060px;
 }
 
 .eventssection h2 {
@@ -360,85 +385,80 @@ main article.article_4 p a {
     text-align: center;
 }
 
-/* Town JSON Info */
+/* Business Cards */
 
-.towns {
+.cards {
     display: grid;
     grid-template-columns: 1fr;
     justify-content: center;
     align-content: center;
     grid-gap: 0.5em;
-}
-
-.towns section {
-    background-color: #272727;
-    text-align: center;
-    margin: .5rem auto;
-    border-radius: 0.5rem;
-    padding: 0.4em;
-}
-
-.towns h2 {
-    color: #FED766;
-    font-weight: bold;
-    text-align: center;
-    line-height: 0.8;
-}
-
-.towns h3 {
-    color: #ff922c;
-    font-size: 1em;
-    font-weight: bold;
-    text-align: center;
-    padding-bottom: 10px;
-}
-
-.towns div {
-    line-height: 1.5;
-}
-
-.towns div p {
-    color: white;
-    padding-bottom: 15px;
-    font-size: 15px;
-}
-
-.towns section img {
     width: 90%;
+    margin: 15px auto;
+}
+
+.cards section {
+    border: 1px solid #5c5a66;
+    padding: 6px;
+    text-align: center;
+    background-color: #EFF1F3;
+}
+
+.cards section h2 {
+    font-family: 'Open Sans', sans-serif;
+    color: #272727;
+    font-weight: bold;
+    border: 1px solid #5c5a66;
+    border-radius: 5px;
+    background-color: #86B3D1;
+}
+
+.cards section p {
+    line-height: 2;
+}
+
+.cards img {
+    width: 90%;
+    box-shadow: 0px 0px 13px 1px rgba(0, 0, 0, 0.9);
     margin: 1em auto;
+    padding: 5px;
+    background-color: #aaa0a0;
+    border-radius: 5px
 }
 
-/* Town Order Set */
-
-.Preston {
-    order: 1;
+.cards section:nth-child(1) img {
+    background-color: #ffffff;
+    width: 60%;
 }
 
-.Soda {
-    order: 2;
+.cards section:nth-child(2) img {
+    background-color: #ffffff;
+    width: 80%;
 }
 
-.Fish {
-    order: 3;
+.cards section:nth-child(3) img {
+    background-color: #000000;
+    width: 80%;
 }
 
-/* Lazy Load Assignment*/
-
-.lazyload {
-    width: 300px;
-    margin: auto;
+.cards section:nth-child(4) img {
+    background-color: #ffffff;
+    width: 80%;
 }
 
-.lazyload picture img[data-src] {
-    filter: blur(2em);
+.cards section:nth-child(5) img {
+    background-color: #f3c57f;
+    width: 40%;
 }
 
-.lazyoad picture img {
-    filter: blur(0em);
-    transition: filter 0.5s;
-    width: 300px;
-    height: 400px;
-    border: 2px solid #000;
+.cards section:nth-child(6) img {
+    background-color: #86b3d1;
+    width: 40%;
+}
+
+.cards section:nth-child(7) img {
+    background-color: #59524c;
+    width: 40%;
 }
 
 /* Gallery Container */
@@ -482,20 +502,20 @@ main div.gallery_container figure.gallery_photo figcaption {
 
 /* Form Area */
 
-main div.stormcenter {
+main div.joinform {
     margin: 0 auto;
     min-width: 30px;
     padding: 0;
 }
 
-main div.stormcenter form fieldset {
+main div.joinform form fieldset {
     margin: 2rem;
     border: 1px solid #0064a7;
     border-radius: 5px;
     padding: 0.5rem 2%;
 }
 
-main div.stormcenter form legend {
+main div.joinform form legend {
     color: #0064a7;
     font-size: 1.2rem;
     font-weight: bold;
@@ -503,15 +523,15 @@ main div.stormcenter form legend {
     padding: 0 0.5rem;
 }
 
-main div.stormcenter form label.top,
-main div.stormcenter form div {
+main div.joinform form label.top,
+main div.joinform form div {
     display: block;
     padding-top: 1rem;
     font-size: 1.2rem;
 }
 
-main div.stormcenter form label.top,
-main div.stormcenter form label.top select {
+main div.joinform form label.top,
+main div.joinform form label.top select {
     display: block;
     color: #272727;
     width: 85%;
@@ -520,29 +540,29 @@ main div.stormcenter form label.top select {
     padding: 1rem;
 }
 
-main div.stormcenter form label.top {
+main div.joinform form label.top {
     display: block;
 }
 
-main div.stormcenter form label.sbs {
+main div.joinform form label.sbs {
     display: block;
     padding: 0.75em 0.75em;
     color: #272727;
 }
 
-main div.stormcenter form label.sbs input {
+main div.joinform form label.sbs input {
     width: auto;
     margin-left: 0.125rem;
 }
 
-main div.stormcenter fieldset div.danger {
+main div.joinform fieldset div.danger {
     color: #d20a0a;
     font-weight: bold;
     text-transform: uppercase;
     padding: 0.75em 0.75em;
 }
 
-main div.stormcenter fieldset label.top textarea {
+main div.joinform fieldset label.top textarea {
     padding: 1rem;
     line-height: 1.5;
     border-radius: 0.313rem;
@@ -550,7 +570,7 @@ main div.stormcenter fieldset label.top textarea {
     box-shadow: 1px 1px 1px #999;
 }
 
-main div.stormcenter input.btnReport {
+main div.joinform input.btnReport {
     font-size: 1.5rem;
     font-weight: bold;
     background-color: #E89700;
@@ -559,29 +579,59 @@ main div.stormcenter input.btnReport {
     padding: 0.75rem 1.5rem;
     margin: 0 0 2rem 2rem;
     width: 15rem;
+
 }
 
-main div.stormcenter form input.btnReport:hover {
+main div.joinform form input.btnReport:hover {
     background-color: #009FB7;
     border-radius: 0.5rem;
 }
 
-main div.stormcenter form label.top input:required {
+main div.joinform form label.top input:required {
     border: #ff0000 solid 0.112rem;
 }
 
-main div.stormcenter form label.top input:required:valid {
+main div.joinform form label.top input:required:valid {
     border: green solid 0.125rem;
 }
 
-main div.stormcenter form input,
-main div.stormcenter form textarea {
+main div.joinform form input,
+main div.joinform form textarea {
     border-radius: 0.3rem;
     width: 85%;
     padding: 0.5em;
 }
 
+/* Board of Directors Table */
+
+.contacttbl {
+    color: black;
+    margin: 1em;
+}
+
+table {
+    font-family: 'Open Sans', sans-serif;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
 /* Contact Area */
+
+.contactdiv {
+    margin-top: 2em;
+}
 
 main div.contactdiv {
     border: .75px solid black;
@@ -598,13 +648,12 @@ main div.contactdiv h3 {
     text-align: center;
 }
 
-main div.contactdiv .contact_map {
+main div.contactdiv .mapouter {
     display: grid;
     grid-column: 1/2;
     grid-row: 1;
     margin: auto;
     border: 1px solid #E89700;
-    border-radius: 0.3125em;
     filter: drop-shadow(1px 2px 1px grey);
 }
 
@@ -622,13 +671,20 @@ main div.contact_info .socialicons {
     width: 35px;
 }
 
+
+#main_h2 {
+    color: black;
+    font-size: 32px;
+    margin: 1em;
+}
+
 /* Footer */
 
 footer {
     align-items: center;
     text-align: center;
-    background-color: #000;
-    color: #E89700;
+    background-color: #474852;
+    color: white;
     padding: 1em;
 }
 
@@ -639,4 +695,18 @@ footer p {
 footer a {
     text-decoration: none;
     color: #FED766;
+}
+
+.mapouter {
+    position: relative;
+    text-align: right;
+    height: 250px;
+    width: 250px;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 250px;
+    width: 250px;
 }

@@ -1,9 +1,9 @@
-@media only screen and (min-width: 42.250em) {
+@media only screen and (min-width: 900px) {
 
 	/* Header */
 
 	header img {
-		width: 70%;
+		width: 100%;
 		height: auto;
 	}
 
@@ -16,15 +16,10 @@
 
 	.navbar {
 		display: flex;
-		justify-content: space-between;
+		justify-content: center;
 		align-items: center;
-	}
-
-	nav ul {
-		display: flex;
-		align-items: center;
-		background-color: none;
-		flex-wrap: wrap;
+		width: 675px;
+		margin: 0 auto;
 	}
 
 	.navbar li {
@@ -43,16 +38,15 @@
 	}
 
 	.navbar li:hover {
-		border-top: 0.125em solid #5FB0D9;
-		border-bottom: 0.125em solid #5FB0D9;
+		border-top: 0.125em solid #86B3D1;
+		border-bottom: 0.125em solid #86B3D1;
 	}
 
 	.navbar .active:hover {
-		border: 0.125em solid black !important;
+		border: 0.125em solid white !important;
 	}
 
 	/* Hero Area */
-
 	.weathersummary {
 		position: absolute;
 		top: 30px;
@@ -63,8 +57,40 @@
 		opacity: .85;
 	}
 
-	#main_h2 {
-		font-size: 32px;
+	.herodiv div.home_centered {
+		top: 30%;
+		left: 60%;
+	}
+
+	.herodiv div.centered {
+		top: 50%;
+		left: 50%;
+	}
+
+	.herodiv h3 {
+		display: block;
+		font-size: 1.8em;
+		width: 100%;
+		margin: auto;
+		text-align: center;
+		color: white;
+	}
+
+	.herodiv .btn {
+		position: absolute;
+		top: 51%;
+		left: 60%;
+		transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		background-color: #8E8268;
+		color: white;
+		font-size: 18px;
+		padding: 12px 24px;
+		border: none;
+		cursor: pointer;
+		border: 1px solid white;
+		border-radius: 5px;
+		text-align: center;
 	}
 
 	/* Five Day Forecast */
@@ -76,16 +102,14 @@
 
 	.forecastdiv {
 		display: grid;
-		grid-template-columns: repeat(5, 1fr);
+		grid-template-columns: repeat(3, 1fr);
 		grid-gap: 1.75%;
 		padding: 0.313rem;
-		width: 80%;
-		margin: 0 auto;
 		text-align: center;
 	}
 
 	.fc_img {
-		padding: 5px;
+		padding: 0;
 		margin: 0 auto;
 		display: block;
 		margin: auto;
@@ -111,46 +135,11 @@
 	.forecastdiv span.fc_temp {
 		color: #FED766;
 		background-color: #26313A;
-		padding: .5em;
 	}
 
 	.forecastdiv div {
 		border-radius: 0.3125em;
 		overflow: hidden;
-	}
-
-	/* Town JSON Info */
-
-	.towns section {
-		background-color: #272727;
-		text-align: center;
-		display: flex;
-		flex-direction: row;
-		margin: .5rem;
-		border-radius: 0.5rem;
-		padding: 2em;
-	}
-
-	.towns div p {
-		color: white;
-	}
-
-	.towns section:nth-child(2) {
-		flex-direction: row-reverse;
-	}
-
-	.towns section:nth-child(3) {
-		flex-direction: row-reverse;
-	}
-
-	.towns section img {
-		width: 50%;
-		margin: 1em;
-	}
-
-	.towns div {
-		width: 50%;
-		line-height: 1.5;
 	}
 
 	/* Article Images */
@@ -171,11 +160,30 @@
 		grid-gap: 0.5em;
 	}
 
+	/* Business Cards */
+
+	.cards {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1em;
+    }
+
+    .cards section {
+        border-radius: 5px;
+        padding: 0.4em;
+        text-align: center;
+    }
+
+    .cards img {
+        width: 50%;
+        box-shadow: 0px 0px 13px 1px rgba(0, 0, 0, 0.9);
+        margin: 2em auto;
+    }
+
 	/* Contact Area */
 
 	main div.contactdiv {
 		display: grid;
-		grid-template-columns: 1fr;
+		grid-template-columns: 1fr 1fr;
 	}
 
 	main div.contact_info {

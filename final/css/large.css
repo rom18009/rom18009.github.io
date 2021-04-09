@@ -7,55 +7,16 @@
 		width: 100%;
 	}
 
-	.headings h1 {
-		font-size: 3rem;
+	.herodiv .btn {
+		position: absolute;
+		top: 52%;
+		left: 61%;
 	}
 
-	.motto {
-		letter-spacing: 1.5pt;
-		font-size: larger;
-		margin-left: 17px;
-	}
-
-	/* Town JSON Info */
-
-	.towns {
-		grid-template-columns: 1fr 1fr 1fr;
-		grid-gap: 2em;
-	}
-
-	.towns section {
-		display: flex;
-		flex-direction: column;
-		margin: .5rem auto;
-		border-radius: 0.5rem;
-		padding: 2em;
-	}
-
-	.towns section:nth-child(2) {
-		flex-direction: column;
-	}
-
-	.towns section:nth-child(3) {
-		flex-direction: column;
-	}
-
-	.towns section img {
-		width: 100%;
-		margin: 1em 0 0 0;
-		margin-top: auto;
-	}
-
-	.towns h3 {
-		border-radius: 0.5rem;
-		padding: 1.25em;
-		font-size: 16px;
-	}
-
-	.towns div {
-		width: 100%;
-	}
-
+	.cards {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1em;
+    }
 
 	/* Gallery Container */
 
