@@ -381,9 +381,21 @@ main article.article_4 p a {
     color: #FED766;
 }
 
+.eventssection h3 {
+    font-size: 1.4em;
+    padding: 5px;
+}
+
 #townevents {
     text-align: center;
 }
+
+#townevents a {
+    font-weight: 600;
+    color: black;
+}
+
+
 
 /* Business Cards */
 
