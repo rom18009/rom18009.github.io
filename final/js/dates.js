@@ -1,4 +1,6 @@
 // Shows Last Modified Date
+document.getElementById('lastUpdated').innerHTML = document.lastModified;
+
 // document.getElementById('lastUpdated').innerHTML = document.lastModified;
 
 const options = {
@@ -18,3 +20,4 @@ if (day == 5) {
 } else {
     announcement.style.display = "none";
 }
+
