@@ -9,7 +9,7 @@ fetch(apiURL)
         const tempF = jsObject.current.temp;
         const humidity = jsObject.current.humidity;
         document.getElementById('current-temp').innerHTML = Math.round(tempF) + "&#176;F";
-        document.getElementById('humidity').textContent = humidity;
+        document.getElementById('humidity').textContent = humidity +"%";
         document.getElementById('current-desc').textContent = description;
     });
 
